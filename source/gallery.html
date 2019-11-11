@@ -10,50 +10,56 @@
 
 <body>
 
+
+
   <header class="page-header">
+
+    <a class="page-header_logo">
+      <h1>PINK</h1>
+    </a>
+
+
     <nav class="main-nav">
-      <a class="main-nav__header">
-        <h1 class="main-nav__logo">PINK</h1>
-        <button class="main-nav__menu-toggle">Открыть</button>
-      </a>
+      <div class="main-nav__header">
+        <button class="main-nav__menu-toggle">Открыть меню</button>
+      </div>
+
       <ul class="main-nav__list site-list">
-        <li clas="site-list__item">Главная</li>
-        <li clas="site-list__item">Фотографии</li>
-        <li clas="site-list__item">Конкурс</li>
-        <li clas="site-list__item">HTML Academy</li>
+        <li class="site-list__item"><a href="#" class="site-list__link"> Главная</a></li>
+        <li class="site-list__item"><a href="#" class="site-list__link">Фотографии</a></li>
+        <li class="site-list__item"><a href="#" class="site-list__link">Конкурс</a></li>
+        <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
       </ul>
+
     </nav>
   </header>
 
   <main class="page-main">
 
+
+
     <section class="gallery">
 
-      <div class="gallery__header header-box">
-
-        <div class="header-box__block">
-          <p class="header-box__content--lablel">
-            Фотографии пользователей
-          </p>
-        </div>
-
-      </div>
+      <h2 class="gallery__header header-label">
+        Фотографии пользователей
+      </h2>
 
 
       <div class="gallery__textblock textblock">
-          <p class="textblock__text">
-            Взгляните на фотографии которые выкладывают пользователи! Видите, как не хватает ваших?
-          </p>
+        <p class="textblock__text">
+          Взгляните на фотографии которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
       </div>
 
-      <ul class="gallry__photo-items photo__items">
-
+      <ul class="gallry__photo-items photo">
 
         <li class="photo__item">
-
           <div class="photo__master">
-            <label class="photo__label">Панорама дня</label>
-            <img class="photo__img--nature" src="https://via.placeholder.com/150x150">
+            <span class="photo__label">Панорама дня</span>
+            <a class="photo__link" href="#">
+              <img class="photo__img photo__img--nature" alt="открыть изображение" src="https://via.placeholder.com/150x150">
+            </a>
+
           </div>
 
           <div class="photo__details">
@@ -67,18 +73,22 @@
             </p>
 
             <div class="photo__like">
-              <img src="https://via.placeholder.com/30x30">
+              <a class="photo__heart" href="#">
+              </a>
+
               <span>Нравится:</span> <span>215</span>
             </div>
 
           </div>
+
         </li>
 
         <li class="photo__item">
 
           <div class="photo__master">
-            <label class="photo__label visually-hidden">Панорама дня</label>
-            <img class="photo__img--car" src="https://via.placeholder.com/150x150">
+            <a class="photo__link" href="#">
+              <img class="photo__img photo__img--car" alt="открыть изображение" src="https://via.placeholder.com/150x150">
+            </a>
           </div>
 
           <div class="photo__details">
@@ -90,7 +100,9 @@
             </p>
 
             <div class="photo__like">
-              <img src="https://via.placeholder.com/30x30">
+              <a class="photo__heart" href="#">
+              </a>
+
               <span>Нравится:</span> <span>356</span>
             </div>
 
@@ -101,8 +113,10 @@
         <li class="photo__item">
 
           <div class="photo__master">
-            <label class="photo__label visually-hidden">Панорама дня</label>
-            <img class="photo__img--drums" src="https://via.placeholder.com/150x150">
+            <a class="photo__link" href="#">
+              <img alt="открыть изображение" class="photo__img photo__img--drums" src="https://via.placeholder.com/150x150">
+            </a>
+
           </div>
 
           <div class="photo__details">
@@ -114,7 +128,9 @@
             </p>
 
             <div class="photo__like">
-              <img src="https://via.placeholder.com/30x30">
+              <a class="photo__heart" href="#">
+              </a>
+
               <span>Нравится:</span> <span>666</span>
             </div>
 
@@ -125,8 +141,9 @@
         <li class="photo__item">
 
           <div class="photo__master">
-            <label class="photo__label visually-hidden">Панорама дня</label>
-            <img class="photo__img--window" src="https://via.placeholder.com/150x150">
+            <a class="photo__link" href="#">
+              <img alt="открыть изображение" class="photo__img photo__img--window" src="https://via.placeholder.com/150x150">
+            </a>
           </div>
 
           <div class="photo__details">
@@ -138,7 +155,8 @@
             </p>
 
             <div class="photo__like">
-              <img src="https://via.placeholder.com/30x30">
+              <a class="photo__heart" href="#">
+              </a>
               <span>Нравится:</span> <span>215</span>
             </div>
 
@@ -149,8 +167,9 @@
         <li class="photo__item">
 
           <div class="photo__master">
-            <label class="photo__label visually-hidden">Панорама дня</label>
-            <img class="photo__img--cafe" src="https://via.placeholder.com/150x150">
+            <a class="photo__link" href="#">
+              <img alt="открыть изображение" class="photo__img photo__img--cafe" src="https://via.placeholder.com/150x150">
+            </a>
           </div>
 
           <div class="photo__details">
@@ -162,7 +181,8 @@
             </p>
 
             <div class="photo__like">
-              <img src="https://via.placeholder.com/30x30">
+              <a class="photo__heart" href="#">
+              </a>
               <span>Нравится:</span> <span>4</span>
             </div>
 
@@ -173,8 +193,9 @@
         <li class="photo__item">
 
           <div class="photo__master">
-            <label class="photo__label visually-hidden">Панорама дня</label>
-            <img class="photo__img--legs" src="https://via.placeholder.com/150x150">
+            <a class="photo__link" href="#">
+              <img alt="открыть изображение" class="photo__img photo__img--legs" src="https://via.placeholder.com/150x150">
+            </a>
           </div>
 
           <div class="photo__details">
@@ -186,7 +207,8 @@
             </p>
 
             <div class="photo__like">
-              <img src="https://via.placeholder.com/30x30">
+              <a class="photo__heart" href="#">
+              </a>
               <span>Нравится:</span> <span>150</span>
             </div>
 
@@ -197,8 +219,11 @@
         <li class="photo__item">
 
           <div class="photo__master">
-            <label class="photo__label visually-hidden">Панорама дня</label>
-            <img class="photo__img--airplane" src="https://via.placeholder.com/150x150">
+
+            <a class="photo__link" href="#">
+              <img alt="открыть изображение" class="photo__img photo__img--airplane" src="https://via.placeholder.com/150x150">
+            </a>
+
           </div>
 
           <div class="photo__details">
@@ -210,7 +235,8 @@
             </p>
 
             <div class="photo__like">
-              <img src="https://via.placeholder.com/30x30">
+              <a class="photo__heart" href="#">
+              </a>
               <span>Нравится:</span> <span>2560</span>
             </div>
 

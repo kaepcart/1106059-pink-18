@@ -9,17 +9,24 @@
 <body>
 
   <header class="page-header">
+
+    <a class="page-header_logo">
+      <h1>PINK</h1>
+    </a>
+
+
     <nav class="main-nav">
-      <a class="main-nav__header">
-        <h1 class="main-nav__logo">PINK</h1>
+      <div class="main-nav__header">
         <button class="main-nav__menu-toggle">Открыть меню</button>
-      </a>
+      </div>
+
       <ul class="main-nav__list site-list">
-        <li clas="site-list__item">Главная</li>
-        <li clas="site-list__item">Фотографии</li>
-        <li clas="site-list__item">Конкурс</li>
-        <li clas="site-list__item">HTML Academy</li>
+        <li class="site-list__item"><a href="#" class="site-list__link">Главная</a></li>
+        <li class="site-list__item"><a href="#" class="site-list__link">Фотографии</a></li>
+        <li class="site-list__item"><a href="#" class="site-list__link">Конкурс</a></li>
+        <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
       </ul>
+
     </nav>
   </header>
 
@@ -28,14 +35,12 @@
 
     <section class="download">
 
-      <div class="download__header header-box">
-        <div class="header-box__block">
-          <p class="header-box__content--img">
-          </p>
-        </div>
-      </div>
+      <header class="header-box">
+        <img class="header-box__content" alt="Приложение на твоем смартфоне"
+          src="https://via.placeholder.com/150x300" />
+      </header>
 
-      <label class="download__buttons-header">Скачать приложение</label>
+      <a class="download__buttons-header">Скачать приложение</a>
 
       <ul class="download__os os-list">
         <li class="os-list__item">
@@ -73,7 +78,9 @@
       </dl>
 
       <div class="advantages_picture">
-        <img src="https://via.placeholder.com/150x300" />
+        <a class="advantages_pictur-link" href="#">
+          <img src="https://via.placeholder.com/150x300" alt="Всем привет" />
+        </a>
       </div>
 
     </section>
