@@ -257,7 +257,7 @@
 
     </section>
 
-    <section class="photo-editor">
+    <form  class="photo-editor" action="https://echo.htmlacademy.ru" method="post">
 
       <div class="photo-editor__work-panel">
 
@@ -275,24 +275,16 @@
           <button class="photo-editor__edit-button photo-editor__edit-button--bright" type="button">Яркость</button>
         </p>
 
-        <p class="photo-editor__bright-slider">
-          <span class="photo-editor__bright-line">
-            Шкала
-          </span>
-
-          <span class="photo-editor__bright-point">
-            Бегунок
-          </span>
-
-        </p>
+        <input  name="bright-range" id="bright-range" type="range" class="photo-editor__bright-slider">
+          </input>
       </div>
 
       <div class="photo-editor__buttons">
-        <button class="photo-editor__button photo-editor__button--submit" type="button"> Запостить</button>
+        <button type="submit" class="photo-editor__button photo-editor__button--submit" type="button"> Запостить</button>
         <button class="photo-editor__button photo-editor__button--cancel" type="button"> Отменить</button>
       </div>
 
-    </section>
+    </form>
 
   </main>
 
