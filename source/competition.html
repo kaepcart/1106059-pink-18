@@ -10,16 +10,14 @@
 
 <body>
 
-
-
   <header class="page-header">
 
     <a class="page-header_logo">
       <h1>PINK</h1>
     </a>
 
-
     <nav class="main-nav">
+
       <div class="main-nav__header">
         <button class="main-nav__menu-toggle">Открыть меню</button>
       </div>
@@ -32,23 +30,185 @@
       </ul>
 
     </nav>
+
   </header>
 
   <main class="page-main">
-    <section class="competition-form">
 
+    <h2 class="page-main__header header-label">
+      Конкурс на самое безбашенное путешествие с ПИНК
+    </h2>
 
-      <h2 class="competition-form__header header-label">
-        Конкурс на самое безбашенное путешествие с ПИНК
-      </h2>
+    <section class="competition">
 
-      <div class="competition-form__textblock textblock">
+      <div class="competition__header textblock">
         <p class="textblock__text">
           Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
         </p>
       </div>
+
+      <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
+
+        <div class="competition__full-name fields">
+          <p class="competition__field fields__item">
+            <label class="fields__label fields__label--input" for="surname">Фамилия:</label>
+            <input required type="text" id="surname" name="surname" class="fields__value fields__value--input"
+              placeholder="Укажите фамилию *" />
+          </p>
+
+          <p class="competition__field fields__item">
+            <label class="fields__label fields__label--input" for="name">Имя:</label>
+            <input required type="text" id="name" name="name" class="fields__value fields__value--input"
+              placeholder="Введите Ваше имя*" />
+          </p>
+
+          <p class="competition__field fields__item">
+            <label class="fields__label fields__label--input" for="last_name">Отчество:</label>
+            <input type="text" id="last_name" name="last_name" class="fields__value fields__value--input"
+              placeholder="Ну и отчество тоже*" />
+          </p>
+
+        </div>
+
+        <div class="competition-progress fields">
+          <p class="competition-progress-header fields__header">
+            Ваши безбашенные достижения в путешествии
+          </p>
+          <p class="competition__field fields__item">
+            <input type="checkbox" checked id="selfy" name="selfy" class="fields__value fields__value--checkbox" />
+            <label class="fields__label fields__label--checkbox" for="selfy">Сделал селфи с
+              акулой</label>
+          </p>
+
+          <p class="competition__field fields__item">
+            <input type="checkbox" checked id="get-sunburn" name="get-sunburn"
+              class="fields__value fields__value--checkbox" />
+            <label class="fields__label fields__label--checkbox" for="get-sunburn">Обгорел на
+              пляже</label>
+          </p>
+
+          <p class="competition__field fields__item">
+            <input type="checkbox" id="chack-noris" name="chack-noris" class="fields__value fields__value--checkbox" />
+            <label class="fields__label fields__label--checkbox" for="chack-noris">Видел Чака
+              Нориса</label>
+          </p>
+
+          <p class="competition__field fields__item">
+            <input type="checkbox" id="bay-suvenirs" name="bay-suvenirs"
+              class="fields__value fields__value--checkbox" />
+            <label class="fields__label fields__label--checkbox" for="bay-suvenirs">
+              Накупил сувениров</label>
+          </p>
+
+          <p class="competition__field fields__item">
+            <input type="checkbox" checked id="hold-tower" name="hold-tower"
+              class="fields__value fields__value--checkbox" />
+            <label class="fields__label fields__label--checkbox" for="hold-tower">
+              Удержал башню</label>
+          </p>
+
+          <p class="competition__field fields__item">
+            <input type="checkbox" id="break-hotel" name="break-hotel" class="fields__value fields__value--checkbox" />
+            <label class="fields__label fields__label--checkbox" for="break-hotel">
+              Разгромил отель</label>
+          </p>
+
+        </div>
+
+        <div class="competition__contacts fields">
+
+          <p class="competition__field fields__item">
+            <label class="fields__label fields__label--input" for="phone">Номер телефона:</label>
+            <input type="tel" id="phone" name="phone" class="fields__value fields__value--input"
+              placeholder="Номер пожалуйства" />
+          </p>
+
+          <p class="competition__field fields__item">
+            <label class="fields__label fields__label--input" for="mail">Адрес почты:</label>
+            <input required type="email" id="mail" name="mail" class="fields__value fields__value--input"
+              placeholder="Введите почту*" />
+          </p>
+
+        </div>
+
+        <div class="competition-application fields">
+
+          <p class="competition-progress-header fields__header">
+            C каким приложением путешествовали?
+          </p>
+
+          <p class="competition__field fields__item">
+            <input type="radio" value="1" checked id="ios" name="application"
+              class="fields__value fields__value--checkbox" />
+            <label class="fields__label fields__label--checkbox" for="ios">Pink для IOS</label>
+          </p>
+
+          <p class="competition__field fields__item">
+            <input type="radio" value="2" id="android" name="application"
+              class="fields__value fields__value--checkbox" />
+            <label class="fields__label fields__label--checkbox" for="android">Pink для Андрод</label>
+          </p>
+
+          <p class="competition__field fields__item">
+            <input type="radio" value="3" id="wp" name="application" class="fields__value fields__value--checkbox" />
+            <label class="fields__label fields__label--checkbox" for="wp">Pink для Windows Phone</label>
+          </p>
+
+        </div>
+
+        <div class="competition__emotion fields">
+
+          <p class="competition__field fields__item">
+            <label class="fields__label fields__label--input" for="emotions">Опишите свои эмоции:</label>
+            <textarea id="emotions" name="emotions" class="fields__value fields__value--textarea"
+              placeholder="Можно прям в красках не стесняйтесь выражаться"></textarea>
+          </p>
+
+        </div>
+
+        <button type="submit">Отправить форму</button>
+
+        <div class="competition__requared-fields">
+          <span class="competition__star">*</span> <span class="competition__star-text"> - Обязательные поля</span>
+        </div>
+
+      </form>
+
     </section>
+
   </main>
+
+  <footer class="page-footer">
+
+    <div class="page-footer__wrapper">
+
+      <div class="page-footer__social social">
+        <img class="page-footer__pink-icon" alt="Иконка с очками" src="https://via.placeholder.com/50x50">
+
+        <b class="social__title">PINK</b>
+
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy">Twiter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--play" href="https://www.instagram.com/htmlacademy">Google play</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+
+    </div>
+
+  </footer>
 
 </body>
 
