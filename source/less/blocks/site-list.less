@@ -1,9 +1,13 @@
 .site-list {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   background-color: #283645;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
   min-height: 62px;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -14,13 +18,28 @@
   line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 100%;
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .site-list__item {
+  align-items: center;
+  justify-content: center;
+  height: 63px;
+  text-align: center;
+  border-bottom: 1px solid #010101;
+  border-top: px solid #485461;
+
+
   &--header {
     display: flex;
     justify-content: space-between;
+    align-self: stretch;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
