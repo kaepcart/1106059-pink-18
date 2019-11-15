@@ -3,55 +3,65 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
+  <link rel="stylesheet" href="./css/style.css" />
+
 </head>
+
 
 <body>
 
   <header class="page-header">
 
-    <a class="page-header_logo">
-      <h1>PINK</h1>
-    </a>
-
 
     <nav class="main-nav">
 
-      <div class="main-nav__header">
-        <button class="main-nav__menu-toggle">Открыть меню</button>
-      </div>
-
       <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a href="#" class="site-list__link">Главная</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">Фотографии</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">Конкурс</a></li>
+
+        <li class="site-list__item site-list__item--header">
+
+          <a href="index.html" class="site-list__link">
+            <img class="main-nav__list-logo" src="./img/logo-pink-white-mobile.svg" alt="Pink" />
+          </a>
+
+          <button class="main-nav__list-toogle">
+            <img src="./img/icon-menu-cross.svg" alt="Pink" />
+          </button>
+
+
+        </li>
+
+        <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+        <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
+        <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
         <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
       </ul>
 
     </nav>
 
-  </header>
+    <header class="header-box">
 
+      <h2 class="header-box__text">
+        Взгляни на жизнь иначе!
+      </h2>
 
-  <main class="page-main">
+      <img class="header-box__content" alt="Приложение на твоем смартфоне" src="./img/iphone-hand-mobile@1x.png" />
+    </header>
+
 
     <section class="download">
-
-      <header class="header-box">
-        <img class="header-box__content" alt="Приложение на твоем смартфоне"
-          src="https://via.placeholder.com/150x300" />
-      </header>
 
       <a class="download__buttons-header">Скачать приложение</a>
 
       <ul class="download__os os-list">
         <li class="os-list__item">
-          <a class="os-list__link os-list__link--ios" href="#">Для IOS</a> </li>
+          <a class="os-list__link os-list__link--ios" href="#"></a> </li>
         <li class="os-list__item">
-          <a class="os-list__link os-list__link--android" href="#">Для Android</a>
+          <a class="os-list__link os-list__link--android" href="#"></a>
         </li>
         <li class="os-list__item">
-          <a class="os-list__link os-list__link--windows" href="#">Для Windows</a>
+          <a class="os-list__link os-list__link--windows" href="#"></a>
         </li>
       </ul>
 
@@ -61,6 +71,11 @@
 
     </section>
 
+  </header>
+
+
+  <main class="page-main">
+
     <section class="advantages">
 
       <ul class="advantages__header-list">
@@ -68,22 +83,33 @@
         <li class="advantages__header-item">Нам есть что вам предложить!</li>
       </ul>
 
-      <dl class="advantages_items">
-        <dt class="advantages_item-header">Поднимает настроение</dt>
-        <dd class="advantages_item-content">Приложение помогает Вам победить осеннию хандру и дипресию буквально в
-          несколько кликов</dd>
-        <dt class="advantages_item-header">Меняет мир вокруг</dt>
-        <dd class="advantages_item-content">Сделайте снимок и украсте его смайликом или тектовой подписью</dd>
-        <dt class="advantages_item-header">Заводите новых друзей</dt>
-        <dd class="advantages_item-content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-          новых</dd>
-      </dl>
 
-      <div class="advantages_picture">
-        <a class="advantages_pictur-link" href="#">
-          <img src="https://via.placeholder.com/150x300" alt="Всем привет" />
-        </a>
-      </div>
+        <dl class="advantages_items">
+          <dt class="advantages_item-header">Поднимает настроение</dt>
+          <dd class="advantages_item-content">
+            Приложение помогает Вам победить осеннию хандру и дипресию буквально в
+            несколько кликов
+          </dd>
+          <dt class="advantages_item-header">
+            Меняет мир вокруг
+          </dt>
+          <dd class="advantages_item-content">
+            Сделайте снимок и украсте его смайликом или тектовой подписью
+          </dd>
+          <dt class="advantages_item-header">
+            Заводите новых друзей
+          </dt>
+          <dd class="advantages_item-content">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            новых
+          </dd>
+        </dl>
+
+        <div class="advantages_picture">
+          <a class="advantages_pictur-link" href="#">
+            <img src="./img/iphone-screen-mobile@1x.png" alt="Всем привет" />
+          </a>
+        </div>
 
     </section>
 
@@ -162,8 +188,7 @@
       <ul class="contacts__list">
         <li class="contacts__item">
           <strong class="contacts__item-header">Звоните</strong>
-          <a href="tel:+1-812-555-6666"
-            class="contacts__value">+7(812)555-66-66</a>
+          <a href="tel:+1-812-555-6666" class="contacts__value">+7(812)555-66-66</a>
         </li>
 
         <li class="contacts__item">

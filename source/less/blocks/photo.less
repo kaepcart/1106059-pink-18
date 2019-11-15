@@ -1,0 +1,93 @@
+.photo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+}
+
+.photo__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+
+
+  &--panorama {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.photo__img {
+  width: 100%;
+}
+
+.photo__master {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+
+
+  &--panorama {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.photo__details {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: @light-gray;
+  padding: 10px;
+}
+
+.photo__like {
+  margin-top: 10px;
+  font-size: 13px;
+  color: @pink;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.photo__time {
+  text-transform: uppercase;
+}
+
+.photo__heart {
+  display: block;
+  background: url("./../../img/icon-heart.svg") no-repeat;
+  width: 25px;
+  height: 15px;
+}
+
+.photo__comment {
+  margin: 0;
+}
+
+.photo__link {
+  display: block;
+}
+
+.photo__label {
+  position: absolute;
+  padding: 7px 23px 6px;
+
+  right: 20px;
+  top: 0;
+  font-size: 12px;
+  line-height: 24px;
+  color: @white;
+  text-transform: uppercase;
+  background-color: @pink;
+}
