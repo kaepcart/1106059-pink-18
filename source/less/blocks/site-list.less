@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: stretch;
   background-color: @black;
-  border-bottom: 1px solid #000000;
-  border-top: 1px solid #485461;
+
   min-height: 62px;
   margin: 0;
   padding: 0;
@@ -12,7 +11,7 @@
 
 
 .site-list__link {
-  color: #ffffff;
+  color: @white;
   flex-direction: column;
   font-size: 18px;
   line-height: 32px;
@@ -24,6 +23,7 @@
   display: block;
   padding-top: 18px;
   padding-bottom: 18px;
+  text-decoration: none;
 }
 
 .site-list__item {
@@ -31,9 +31,9 @@
   justify-content: center;
   height: 63px;
   text-align: center;
-  border-bottom: 1px solid #010101;
-  border-top: 1px solid #485461;
-
+  border-bottom: 1px solid @black-border-bottom;
+  border-top: 1px solid @black-border-top;
+  text-decoration: none;
 
   &--header {
     display: flex;

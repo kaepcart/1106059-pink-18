@@ -6,40 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Конкурс</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
 
-  <header class="page-header">
 
-    <a class="page-header_logo">
-      <h1>PINK</h1>
-    </a>
+  <nav class="main-nav">
 
-    <nav class="main-nav">
+    <ul class="main-nav__list site-list">
 
-      <div class="main-nav__header">
-        <button class="main-nav__menu-toggle">Открыть меню</button>
-      </div>
+      <li class="site-list__item site-list__item--header">
 
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a href="#" class="site-list__link"> Главная</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">Фотографии</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">Конкурс</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
-      </ul>
+        <a href="index.html" class="site-list__link">
+          <img class="main-nav__list-logo" src="./img/logo-pink-white-mobile.svg" alt="Pink" />
+        </a>
 
-    </nav>
+        <button class="main-nav__list-toogle">
+          <img src="./img/icon-menu-cross.svg" alt="Pink" />
+        </button>
+
+
+      </li>
+
+      <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+      <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
+      <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
+      <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
+    </ul>
+
+  </nav>
 
   </header>
 
   <main class="page-main">
 
-    <h2 class="page-main__header header-label">
-      Конкурс на самое безбашенное путешествие с ПИНК
-    </h2>
+
+
 
     <section class="competition">
+
+      <header class="competition-main header-box header-box--text">
+
+        <h2 class="header-box__text">
+          Конкурс на самое безбашенное путешествие с ПИНК
+        </h2>
+
+      </header>
+
 
       <div class="competition__header textblock">
         <p class="textblock__text">
