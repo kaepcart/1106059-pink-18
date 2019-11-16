@@ -1,17 +1,123 @@
 .rates {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-top: 0;
-    padding-top: 81px;
-    background: @light-gray;
-    background-image: url("./../img/bg-triangle-white.svg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  padding-top: 81px;
+  background: @light-gray;
+  background-image: url("./../img/bg-triangle-white.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  width: 100%;
 
+}
+
+
+.rates__items-list {
+  width: 840px;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.rates__items-head {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @white;
+  background-color: @black;
+  width: 276px;
+}
+
+.rates__name {
+  .font-bold();
+  font-size: 18px
+}
+
+.rates__cost {
+  .font-light();
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.rates__items-body {
+  background-color: @white;
+
+}
+
+.rates__access-field {
+  border-left-color: @white;
+
+}
+
+
+
+.rates__function {
+  height: 60px;
+  border-left: 3px solid @light-gray;
+}
+
+.rates__tag {
+  position: absolute;
+  left: 0;
+}
+
+.rates_header {
+  border: 3px solid @light-gray;
+
+  &--tag {
+    position: relative;
+  }
+}
+
+
+
+.rates__tag::before {
+  position: absolute;
+  content: "хит";
+  height: 10px;
+  width: 28px;
+  top: 20px;
+  left: 9px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  vertical-align: center;
+  text-transform: uppercase;
+  color: @white;
+  background-color: @pink;
+  transform: rotate(-45deg);
+  z-index: 10;
+
+  .font-bold();
+}
+
+.rates__items-fields-tr {
+  border: 3px solid @light-gray;
+}
+
+.rates__access-value {
+  display: block;
+  width: 31px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+
+  &--yes {
+    background: url("../../img/icon-yes.svg") no-repeat;
+  }
+
+  &--no {
+    background: url("../../img/icon-no.svg") no-repeat;
+  }
+
+}
+
+.rates__wrapper
+{
+  
+  overflow-x: scroll;
 }
