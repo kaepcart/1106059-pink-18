@@ -63,8 +63,7 @@
           <div class="photo__master photo__master--panorama">
             <span class="photo__label">Панорама дня</span>
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--nature" alt="открыть изображение"
-                src="./img/panorama-mobile@1x.jpg">
+              <img class="photo__img photo__img--nature" alt="открыть изображение" src="./img/panorama-mobile@1x.jpg">
             </a>
           </div>
 
@@ -88,8 +87,7 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--car" alt="открыть изображение"
-                src="./img/photo-car-mobile@1x.jpg" />
+              <img class="photo__img photo__img--car" alt="открыть изображение" src="./img/photo-car-mobile@1x.jpg" />
             </a>
           </div>
 
@@ -160,8 +158,7 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--cafe" alt="открыть изображение"
-                src="./img/photo-fair-mobile@1x.jpg" />
+              <img class="photo__img photo__img--cafe" alt="открыть изображение" src="./img/photo-fair-mobile@1x.jpg" />
             </a>
           </div>
 
@@ -184,8 +181,7 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--legs" alt="открыть изображение"
-                src="./img/photo-pov-mobile@1x.jpg" />
+              <img class="photo__img photo__img--legs" alt="открыть изображение" src="./img/photo-pov-mobile@1x.jpg" />
             </a>
           </div>
 
@@ -235,30 +231,37 @@
 
     <form class="photo-editor" action="https://echo.htmlacademy.ru" method="post">
 
+      <div class="photo-editor__header">
+        <p class="textblock__text-first">
+          Затмите из всех!
+        </p>
+        <p class="textblock__text-second">
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </div>
+
       <div class="photo-editor__work-panel">
 
-        <div class="photo-editor textblock">
-          <p class="textblock__text">
-            Затмите из всех! Выкладывайте все, что накопилось в телефоне!
-          </p>
-        </div>
 
-        <img class="photo-editor__work-area" src="https://via.placeholder.com/200x350" alt="Фото для редактирование" />
+
+        <img class="photo-editor__work-area" src="./img/photo-road-mobile@1x.jpg" alt="Фото для редактирование" />
 
         <p class="photo-editor__edit-buttons ">
-          <button class="photo-editor__edit-button photo-editor__edit-button--cut" type="button">Обрезать</button>
-          <button class="photo-editor__edit-button photo-editor__edit-button--paint" type="button">Залить</button>
-          <button class="photo-editor__edit-button photo-editor__edit-button--bright" type="button">Яркость</button>
+          <img class="photo-editor__edit-button photo-editor__edit-button--cut" src="./img/icon-editor-crop.svg" ></img>
+          <img class="photo-editor__edit-button photo-editor__edit-button--paint" src="./img/icon-editor-fill.svg" ></img>
+          <img class="photo-editor__edit-button photo-editor__edit-button--bright" src="./img/icon-editor-contrast.svg"></img>
         </p>
 
         <input name="bright-range" id="bright-range" type="range" class="photo-editor__bright-slider" />
 
+        <div class="photo-editor__buttons">
+          <button class="photo-editor__button photo-editor__button--submit" type="submit"> Запостить</button>
+          <button class="photo-editor__button photo-editor__button--cancel" type="button"> Отменить</button>
+        </div>
+
       </div>
 
-      <div class="photo-editor__buttons">
-        <button class="photo-editor__button photo-editor__button--submit" type="submit"> Запостить</button>
-        <button class="photo-editor__button photo-editor__button--cancel" type="button"> Отменить</button>
-      </div>
+
 
     </form>
 
