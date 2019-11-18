@@ -60,95 +60,96 @@
       <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
 
         <div class="competition__full-name fields">
-          <p class="competition__field fields__item">
+          <div class="competition__field fields__item">
             <label class="fields__label fields__label--input" for="surname">Фамилия:</label>
             <input required type="text" id="surname" name="surname" class="fields__value fields__value--input"
               placeholder="Укажите фамилию *" />
-          </p>
+          </div>
 
-          <p class="competition__field fields__item">
+          <div class="competition__field fields__item">
             <label class="fields__label fields__label--input" for="name">Имя:</label>
             <input required type="text" id="name" name="name" class="fields__value fields__value--input"
               placeholder="Введите Ваше имя*" />
-          </p>
+          </div>
 
-          <p class="competition__field fields__item">
+          <div class="competition__field fields__item">
             <label class="fields__label fields__label--input" for="last_name">Отчество:</label>
             <input type="text" id="last_name" name="last_name" class="fields__value fields__value--input"
               placeholder="Ну и отчество тоже*" />
-          </p>
+          </div>
 
         </div>
 
         <div class="competition-progress fields">
+
           <p class="competition-progress-header fields__header">
             Ваши безбашенные достижения в путешествии
           </p>
 
-          <div class="fields__item-checkbox" for="selfy">
+          <div class="fields__item-check">
 
             <div class="fields__checkbox">
-              <input type="checkbox" class="fields__checkbox-input " />
+              <input type="checkbox" class="fields__checkbox-input" name="shark" id="shark" />
               <div class="fields__checkbox-img fields__checkbox-img--yes"></div>
             </div>
 
-            <label class="fields__checkbox-label"> Сделал селфи с акулой </label>
+            <label class="fields__checkbox-label" for="shark"> Сделал селфи с акулой </label>
 
           </div>
 
-          <div class="fields__item-checkbox" for="selfy">
+          <div class="fields__item-check">
 
             <div class="fields__checkbox">
-              <input type="checkbox" class="fields__checkbox-input " />
+              <input type="checkbox" class="fields__checkbox-input" name="sunburn" id="sunburn" />
               <div class="fields__checkbox-img fields__checkbox-img--yes"></div>
             </div>
 
-            <label class="fields__checkbox-label"> Обгорел на пляже </label>
+            <label class="fields__checkbox-label" for="sunburn"> Обгорел на пляже </label>
 
           </div>
 
-          <div class="fields__item-checkbox" for="selfy">
+          <div class="fields__item-check">
 
             <div class="fields__checkbox">
-              <input type="checkbox" class="fields__checkbox-input " />
-              <div class="fields__checkbox-img fields__checkbox-img--yes"></div>
+              <input type="checkbox" class="fields__checkbox-input " name="chack-noris" id="chack-noris" />
+              <div class="fields__checkbox-img fields__checkbox-img--no"></div>
             </div>
 
-            <label class="fields__checkbox-label"> Видел Чака
+            <label class="fields__checkbox-label" for="chack-noris"> Видел Чака
               Нориса </label>
 
           </div>
 
-          <div class="fields__item-checkbox" for="selfy">
+          <div class="fields__item-check">
 
             <div class="fields__checkbox">
-              <input type="checkbox" class="fields__checkbox-input " />
-              <div class="fields__checkbox-img fields__checkbox-img--yes"></div>
+              <input type="checkbox" class="fields__checkbox-input " name="suvenir" id="suvenir" />
+              <div class="fields__checkbox-img fields__checkbox-img--no"></div>
             </div>
 
-            <label class="fields__checkbox-label"> Накупил сувениров </label>
+            <label class="fields__checkbox-label" for="suvenir"> Накупил сувениров </label>
 
           </div>
 
-          <div class="fields__item-checkbox" for="selfy">
+          <div class="fields__item-check">
 
             <div class="fields__checkbox">
-              <input type="checkbox" class="fields__checkbox-input " />
+              <input type="checkbox" class="fields__checkbox-input " name="tower" id="tower" />
               <div class="fields__checkbox-img fields__checkbox-img--yes"></div>
             </div>
 
-            <label class="fields__checkbox-label"> Удержал башню </label>
+            <label class="fields__checkbox-label" for="tower">  Удержал башню </label>
 
           </div>
 
-          <div class="fields__item-checkbox" for="selfy">
+          <div class="fields__item-check" >
 
             <div class="fields__checkbox">
-              <input type="checkbox" class="fields__checkbox-input " />
-              <div class="fields__checkbox-img fields__checkbox-img--yes"></div>
+              <input type="checkbox" class="fields__checkbox-input" name="breack-hotel" id="breack-hotel" />
+              <div class="fields__checkbox-img fields__checkbox-img--no"></div>
             </div>
 
-            <label class="fields__checkbox-label"> Разгромил отель</label>
+            <label class="fields__checkbox-label" for="breack-hotel"> Разгромил отель</label>
 
           </div>
 
@@ -176,22 +177,38 @@
             C каким приложением путешествовали?
           </p>
 
-          <p class="competition__field fields__item">
-            <input type="radio" value="1" checked id="ios" name="application"
-              class="fields__value fields__value--checkbox" />
-            <label class="fields__label fields__label--checkbox" for="ios">Pink для IOS</label>
-          </p>
+          <div class="fields__item-check" for="selfy">
 
-          <p class="competition__field fields__item">
-            <input type="radio" value="2" id="android" name="application"
-              class="fields__value fields__value--checkbox" />
-            <label class="fields__label fields__label--checkbox" for="android">Pink для Андрод</label>
-          </p>
+            <div class="fields__radio">
+              <input type="radio" class="fields__radio-input " />
+              <div class="fields__radio-img fields__radio-img--yes"></div>
+            </div>
 
-          <p class="competition__field fields__item">
-            <input type="radio" value="3" id="wp" name="application" class="fields__value fields__value--checkbox" />
-            <label class="fields__label fields__label--checkbox" for="wp">Pink для Windows Phone</label>
-          </p>
+            <label class="fields__checkbox-label"> Pink для IOS </label>
+
+          </div>
+
+          <div class="fields__item-check" for="selfy">
+
+            <div class="fields__radio">
+              <input type="radio" class="fields__radio-input " />
+              <div class="fields__radio-img"></div>
+            </div>
+
+            <label class="fields__checkbox-label"> Pink для Андрод </label>
+
+          </div>
+
+          <div class="fields__item-check" for="selfy">
+
+            <div class="fields__radio">
+              <input type="radio" class="fields__radio-input " />
+              <div class="fields__radio-img"></div>
+            </div>
+
+            <label class="fields__checkbox-label"> Windows Phone </label>
+
+          </div>
 
         </div>
 
@@ -205,7 +222,7 @@
 
         </div>
 
-        <button type="submit">Отправить форму</button>
+        <button class="competition__submit" type="submit">Отправить форму</button>
 
         <div class="competition__requared-fields">
           <span class="competition__star">*</span> <span class="competition__star-text"> - Обязательные поля</span>
