@@ -247,12 +247,19 @@
         <img class="photo-editor__work-area" src="./img/photo-road-mobile@1x.jpg" alt="Фото для редактирование" />
 
         <p class="photo-editor__edit-buttons ">
-          <img class="photo-editor__edit-button photo-editor__edit-button--cut" src="./img/icon-editor-crop.svg" ></img>
-          <img class="photo-editor__edit-button photo-editor__edit-button--paint" src="./img/icon-editor-fill.svg" ></img>
-          <img class="photo-editor__edit-button photo-editor__edit-button--bright" src="./img/icon-editor-contrast.svg"></img>
+          <img class="photo-editor__edit-button photo-editor__edit-button--cut" src="./img/icon-editor-crop.svg"></img>
+          <img class="photo-editor__edit-button photo-editor__edit-button--paint"
+            src="./img/icon-editor-fill.svg"></img>
+          <img class="photo-editor__edit-button photo-editor__edit-button--bright"
+            src="./img/icon-editor-contrast.svg"></img>
         </p>
 
-        <input name="bright-range" id="bright-range" type="range" class="photo-editor__bright-slider" />
+        <div name="bright-range" id="bright-range" type="range" class="photo-editor__bright-slider bright-range">
+          <div class="bright-range__bar"></div>
+          <div class="bright-range__toggle"></div>
+        </div>
+
+        <hr />
 
         <div class="photo-editor__buttons">
           <button class="photo-editor__button photo-editor__button--submit" type="submit"> Запостить</button>
@@ -272,24 +279,27 @@
     <div class="page-footer__wrapper">
 
       <div class="page-footer__social social">
-        <img class="page-footer__pink-icon" alt="Иконка с очками" src="https://via.placeholder.com/50x50">
-        <b class="social__title">PINK</b>
+
+        <div class="page-footer__header social-header">
+          <img class="page-footer__pink-icon" alt="Иконка с очками" src="./img/logo-pink-blue-mobile.svg">
+        </div>
+
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy">Twiter</a>
+            <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--play" href="https://www.instagram.com/htmlacademy">Google play</a>
+            <a class="social__link social__link--play" href="https://www.instagram.com/htmlacademy"></a>
           </li>
         </ul>
-      </div>
 
+      </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
 
     </div>

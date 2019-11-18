@@ -13,7 +13,6 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   width: 100%;
-
 }
 
 
@@ -21,7 +20,6 @@
   width: 840px;
   box-sizing: border-box;
   border-collapse: collapse;
-  left:-100px
 }
 
 .rates__items-head {
@@ -35,7 +33,7 @@
 
 .rates__name {
   .font-bold();
-  font-size: 18px
+  font-size: 18px;
 }
 
 .rates__cost {
@@ -51,10 +49,7 @@
 
 .rates__access-field {
   border-left-color: @white;
-
 }
-
-
 
 .rates__function {
   height: 60px;
@@ -73,7 +68,6 @@
     position: relative;
   }
 }
-
 
 
 .rates__tag::before {
@@ -114,12 +108,13 @@
   &--no {
     background: url("../../img/icon-no.svg") no-repeat;
   }
-
 }
 
-.rates__wrapper
-{
-  
+.rates__wrapper {
+
   overflow-x: scroll;
   width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }

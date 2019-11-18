@@ -48,5 +48,25 @@
     opacity: 0.3;
     filter: invert(19%) sepia(7%) saturate(2125%) hue-rotate(171deg) brightness(99%) contrast(97%);
   }
+}
 
+.photo-editor__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid @black-trans;
+  padding-top: 20px;
+}
+
+.photo-editor__button {
+  color: @pink;
+  border: 3px solid @pink;
+  border-radius: 30px;
+  background-color: transparent;
+  height: 53px;
+  width: 280px;
+  margin-top: 12px;
+  .font-bold();
+  font-size: 18px;
 }
