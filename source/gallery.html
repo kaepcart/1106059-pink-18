@@ -35,7 +35,6 @@
     </ul>
 
   </nav>
-  </header>
 
   <main class="page-main">
 
@@ -247,14 +246,16 @@
         <img class="photo-editor__work-area" src="./img/photo-road-mobile@1x.jpg" alt="Фото для редактирование" />
 
         <p class="photo-editor__edit-buttons ">
-          <img class="photo-editor__edit-button photo-editor__edit-button--cut" src="./img/icon-editor-crop.svg"></img>
-          <img class="photo-editor__edit-button photo-editor__edit-button--paint"
-            src="./img/icon-editor-fill.svg"></img>
-          <img class="photo-editor__edit-button photo-editor__edit-button--bright"
-            src="./img/icon-editor-contrast.svg"></img>
+          <img class="photo-editor__edit-button photo-editor__edit-button--cut" src="./img/icon-editor-crop.svg"
+            alt="Вырезать" />
+          <img class="photo-editor__edit-button photo-editor__edit-button--paint" src="./img/icon-editor-fill.svg"
+            alt="Залить" />
+          <img class="photo-editor__edit-button photo-editor__edit-button--bright" src="./img/icon-editor-contrast.svg"
+            alt="Контраст" />
         </p>
 
-        <div name="bright-range" id="bright-range" type="range" class="photo-editor__bright-slider bright-range">
+        <div class="photo-editor__bright-slider bright-range">
+          <input type="range" class="bright-range__input" />
           <div class="bright-range__bar"></div>
           <div class="bright-range__toggle"></div>
         </div>
