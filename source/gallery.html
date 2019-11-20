@@ -22,7 +22,7 @@
         </a>
 
         <button class="main-nav__list-toogle">
-          <img src="./img/icon-menu-cross.svg" alt="Pink" />
+          <img src="./img/icon-menu-cross.svg" alt="Закрыть меню" />
         </button>
 
 
@@ -246,18 +246,21 @@
         <img class="photo-editor__work-area" src="./img/photo-road-mobile@1x.jpg" alt="Фото для редактирование" />
 
         <p class="photo-editor__edit-buttons ">
-          <img class="photo-editor__edit-button photo-editor__edit-button--cut" src="./img/icon-editor-crop.svg"
-            alt="Вырезать" />
-          <img class="photo-editor__edit-button photo-editor__edit-button--paint" src="./img/icon-editor-fill.svg"
-            alt="Залить" />
-          <img class="photo-editor__edit-button photo-editor__edit-button--bright" src="./img/icon-editor-contrast.svg"
-            alt="Контраст" />
+
+          <button type="button" class="photo-editor__edit-button photo-editor__edit-button--crop photo-editor__edit-button--active"
+          title="Вырезать" ></button>
+
+          <button type="button" class="photo-editor__edit-button photo-editor__edit-button--fill"
+          title="Залить"></button>
+
+          <button type="button" class="photo-editor__edit-button photo-editor__edit-button--contrast"
+          title="Контраст"></button>
         </p>
 
         <div class="photo-editor__bright-slider bright-range">
           <input type="range" class="bright-range__input" />
-          <div class="bright-range__bar"></div>
-          <div class="bright-range__toggle"></div>
+          <a class="bright-range__bar"></a>
+          <a class="bright-range__toggle"></a>
         </div>
 
         <hr />

@@ -26,7 +26,7 @@
           </a>
 
           <button class="main-nav__list-toogle">
-            <img src="./img/icon-menu-cross.svg" alt="Pink" />
+            <img src="./img/icon-menu-cross.svg" alt="Закрыть меню" />
           </button>
 
 
@@ -56,12 +56,12 @@
 
       <ul class="download__os os-list">
         <li class="os-list__item">
-          <a class="os-list__link os-list__link--ios" href="#"></a> </li>
+          <a class="os-list__link os-list__link--ios" href="#" title="Скачать приложение для IOS"></a> </li>
         <li class="os-list__item">
-          <a class="os-list__link os-list__link--android" href="#"></a>
+          <a class="os-list__link os-list__link--android" href="#" title="Скачать приложение для Android"></a>
         </li>
         <li class="os-list__item">
-          <a class="os-list__link os-list__link--windows" href="#"></a>
+          <a class="os-list__link os-list__link--windows" href="#" title="Скачать приложение для Windows"></a>
         </li>
       </ul>
 
@@ -127,9 +127,9 @@
         </ul>
 
         <p class="feedbacks__toggles slider__toggles">
-          <span class="slider__toggle slider__toggle--active"></span>
-          <span class="slider__toggle"></span>
-          <span class="slider__toggle"></span>
+          <button type="button" class="slider__toggle slider__toggle--active" title="Слайд 1"> </button>
+          <button type="button" class="slider__toggle" title="Слайд 2"></button>
+          <button type="button" class="slider__toggle" title="Слайд 3"></button>
         </p>
 
       </div>
@@ -144,18 +144,17 @@
           <table class="rates__items-list">
             <thead class="rates__items-head">
               <tr>
-                <th colspan="2" class="rates_header">
+                <th colspan="2" class="rates__header">
                   <strong class="rates__name">БАЗА</strong>
                   <p class="rates__cost">1.99 USD</p>
                 </th>
-                <th colspan="2" class="rates_header rates_header--tag">
+                <th colspan="2" class="rates__header rates__header--tag">
                   <span class="rates__tag">
-                    <img src="./img/bg-hit.svg" alt="ХИТ" >
                   </span>
                   <strong class="rates__name">Стандарт</strong>
                   <p class="rates__cost">3.99 USD</p>
                 </th>
-                <th colspan="2" class="rates_header">
+                <th colspan="2" class="rates__header">
                   <strong class="rates__name">АНЛИМ</strong>
                   <p class="rates__cost">9.99 USD</p>
                 </th>
@@ -165,37 +164,43 @@
               <tr class="rates__items-fields-tr">
                 <td class="rates__function"> Разовый фильтр </td>
                 <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--yes"> </p>
+                  <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
                 </td>
                 <td class="rates__function"> Разовый фильтр </td>
                 <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--yes"> </p>
+                  <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
                 </td>
                 <td class="rates__function"> Разовый фильтр </td>
-                <td class="rates__access-field"> <span class="rates__access-value rates__access-value--yes"> </span>
+                <td class="rates__access-field">
+                  <p class="rates__access-value rates__access-value--yes" title="Да"></p>
                 </td>
               </tr>
               <tr class="rates__items-fields-tr">
                 <td class="rates__function"> Смайлики </td>
                 <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--no"> </p>
+                  <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
                 </td>
                 <td class="rates__function"> Смайлики </td>
-                <td class="rates__access-field"> <span class="rates__access-value rates__access-value--yes"> </span>
+                <td class="rates__access-field">
+                  <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
                 </td>
                 <td class="rates__function"> Смайлики </td>
-                <td class="rates__access-field"> <span class="rates__access-value rates__access-value--yes"> </span>
+                <td class="rates__access-field">
+                  <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
                 </td>
               </tr>
               <tr class="rates__items-fields-tr">
                 <td class="rates__function"> Комментарии </td>
-                <td class="rates__access-field"> <span class="rates__access-value rates__access-value--no"> </span>
+                <td class="rates__access-field">
+                  <p class="rates__access-value rates__access-value--no" title="НЕТ"></p>
                 </td>
                 <td class="rates__function"> Комментарии </td>
-                <td class="rates__access-field"> <span class="rates__access-value rates__access-value--no"> </span>
+                <td class="rates__access-field">
+                  <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
                 </td>
                 <td class="rates__function"> Комментарии </td>
-                <td class="rates__access-field"> <span class="rates__access-value rates__access-value--yes"> </span>
+                <td class="rates__access-field">
+                  <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
                 </td>
               </tr>
             </tbody>
@@ -205,9 +210,9 @@
       </div>
 
       <p class="rates__toggles slider__toggles">
-        <span class="slider__toggle"></span>
-        <span class="slider__toggle slider__toggle--active"></span>
-        <span class="slider__toggle"></span>
+        <button type="button" class="slider__toggle" title="Слайд 1"></button>
+        <button type="button" class="slider__toggle slider__toggle--active" title="Слайд 2"></button>
+        <button type="button" class="slider__toggle" title="Слайд 3"></button>
       </p>
     </section>
 
@@ -235,6 +240,12 @@
       <div class="contacts__map map">
         <div class="contacts__map-triangle"></div>
         <div class="contacts__map-img"></div>
+
+        <p class="contacts__radio radio">
+          <input type="radio" class="radio__input" name="ios-radio" id="ios-radio" title="Точка нахождения" />
+          <a class="radio__img radio__img--yes"></a>
+        </p>
+
       </div>
 
     </section>

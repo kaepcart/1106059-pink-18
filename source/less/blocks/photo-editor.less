@@ -31,22 +31,27 @@
 }
 
 .photo-editor__edit-button {
-
+  border: none;
   height: 44px;
   width: 44px;
+  opacity: 0.3;
+  filter: @filter-gray;
 
-  &--cut {
-    filter: invert(24%) sepia(94%) saturate(2008%) hue-rotate(324deg) brightness(85%) contrast(95%);
+  &--active {
+    opacity: 1;
+    filter: @filter-pink;
   }
 
-  &--paint {
-    opacity: 0.3;
-    filter: invert(19%) sepia(7%) saturate(2125%) hue-rotate(171deg) brightness(99%) contrast(97%);
+  &--crop {
+    background: url("../img/icon-editor-crop.svg");
   }
 
-  &--bright {
-    opacity: 0.3;
-    filter: invert(19%) sepia(7%) saturate(2125%) hue-rotate(171deg) brightness(99%) contrast(97%);
+  &--fill {
+    background: url("../img/icon-editor-fill.svg");
+  }
+
+  &--contrast {
+    background: url("../../img/icon-editor-contrast.svg") no-repeat 50% 50%;
   }
 }
 
