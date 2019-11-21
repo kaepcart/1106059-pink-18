@@ -22,7 +22,7 @@
         </a>
 
         <button class="main-nav__list-toogle">
-          <img src="./img/icon-menu-cross.svg" alt="Pink" />
+          <img src="./img/icon-menu-cross.svg" alt="Закрыть меню" />
         </button>
 
 
@@ -35,7 +35,6 @@
     </ul>
 
   </nav>
-  </header>
 
   <main class="page-main">
 
@@ -63,8 +62,7 @@
           <div class="photo__master photo__master--panorama">
             <span class="photo__label">Панорама дня</span>
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--nature" alt="открыть изображение"
-                src="./img/panorama-mobile@1x.jpg">
+              <img class="photo__img photo__img--nature" alt="открыть изображение" src="./img/panorama-mobile@1x.jpg">
             </a>
           </div>
 
@@ -88,8 +86,7 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--car" alt="открыть изображение"
-                src="./img/photo-car-mobile@1x.jpg" />
+              <img class="photo__img photo__img--car" alt="открыть изображение" src="./img/photo-car-mobile@1x.jpg" />
             </a>
           </div>
 
@@ -160,8 +157,7 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--cafe" alt="открыть изображение"
-                src="./img/photo-fair-mobile@1x.jpg" />
+              <img class="photo__img photo__img--cafe" alt="открыть изображение" src="./img/photo-fair-mobile@1x.jpg" />
             </a>
           </div>
 
@@ -184,8 +180,7 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--legs" alt="открыть изображение"
-                src="./img/photo-pov-mobile@1x.jpg" />
+              <img class="photo__img photo__img--legs" alt="открыть изображение" src="./img/photo-pov-mobile@1x.jpg" />
             </a>
           </div>
 
@@ -235,30 +230,49 @@
 
     <form class="photo-editor" action="https://echo.htmlacademy.ru" method="post">
 
+      <div class="photo-editor__header">
+        <p class="textblock__text-first">
+          Затмите из всех!
+        </p>
+        <p class="textblock__text-second">
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </div>
+
       <div class="photo-editor__work-panel">
 
-        <div class="photo-editor textblock">
-          <p class="textblock__text">
-            Затмите из всех! Выкладывайте все, что накопилось в телефоне!
-          </p>
-        </div>
 
-        <img class="photo-editor__work-area" src="https://via.placeholder.com/200x350" alt="Фото для редактирование" />
+
+        <img class="photo-editor__work-area" src="./img/photo-road-mobile@1x.jpg" alt="Фото для редактирование" />
 
         <p class="photo-editor__edit-buttons ">
-          <button class="photo-editor__edit-button photo-editor__edit-button--cut" type="button">Обрезать</button>
-          <button class="photo-editor__edit-button photo-editor__edit-button--paint" type="button">Залить</button>
-          <button class="photo-editor__edit-button photo-editor__edit-button--bright" type="button">Яркость</button>
+
+          <button type="button" class="photo-editor__edit-button photo-editor__edit-button--crop photo-editor__edit-button--active"
+          title="Вырезать" ></button>
+
+          <button type="button" class="photo-editor__edit-button photo-editor__edit-button--fill"
+          title="Залить"></button>
+
+          <button type="button" class="photo-editor__edit-button photo-editor__edit-button--contrast"
+          title="Контраст"></button>
         </p>
 
-        <input name="bright-range" id="bright-range" type="range" class="photo-editor__bright-slider" />
+        <div class="photo-editor__bright-slider bright-range">
+          <input type="range" class="bright-range__input" />
+          <a class="bright-range__bar"></a>
+          <a class="bright-range__toggle"></a>
+        </div>
+
+        <hr />
+
+        <div class="photo-editor__buttons">
+          <button class="photo-editor__button photo-editor__button--submit" type="submit"> Запостить</button>
+          <button class="photo-editor__button photo-editor__button--cancel" type="button"> Отменить</button>
+        </div>
 
       </div>
 
-      <div class="photo-editor__buttons">
-        <button class="photo-editor__button photo-editor__button--submit" type="submit"> Запостить</button>
-        <button class="photo-editor__button photo-editor__button--cancel" type="button"> Отменить</button>
-      </div>
+
 
     </form>
 
@@ -269,24 +283,27 @@
     <div class="page-footer__wrapper">
 
       <div class="page-footer__social social">
-        <img class="page-footer__pink-icon" alt="Иконка с очками" src="https://via.placeholder.com/50x50">
-        <b class="social__title">PINK</b>
+
+        <div class="page-footer__header social-header">
+          <img class="page-footer__pink-icon" alt="Иконка с очками" src="./img/logo-pink-blue-mobile.svg">
+        </div>
+
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy">Twiter</a>
+            <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--play" href="https://www.instagram.com/htmlacademy">Google play</a>
+            <a class="social__link social__link--play" href="https://www.instagram.com/htmlacademy"></a>
           </li>
         </ul>
-      </div>
 
+      </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
 
     </div>
