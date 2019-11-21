@@ -9,18 +9,16 @@
   background-color: @white;
   border: 2px solid @black-trans;
   border-radius: 50%;
+  
+  &--yes:after {
+    background: url("../img/icon-map-marker.svg") no-repeat 0% 0%;
+    width: 32px;
+    height: 32px;
+    display: block;
+    content:""
+  }
 }
 
 .radio__input {
   display: none;
-}
-
-.radio__img {
-  width: 32px;
-  height: 32px;
-  display: block;
-
-  &--yes {
-    background: url("../img/icon-map-marker.svg") no-repeat 0% 0%;
-  }
 }
