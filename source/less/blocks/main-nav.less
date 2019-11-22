@@ -2,6 +2,16 @@
   width: 100%;
 }
 
+@media (min-width: @desktop-width) {
+  .main-nav {
+    background-color: @black-desc-trans;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
 .main-nav__list-toogle {
   border: none;
   outline: none;
@@ -22,5 +32,17 @@
     width: 147px;
     height: 40px;
     background: url("../../img/logo-pink-white-tablet.svg") no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list-toogle {
+    display: none;
+  }
+
+  .main-nav__list-logo {
+    width: 147px;
+    height: 40px;
+    background: url("../../img/logo-pink-white-desktop.svg") no-repeat;
   }
 }
