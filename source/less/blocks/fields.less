@@ -67,37 +67,26 @@
   height: 22px;
   border: 1px solid @black-trans;
   padding: 6px;
-  margin-right: 5px;
+  margin-right: 10px;
   background-color: @white;
 
-  &--yes:after {
-    background: url("../img/icon-yes.svg") no-repeat 50% 50%;
-    width: 22px;
-    height: 22px;
-    display: block;
-    content: "";
-  }
 }
 
-.fields__checkbox-img {
-  width: 22px;
-  height: 22px;
-  display: block;
-
-  &--yes {
-    background: url("../img/icon-yes.svg") no-repeat 50% 50%;
-  }
-}
 
 .fields__checkbox-input {
   display: none;
 }
 
+.fields__checkbox-input:not(:checked) ~ img {
+  display: none;
+}
+
 .fields__checkbox-label {
   .font-main();
-  display: block;
   font-size: 18px;
   line-height: 30px;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
