@@ -4,8 +4,7 @@
   align-items: stretch;
   background-color: @black;
   min-height: 62px;
-  margin: 0;
-  padding: 0;
+  .ul-clear-style();
 }
 
 @media (min-width: @desktop-width) {
@@ -57,13 +56,17 @@
 @media (min-width: @tablet-width) {
   .site-list__item {
     &--header {
-      height: 109px;
+      height: 110px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .site-list__item {
+
+    border-bottom: none;
+    border-top: none;
+
     &--header {
       height: 110px;
     }
