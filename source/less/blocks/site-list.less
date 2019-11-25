@@ -15,6 +15,8 @@
     margin-right: auto;
     margin-left: auto;
     background-color: transparent;
+    align-items: center;
+    height: 110px;
   }
 }
 
@@ -27,12 +29,19 @@
   text-transform: uppercase;
   margin-top: auto;
   margin-bottom: auto;
-  height: 100%;
   display: block;
   padding-top: 18px;
   padding-bottom: 18px;
   text-decoration: none;
 }
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
+
 
 .site-list__item {
   align-items: center;
@@ -68,7 +77,8 @@
     border-top: none;
 
     &--header {
-      height: 110px;
+      display: flex;
+      align-items: center;
     }
   }
 }
