@@ -1,0 +1,66 @@
+.profit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 900px;
+}
+
+.profit__logo {
+
+  content: "";
+  background: url("../img/icon-timer.svg") no-repeat 50% 0;
+  background-color: @light-gray;
+  width: 350px;
+  height: 350px;
+  display: flex;
+}
+
+.profit__logo-face {
+  border: 20px solid @pink;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  display: flex;
+}
+
+.profit__logo-number {
+  color: @pink;
+  font-size: 120px;
+  margin: auto;
+  .font-bold();
+  padding-bottom: 20px;
+}
+
+.profit__content {
+  margin-left: 80px;
+  width: 550px;
+}
+
+.profit__header {
+  .font-bold();
+  font-size: 30px;
+  text-align: left;
+}
+
+.profit__text {
+  .font-main();
+  font-size: 18px;
+  text-align: left;
+  line-height: 30px;
+
+  &--link {
+    color: @pink;
+  }
+}
+
+
+@media (max-width: @desktop-width) {
+  .profit {
+    display: none;
+  }
+}
