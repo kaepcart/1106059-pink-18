@@ -66,17 +66,17 @@
         <li class="photo__item photo__item--panorama">
 
           <div class="photo__master photo__master--panorama">
-            <span class="photo__label">Панорама дня</span>
-            <a class="photo__link" href="#">
 
+            <a class="photo__link photo__link--panorama" href="#">
+              <span class="photo__label">Панорама дня</span>
             </a>
           </div>
 
-          <div class="photo__details">
+          <div class="photo__details photo__details--panorama">
             <strong class="photo__author">Анна</strong>
             <span class="photo__time">(5 минут назад)</span>
             <p class="photo__comment">
-              Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, залавайте
+              Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавайте
               свои вопросы!
             </p>
             <div class="photo__like">
@@ -92,7 +92,10 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
+              <source media="(min-width: 1200px)" srcset="./img/photo-car-desktop.jpg, ./img/photo-car-desktop@2x.jpg 1.5x">
+              <source media="(min-width: 700px)" srcset="./img/photo-car-tablet.jpg, ./img/photo-car-tablet@2x.jpg 1.5x">
               <img class="photo__img photo__img--car" alt="открыть изображение" src="./img/photo-car-mobile@1x.jpg" />
+
             </a>
           </div>
 

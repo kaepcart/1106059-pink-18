@@ -6,7 +6,16 @@
   text-decoration: none;
   list-style-type: none;
   width: 100%;
+
+
+  @media (min-width: @tablet-width) {
+    max-width: 960px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
+
 
 .photo__item {
   display: flex;
@@ -14,6 +23,9 @@
   align-items: center;
   list-style-type: none;
 
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 
   &--panorama {
     position: relative;
@@ -30,9 +42,7 @@
   margin-right: auto;
   margin-left: auto;
 
-
   &--panorama {
-    position: relative;
     width: 100%;
     margin: 0;
   }
@@ -49,6 +59,20 @@
   line-height: 24px;
   background-color: @light-gray;
   padding: 10px;
+
+  @media (min-width: @tablet-width) {
+
+    height: 155px;
+    margin-top: 0;
+
+    &--panorama {
+      min-width: 520px;
+
+      width: auto;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
 }
 
 .photo__like {
@@ -81,28 +105,27 @@
   background-size: 100%;
   min-height: 150px;
   width: 100%;
+  height: 180px;
 }
 
 @media (min-width: @tablet-width) {
-  .photo__link {
+  .photo__link--panorama {
     background: url("../../img/panorama-tablet@1x.jpg") no-repeat 100% 100%;
     background-size: 100%;
     min-height: 510px;
-
   }
 }
 
 @media (min-width: @desktop-width) {
-  .photo__link {
+  .photo__link--panorama {
     background: url("../../img/panorama-desktop@1x.jpg") no-repeat 0 0;
     background-size: 100%;
     min-height: 510px;
-    max-width: 1200px;
-    width: 100%;
+    width: 1200px;
+    margin: auto;
+    position: relative;
   }
 }
-
-
 
 .photo__label {
   position: absolute;
