@@ -1,6 +1,20 @@
 .fields {
   padding-bottom: 41px;
   padding-top: 41px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+
+    align-self: stretch;
+    justify-content: center;
+    align-items: stretch;
+  }
 }
 
 .fields__item {
@@ -9,13 +23,27 @@
   align-items: flex-start;
   width: 276px;
   padding: 0;
-  margin: 0 22px 0;
+
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+
+    margin-bottom: 56px;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .fields__label {
   margin-left: 5px;
   color: @pink;
+
   .font-main();
+
+  @media (min-width: @tablet-width) {
+    margin-right: 22px;
+  }
 }
 
 .fields__value {
@@ -29,6 +57,12 @@
   border-radius: 2px;
   padding: 14px 22px 15px;
   margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
 
   &--textarea {
     height: 197px;
@@ -52,6 +86,10 @@
   font-size: 18px;
   width: 250px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
 }
 
 .fields__item-check {
@@ -75,7 +113,7 @@
   display: none;
 }
 
-.fields__checkbox-input:not(:checked) ~ img {
+.fields__checkbox-input:not(:checked)~img {
   display: none;
 }
 

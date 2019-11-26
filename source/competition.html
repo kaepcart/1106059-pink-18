@@ -19,7 +19,7 @@
         <li class="site-list__item site-list__item--header">
 
           <a href="index.html" class="site-list__link">
-            <p class="main-nav__list-logo" alt="Pink"></p>
+            <p class="main-nav__list-logo" ></p>
           </a>
 
           <button class="main-nav__list-toogle">
@@ -37,13 +37,16 @@
 
     </nav>
 
-    <header class="competition-main header-box header-box--text">
+    <div class="page-header__wrapper">
+      <div class="header-box header-box--text">
 
-        <h2 class="header-box__text">
+        <h2 class="header-box__text header-box__text--tagline header-box__text--wide">
           Конкурс на самое безбашенное путешествие с ПИНК
         </h2>
 
-      </header>
+      </div>
+    </div>
+
 
   </header>
 
@@ -56,6 +59,9 @@
       <div class="competition__header textblock">
         <p class="textblock__text">
           Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+          <span class="textblock__text textblock__text--fill-form">
+            Пожалуйста, заполните форму ниже:
+          </span>
         </p>
       </div>
 
@@ -92,10 +98,10 @@
 
             <label class="fields__checkbox-label" for="shark">
 
-              <p class="fields__checkbox ">
+              <span class="fields__checkbox ">
                 <input type="checkbox" class="fields__checkbox-input" checked name="shark" id="shark" />
                 <img src="./img/icon-yes.svg" alt="yes" />
-              </p>
+              </span>
 
               Сделал селфи с акулой
             </label>
@@ -190,9 +196,9 @@
 
         </div>
 
-        <div class="competition__progress fields">
+        <div  class="competition__application fields">
 
-          <p class="competition__progress-header fields__header">
+          <p class="competition__application-header fields__header">
             C каким приложением путешествовали?
           </p>
 

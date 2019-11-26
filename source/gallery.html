@@ -20,7 +20,7 @@
         <li class="site-list__item site-list__item--header">
 
           <a href="index.html" class="site-list__link">
-            <p class="main-nav__list-logo" alt="Pink"></p>
+            <p class="main-nav__list-logo" ></p>
           </a>
 
           <button class="main-nav__list-toogle">
@@ -36,16 +36,18 @@
         <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
       </ul>
 
+
     </nav>
 
-    <header class="gallery__header header-box header-box--text">
+    <div class="page-header__wrapper">
+      <div class="gallery__header header-box header-box--text">
 
-        <h2 class="header-box__text header-box__text--galery">
+        <h2 class="header-box__text header-box__text--tagline">
           Фотографии пользователей
         </h2>
 
-      </header>
-
+      </div>
+    </div>
   </header>
 
   <main class="page-main">
@@ -68,6 +70,12 @@
           <div class="photo__master photo__master--panorama">
 
             <a class="photo__link photo__link--panorama" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/panorama-tablet@1x.jpg">
+                <img class="photo__img photo__img--panorama" alt="открыть изображение"
+                  src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@1x.jpg" />
+              </picture>
               <span class="photo__label">Панорама дня</span>
             </a>
           </div>
@@ -92,10 +100,12 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <source media="(min-width: 1200px)" srcset="./img/photo-car-desktop.jpg, ./img/photo-car-desktop@2x.jpg 1.5x">
-              <source media="(min-width: 700px)" srcset="./img/photo-car-tablet.jpg, ./img/photo-car-tablet@2x.jpg 1.5x">
-              <img class="photo__img photo__img--car" alt="открыть изображение" src="./img/photo-car-mobile@1x.jpg" />
-
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-car-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-car-tablet@1x.jpg">
+                <img class="photo-img" alt="открыть изображение" src="./img/photo-car-mobile@1x.jpg"
+                  srcset="./img/photo-car-mobile@1x.jpg" />
+              </picture>
             </a>
           </div>
 
@@ -118,8 +128,12 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--drums" alt="открыть изображение"
-                src="./img/photo-drumset-mobile@1x.jpg" />
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-drumset-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-drumset-tablet@1x.jpg">
+                <img class="photo-img" alt="открыть изображение" src="./img/photo-drumset-mobile@1x.jpg"
+                  srcset="./img/photo-drumset-mobile@1x.jpg" />
+              </picture>
             </a>
           </div>
 
@@ -142,8 +156,12 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--window" alt="открыть изображение"
-                src="./img/photo-window-mobile@1x.jpg">
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-window-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-window-tablet@1x.jpg">
+                <img class="photo__img photo__img--window" alt="открыть изображение"
+                  src="./img/photo-window-mobile@1x.jpg">
+              </picture>
             </a>
           </div>
 
@@ -166,7 +184,13 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--cafe" alt="открыть изображение" src="./img/photo-fair-mobile@1x.jpg" />
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-fair-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-fair-tablet@1x.jpg">
+                <img class="photo__img photo__img--cafe" alt="открыть изображение"
+                  src="./img/photo-fair-mobile@1x.jpg" />
+              </picture>
+
             </a>
           </div>
 
@@ -189,7 +213,13 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--legs" alt="открыть изображение" src="./img/photo-pov-mobile@1x.jpg" />
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-pov-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-pov-tablet@1x.jpg">
+                <img class="photo__img photo__img--legs" alt="открыть изображение"
+                  src="./img/photo-pov-mobile@1x.jpg" />
+              </picture>
+
             </a>
           </div>
 
@@ -213,8 +243,12 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--airplane" alt="открыть изображение"
-                src="./img/photo-wing-mobile@1x.jpg" />
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-wing-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-wing-tablet@1x.jpg">
+                <img class="photo__img photo__img--airplane" alt="открыть изображение"
+                  src="./img/photo-wing-mobile@1x.jpg" />
+              </picture>
             </a>
           </div>
 
