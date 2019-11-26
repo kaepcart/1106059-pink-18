@@ -33,15 +33,12 @@
   padding-top: 18px;
   padding-bottom: 18px;
   text-decoration: none;
-}
 
-@media (min-width: @desktop-width) {
-  .site-list__link {
+  @media (min-width: @desktop-width) {
     margin: auto;
     margin-bottom: 25px;
   }
 }
-
 
 .site-list__item {
   align-items: center;
@@ -58,21 +55,13 @@
     align-self: stretch;
     margin-left: 20px;
     margin-right: 20px;
-  }
-}
 
-
-@media (min-width: @tablet-width) {
-  .site-list__item {
-    &--header {
+    @media (min-width: @tablet-width) {
       height: 110px;
     }
   }
-}
 
-@media (min-width: @desktop-width) {
-  .site-list__item {
-
+  @media (min-width: @desktop-width) {
     border-bottom: none;
     border-top: none;
 
