@@ -32,6 +32,7 @@
 
   &--panorama {
     width: 100%;
+    margin: 0;
   }
 }
 
@@ -45,18 +46,15 @@
 
 @media (min-width: @tablet-width) {
   .photo__link:not(.photo__link--panorama) {
-
     height: 300px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo__link:not(.photo__link--panorama) {
-
     height: 400px;
   }
 }
-
 
 .photo__img {
   width: 100%;
@@ -151,11 +149,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-@media (min-width: @tablet-width) {
-  .photo__label {
-    right: 20px;
+  @media (min-width: @tablet-width) {
     top: 60px;
   }
 }
