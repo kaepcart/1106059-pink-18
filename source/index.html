@@ -13,40 +13,42 @@
 <body>
   <header class="page-header">
 
-    <nav class="main-nav">
+    <div class="page-header__menu-wrapper">
+      <a href="index.html" class="page-header__logo page-header__logo--close  page-header__link">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 640px)" srcset="./img/logo-pink-white-tablet.svg">
+          <img class="page-header__list-logo" alt="открыть изображение" src="./img/logo-pink-white-mobile.svg"
+            srcset="./img/logo-pink-white-mobile.svg" />
+        </picture>
 
-      <ul class="main-nav__list site-list">
+      </a>
 
-        <li class="site-list__item site-list__item--header">
-
-          <a href="index.html" class="site-list__link">
-            <p class="main-nav__list-logo"></p>
-          </a>
-
-          <button class="main-nav__list-toogle">
-            <img src="./img/icon-menu-cross.svg" alt="Закрыть меню" />
-          </button>
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toogle main-nav__toogle--burger">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
 
 
-        </li>
+        <ul class="main-nav__list site-list visually-hidden">
+          <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+          <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
+          <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
+        </ul>
 
-        <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
-        <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
-        <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
-      </ul>
 
-    </nav>
+      </nav>
+    </div>
+
     <div class="page-header__wrapper">
       <div class="header-box">
 
         <div class="header-box__wrapper">
 
-          <div class="header-box__text-wrapper">
-            <h2 class="header-box__text">
-              Взгляните на жизнь иначе!
-            </h2>
-          </div>
+          <h2 class="header-box__text-wrapper header-box__text">
+            Взгляните на жизнь иначе!
+          </h2>
 
           <section class="download header-box__content">
 
@@ -91,33 +93,33 @@
       </ul>
 
 
-      <div class="advantages_wrapper">
+      <div class="advantages__wrapper">
 
 
-        <dl class="advantages_items">
+        <dl class="advantages__items">
 
-          <div class="advantages_item advantages_item--moody">
-            <dt class="advantages_item-header">Поднимает настроение</dt>
-            <dd class="advantages_item-content">
+          <div class="advantages__item advantages__item--moody">
+            <dt class="advantages__item-header">Поднимает настроение</dt>
+            <dd class="advantages__item-content">
               Приложение помогает Вам победить осеннию хандру и дипресию буквально в
               несколько кликов
             </dd>
           </div>
 
-          <div class="advantages_item advantages_item--world">
-            <dt class="advantages_item-header">
+          <div class="advantages__item advantages__item--world">
+            <dt class="advantages__item-header">
               Меняет мир вокруг
             </dt>
-            <dd class="advantages_item-content">
+            <dd class="advantages__item-content">
               Сделайте снимок и украсте его смайликом или тектовой подписью
             </dd>
           </div>
 
-          <div class="advantages_item advantages_item--friends">
-            <dt class="advantages_item-header">
+          <div class="advantages__item advantages__item--friends">
+            <dt class="advantages__item-header">
               Заводите новых друзей
             </dt>
-            <dd class="advantages_item-content">
+            <dd class="advantages__item-content">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
               новых
             </dd>
@@ -136,9 +138,7 @@
 
 
         <div class="profit__logo">
-          <div class="profit__logo-face">
-            <p class="profit__logo-number">24</p>
-          </div>
+
         </div>
 
         <div class="profit__content">
@@ -301,5 +301,7 @@
   </main>
 
 </body>
+<script src="./js/app.js">
+</script>
 
 </html>

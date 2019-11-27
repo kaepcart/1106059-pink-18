@@ -1,44 +1,25 @@
-.main-nav {
-  width: 100%;
 
-  @media (min-width: @desktop-width) {
-    background-color: @black-desc-trans;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-}
-
-.main-nav__list-toogle {
+.main-nav__toogle {
   border: none;
   outline: none;
-  min-height: 66px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 33px;
+  width: 50px;
+  background: url("../../img/icon-menu-cross.svg") no-repeat 100%;
   background-color: transparent;
-}
-
-.main-nav__list-logo {
-  width: 75px;
-  height: 22px;
-  margin: 0;
-  padding: 0;
-  background: url("../img/logo-pink-white-mobile.svg") no-repeat;
 
   @media (min-width: @tablet-width) {
-    width: 147px;
-    height: 40px;
-    background: url("../img/logo-pink-white-tablet.svg") no-repeat;
+    top: 30px;
+    margin: auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 147px;
-    height: 40px;
-    background: url("../img/logo-pink-white-desktop.svg") no-repeat;
+    display: none;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .main-nav__list-toogle {
-    display: none;
-  }
+.main-nav__toogle--burger {
+  background: url("../../img/icon-menu-burger.svg") no-repeat 100%;
 }

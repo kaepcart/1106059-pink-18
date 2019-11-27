@@ -11,7 +11,6 @@
   .site-list {
     flex-direction: row;
     justify-content: space-around;
-    width: 960px;
     margin-right: auto;
     margin-left: auto;
     background-color: transparent;
@@ -49,25 +48,8 @@
   border-top: 1px solid @black-border-top;
   text-decoration: none;
 
-  &--header {
-    display: flex;
-    justify-content: space-between;
-    align-self: stretch;
-    margin-left: 20px;
-    margin-right: 20px;
-
-    @media (min-width: @tablet-width) {
-      height: 110px;
-    }
-  }
-
   @media (min-width: @desktop-width) {
     border-bottom: none;
     border-top: none;
-
-    &--header {
-      display: flex;
-      align-items: center;
-    }
   }
 }

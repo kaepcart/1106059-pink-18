@@ -12,39 +12,35 @@
 <body>
   <header class="page-header">
 
-    <nav class="main-nav">
+    <div class="page-header__menu-wrapper">
+      <a href="index.html" class="page-header__logo page-header__logo--close  page-header__link">
+        <p class="page-header__list-logo"></p>
+      </a>
 
-      <ul class="main-nav__list site-list">
-
-        <li class="site-list__item site-list__item--header">
-
-          <a href="index.html" class="site-list__link">
-            <p class="main-nav__list-logo"></p>
-          </a>
-
-          <button class="main-nav__list-toogle">
-            <img src="./img/icon-menu-cross.svg" alt="Закрыть меню" />
-          </button>
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toogle main-nav__toogle--burger">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
 
 
-        </li>
+        <ul class="main-nav__list site-list visually-hidden">
+          <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+          <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
+          <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
+        </ul>
 
-        <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
-        <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
-        <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
-      </ul>
 
-    </nav>
+      </nav>
+    </div>
 
-    <div class="page-header__wrapper">
-      <div class="header-box header-box--text">
+    <div class="page-header__wrapper header-box header-box--text">
 
-        <h2 class="header-box__text header-box__text--tagline header-box__text--wide">
-          Конкурс на самое безбашенное путешествие с Пинк
-        </h2>
+      <h2 class="header-box__text header-box__text--tagline header-box__text--wide">
+        Конкурс на самое безбашенное путешествие с Пинк
+      </h2>
 
-      </div>
+
     </div>
 
 
@@ -96,13 +92,8 @@
 
           <div class="fields__item-check">
 
+            <input type="checkbox" class="fields__checkbox-input" checked name="shark" id="shark" />
             <label class="fields__checkbox-label" for="shark">
-
-              <span class="fields__checkbox ">
-                <input type="checkbox" class="fields__checkbox-input" checked name="shark" id="shark" />
-                <img src="./img/icon-yes.svg" alt="yes" />
-              </span>
-
               Сделал селфи с акулой
             </label>
 
@@ -110,72 +101,39 @@
 
           <div class="fields__item-check">
 
+            <input type="checkbox" class="fields__checkbox-input" checked name="sunburn" id="sunburn" />
             <label class="fields__checkbox-label" for="sunburn">
-
-              <p class="fields__checkbox ">
-                <input type="checkbox" class="fields__checkbox-input" checked name="sunburn" id="sunburn" />
-                <img src="./img/icon-yes.svg" alt="yes" />
-              </p>
-
               Обгорел на пляже
             </label>
 
           </div>
 
           <div class="fields__item-check">
-
+            <input type="checkbox" class="fields__checkbox-input" name="chack-noris" id="chack-noris" />
             <label class="fields__checkbox-label" for="chack-noris">
-
-              <p class="fields__checkbox ">
-                <input type="checkbox" class="fields__checkbox-input" name="chack-noris" id="chack-noris" />
-                <img src="./img/icon-yes.svg" alt="yes" />
-              </p>
-
               Видел Чака Нориса
             </label>
-
           </div>
 
           <div class="fields__item-check">
-
+            <input type="checkbox" class="fields__checkbox-input" checked name="suvenir" id="suvenir" />
             <label class="fields__checkbox-label" for="suvenir">
-
-              <p class="fields__checkbox ">
-                <input type="checkbox" class="fields__checkbox-input" checked name="suvenir" id="suvenir" />
-                <img src="./img/icon-yes.svg" alt="yes" />
-              </p>
-
               Накупил сувениров
             </label>
-
           </div>
 
           <div class="fields__item-check">
-
+            <input type="checkbox" class="fields__checkbox-input" name="tower" id="tower" />
             <label class="fields__checkbox-label" for="tower">
-
-              <p class="fields__checkbox ">
-                <input type="checkbox" class="fields__checkbox-input" name="tower" id="tower" />
-                <img src="./img/icon-yes.svg" alt="yes" />
-              </p>
-
               Удержал башню
             </label>
-
           </div>
 
           <div class="fields__item-check">
-
+            <input type="checkbox" class="fields__checkbox-input" name="breack-hotel" id="breack-hotel" />
             <label class="fields__checkbox-label" for="breack-hotel">
-
-              <p class="fields__checkbox ">
-                <input type="checkbox" class="fields__checkbox-input" name="breack-hotel" id="breack-hotel" />
-                <img src="./img/icon-yes.svg" alt="yes" />
-              </p>
-
               Разгромил отель
             </label>
-
           </div>
 
         </div>
@@ -205,42 +163,26 @@
           </p>
 
           <div class="fields__item-check">
-
-
-
-            <label class="fields__checkbox-label" for="ios-radio">
-              <p class="fields__radio radio radio--yes">
-                <input type="radio" class="radio__input" checked name="application-radio" id="ios-radio" />
-                <img src="./img/icon-map-marker.svg">
-              </p>
-
+            <input type="radio" name="application-radio" id="ios-radio" />
+            <label for="ios-radio">
               Pink для IOS
             </label>
 
           </div>
 
           <div class="fields__item-check">
-
-            <label class="fields__checkbox-label" for="android-radio">
-              <p class="fields__radio radio">
-                <input type="radio" class="radio__input" name="application-radio" id="android-radio" />
-                <img src="./img/icon-map-marker.svg">
-              </p>
-              Pink для Андрод
+            <input type="radio" name="application-radio" id="android-radio" />
+            <label for="android-radio">
+              Pink для Android
             </label>
-
           </div>
 
           <div class="fields__item-check">
 
-            <label class="fields__checkbox-label" for="windows-radio">
-              <p class="fields__radio radio">
-                <input type="radio" class="fields__radio-input radio__input " name="application-radio"
-                  id="windows-radio" />
-                <img src="./img/icon-map-marker.svg">
-              </p>
-              Windows Phone
-            </label>
+              <input type="radio" name="application-radio" id="windows-radio" />
+              <label for="windows-radio">
+                Windows Phone
+              </label>
 
           </div>
 
@@ -302,5 +244,7 @@
   </footer>
 
 </body>
+<script src="./js/app.js">
+</script>
 
 </html>

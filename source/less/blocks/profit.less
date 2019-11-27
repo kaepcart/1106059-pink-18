@@ -9,31 +9,34 @@
 
 .profit__logo {
 
-  content: "";
   background: url("../img/icon-timer.svg") no-repeat 50% 0;
   background-color: @light-gray;
   width: 350px;
   height: 350px;
   display: flex;
+  position: relative;
 }
 
-.profit__logo-face {
+.profit__logo::after {
+  content: "";
+
+  position: absolute;
   border: 20px solid @pink;
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
-  display: flex;
+  top: 22%;
+  left: 12%;
 }
 
-.profit__logo-number {
+.profit__logo::before {
+  content: "24";
+  position: absolute;
   color: @pink;
   font-size: 120px;
-  margin: auto;
   .font-bold();
-  padding-bottom: 20px;
+  top: 35%;
+  left: 30%;
 }
 
 .profit__content {
