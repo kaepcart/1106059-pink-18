@@ -63,7 +63,7 @@
 
       <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
 
-        <div class="competition__full-name fields">
+        <div class="competition__full-name fields fields--not-border">
           <div class="competition__field fields__item">
             <label class="fields__label fields__label--input" for="surname">Фамилия:</label>
             <input required type="text" id="surname" name="surname" class="fields__value fields__value--input"
@@ -193,10 +193,13 @@
         <div class="competition__emotion fields">
 
           <p class="competition__field fields__item">
-            <label class="fields__label fields__label--input" for="emotions">Опишите свои эмоции:</label>
+
+            <label class="competition__emotion-header fields__header fields__label fields__label--input" for="emotions">Опишите свои эмоции:</label>
+
             <textarea id="emotions" name="emotions" class="fields__value fields__value--textarea"
               placeholder="Можно прям в красках не стесняйтесь выражаться"></textarea>
-          </p>
+
+            </p>
 
         </div>
 

@@ -18,8 +18,19 @@
     width: auto;
     margin-left: 25px;
     margin-right: 25px;
+
+    &:not(.fields--not-border) {
+      padding-right: 60px;
+      padding-left: 60px;
+      background-color: @white;
+      width: auto;
+      border: 2px solid @gray;
+      position: relative;
+      margin-bottom: 80px;
+    }
   }
 }
+
 
 .fields__item {
   display: flex;
@@ -60,10 +71,12 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: -30px;
+    top: -40px;
     align-self: center;
     background-color: @white;
-    width: 317px;
+    min-width: 360px;
+    max-width: 500px;
+    width: fit-content;
     padding-left: 20px;
     padding-right: 20px;
     display: block;
@@ -89,7 +102,11 @@
 
 
   &--textarea {
-    height: 197px;
+    min-height: 197px;
+
+    @media (min-width: @tablet-width) {
+      min-height: 190;
+    }
   }
 
   &::placeholder {

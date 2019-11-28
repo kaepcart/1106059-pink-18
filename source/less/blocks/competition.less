@@ -33,7 +33,6 @@
 
 .competition__progress {
   background-color: @light-gray;
-
 }
 
 .competition__application {
@@ -42,11 +41,6 @@
 
   @media (min-width: @tablet-width) {
     order: -4;
-    background-color: @white;
-    width: auto;
-    border: 2px solid @gray;
-    padding-left: 60px;
-    position: relative;
   }
 }
 
@@ -59,7 +53,6 @@
     border: 2px solid @gray;
     padding-left: 60px;
     position: relative;
-    margin-top: 80px;
   }
 }
 
@@ -68,6 +61,20 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+  }
+}
+
+.competition__field {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+}
+
+.competition__emotion-header {
+  @media (min-width: @tablet-width) {
+    top: -20px;
   }
 }
 
