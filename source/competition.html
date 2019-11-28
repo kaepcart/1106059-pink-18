@@ -140,15 +140,19 @@
 
         <div class="competition__contacts fields">
 
-          <p class="competition__field fields__item">
-            <label class="fields__label fields__label--input" for="phone">Номер телефона:</label>
-            <input type="tel" id="phone" name="phone" class="fields__value fields__value--input"
+          <p class="competition__contacts-header fields__header">
+                Контактная информация
+            </p>
+
+          <p class="competition__contacts-field fields__item contact-info contact-info--phone">
+            <label class="fields__label fields__label--input contact-info__label" for="phone">Номер телефона</label>
+            <input class="fields__value fields__value--input contact-info__value" type="tel" id="phone" name="phone"
               placeholder="Номер пожалуйства" />
           </p>
 
-          <p class="competition__field fields__item">
-            <label class="fields__label fields__label--input" for="mail">Адрес почты:</label>
-            <input required type="email" id="mail" name="mail" class="fields__value fields__value--input"
+          <p class="competition__contacts-field fields__item contact-info contact-info--email">
+            <label class="fields__label fields__label--input contact-info__label" for="mail">Адрес почты</label>
+            <input class="fields__value fields__value--input contact-info__value"  required type="email" id="mail" name="mail"
               placeholder="Введите почту*" />
           </p>
 
@@ -157,9 +161,7 @@
         <div class="competition__application fields">
 
           <p class="competition__application-header fields__header">
-            <span>
               C каким приложением путешествовали?
-            </span>
           </p>
 
           <div class="fields__item-check">
