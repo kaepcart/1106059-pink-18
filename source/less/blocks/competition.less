@@ -150,6 +150,18 @@
   background-color: @green;
   width: 276px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
+
 }
 
 .competition__requared-fields {

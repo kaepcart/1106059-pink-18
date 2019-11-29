@@ -42,6 +42,8 @@
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 
@@ -49,45 +51,72 @@
   padding-top: 20px;
   width: 280px;
   height: 374px;
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .photo-editor__edit-buttons {
   display: flex;
-  width: 280px;
+  justify-content: stretch;
   justify-content: space-around;
+  align-self: center;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    width: auto;
+    align-self: stretch;
+    flex-direction: column;
+    padding-bottom: 30px;
   }
+}
+
+
+
+.photo-editor__edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 2px solid @gray;
+  padding-bottom: 20px;
+
+
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
 }
 
 .photo-editor__edit-button {
   border: none;
+  opacity: 0.3;
+  background: transparent;
+  justify-content: space-around;
   height: 44px;
   width: 44px;
-  opacity: 0.3;
-  filter: @filter-gray;
+
+  & svg {
+    height: 44px;
+    width: 44px;
+  }
 
   &--active {
     opacity: 1;
-    filter: @filter-pink;
-  }
-
-  &--crop {
-    background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
-    background-size: 100%;
-  }
-
-  &--fill {
-    background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
-    background-size: 100%;
-  }
-
-  &--contrast {
-    background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
-    background-size: 100%;
+    fill: @pink;
   }
 
   @media (min-width: @tablet-width) {
@@ -95,6 +124,29 @@
     width: 22px;
     margin-left: 20px;
     margin-right: 20px;
+    fill: @pink;
+    opacity: 1;
+
+    & svg {
+      height: 22px;
+      width: 22px;
+    }
+  }
+
+
+  @media (min-width: @desktop-width) {
+    height: 44px;
+    width: 44px;
+    margin-left: 20px;
+    margin-right: 20px;
+    fill: @pink;
+    opacity: 1;
+
+    & svg {
+      height: 44px;
+      width: 44px;
+    }
+
   }
 }
 
@@ -107,6 +159,16 @@
   width: 100%;
   border-top: 1px solid @black-trans;
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: center;
+
+  }
 }
 
 .photo-editor__button {
@@ -119,6 +181,17 @@
   margin-top: 12px;
   .font-bold();
   font-size: 18px;
+
+  @media (min-width: @desktop-width) {
+    width: 185px;
+    height: 55px;
+    margin: 20px;
+
+    &--cancel {
+      border-color: @gray;
+      color: @gray;
+    }
+  }
 }
 
 .bright-range__input {
