@@ -11,42 +11,44 @@
 
 <body>
 
-  <nav class="main-nav">
+  <header class="page-header">
 
-    <ul class="main-nav__list site-list">
+      <div class="page-header__menu-wrapper">
+          <a href="index.html" class="page-header__logo page-header__logo--close  page-header__link">
+            <p class="page-header__list-logo"></p>
+          </a>
 
-      <li class="site-list__item site-list__item--header">
-
-        <a href="index.html" class="site-list__link">
-          <img class="main-nav__list-logo" src="./img/logo-pink-white-mobile.svg" alt="Pink" />
-        </a>
-
-        <button class="main-nav__list-toogle">
-          <img src="./img/icon-menu-cross.svg" alt="Закрыть меню" />
-        </button>
+          <nav class="page-header__nav main-nav">
+            <button class="main-nav__toogle main-nav__toogle--burger">
+             <span class="visually-hidden">Закрыть меню</span>
+            </button>
 
 
-      </li>
+            <ul class="main-nav__list site-list visually-hidden">
+              <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+              <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
+              <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
+              <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
+            </ul>
 
-      <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
-      <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
-      <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
-      <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
-    </ul>
 
-  </nav>
+          </nav>
+        </div>
+
+    <div class="page-header__wrapper gallery__header header-box header-box--text">
+
+      <h2 class="header-box__text header-box__text--tagline">
+          Фотографии пользователей
+        </h2>
+
+    </div>
+  </header>
 
   <main class="page-main">
 
     <section class="gallery">
 
-      <header class="gallery__header header-box header-box--text">
 
-        <h2 class="header-box__text">
-          Фотографии пользователей
-        </h2>
-
-      </header>
 
 
       <div class="gallery__textblock textblock">
@@ -60,17 +62,23 @@
         <li class="photo__item photo__item--panorama">
 
           <div class="photo__master photo__master--panorama">
-            <span class="photo__label">Панорама дня</span>
-            <a class="photo__link" href="#">
-              <img class="photo__img photo__img--nature" alt="открыть изображение" src="./img/panorama-mobile@1x.jpg">
+
+            <a class="photo__link photo__link--panorama" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/panorama-tablet@1x.jpg">
+                <img class="photo__img photo__img--panorama" alt="открыть изображение"
+                  src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@1x.jpg" />
+              </picture>
+              <span class="photo__label">Панорама дня</span>
             </a>
           </div>
 
-          <div class="photo__details">
+          <div class="photo__details photo__details--panorama">
             <strong class="photo__author">Анна</strong>
             <span class="photo__time">(5 минут назад)</span>
             <p class="photo__comment">
-              Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, залавайте
+              Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавайте
               свои вопросы!
             </p>
             <div class="photo__like">
@@ -86,7 +94,12 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--car" alt="открыть изображение" src="./img/photo-car-mobile@1x.jpg" />
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-car-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-car-tablet@1x.jpg">
+                <img class="photo-img" alt="открыть изображение" src="./img/photo-car-mobile@1x.jpg"
+                  srcset="./img/photo-car-mobile@1x.jpg" />
+              </picture>
             </a>
           </div>
 
@@ -109,8 +122,12 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--drums" alt="открыть изображение"
-                src="./img/photo-drumset-mobile@1x.jpg" />
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-drumset-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-drumset-tablet@1x.jpg">
+                <img class="photo-img" alt="открыть изображение" src="./img/photo-drumset-mobile@1x.jpg"
+                  srcset="./img/photo-drumset-mobile@1x.jpg" />
+              </picture>
             </a>
           </div>
 
@@ -133,8 +150,12 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--window" alt="открыть изображение"
-                src="./img/photo-window-mobile@1x.jpg">
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-window-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-window-tablet@1x.jpg">
+                <img class="photo__img photo__img--window" alt="открыть изображение"
+                  src="./img/photo-window-mobile@1x.jpg">
+              </picture>
             </a>
           </div>
 
@@ -157,7 +178,13 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--cafe" alt="открыть изображение" src="./img/photo-fair-mobile@1x.jpg" />
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-fair-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-fair-tablet@1x.jpg">
+                <img class="photo__img photo__img--cafe" alt="открыть изображение"
+                  src="./img/photo-fair-mobile@1x.jpg" />
+              </picture>
+
             </a>
           </div>
 
@@ -180,7 +207,13 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--legs" alt="открыть изображение" src="./img/photo-pov-mobile@1x.jpg" />
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-pov-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-pov-tablet@1x.jpg">
+                <img class="photo__img photo__img--legs" alt="открыть изображение"
+                  src="./img/photo-pov-mobile@1x.jpg" />
+              </picture>
+
             </a>
           </div>
 
@@ -204,8 +237,12 @@
 
           <div class="photo__master">
             <a class="photo__link" href="#">
-              <img class="photo__img photo__img--airplane" alt="открыть изображение"
-                src="./img/photo-wing-mobile@1x.jpg" />
+              <picture class="photo__img photo__img--car">
+                <source media="(min-width: 1200px)" srcset="./img/photo-wing-desktop@1x.jpg">
+                <source media="(min-width: 640px)" srcset="./img/photo-wing-tablet@1x.jpg">
+                <img class="photo__img photo__img--airplane" alt="открыть изображение"
+                  src="./img/photo-wing-mobile@1x.jpg" />
+              </picture>
             </a>
           </div>
 
@@ -247,14 +284,15 @@
 
         <p class="photo-editor__edit-buttons ">
 
-          <button type="button" class="photo-editor__edit-button photo-editor__edit-button--crop photo-editor__edit-button--active"
-          title="Вырезать" ></button>
+          <button type="button"
+            class="photo-editor__edit-button photo-editor__edit-button--crop photo-editor__edit-button--active"
+            title="Вырезать"></button>
 
           <button type="button" class="photo-editor__edit-button photo-editor__edit-button--fill"
-          title="Залить"></button>
+            title="Залить"></button>
 
           <button type="button" class="photo-editor__edit-button photo-editor__edit-button--contrast"
-          title="Контраст"></button>
+            title="Контраст"></button>
         </p>
 
         <div class="photo-editor__bright-slider bright-range">
@@ -277,6 +315,8 @@
     </form>
 
   </main>
+
+
 
   <footer class="page-footer">
 
@@ -311,5 +351,6 @@
   </footer>
 
 </body>
-
+<script src="./js/app.js">
+</script>
 </html>

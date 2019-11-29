@@ -1,6 +1,24 @@
 .fields {
   padding-bottom: 41px;
   padding-top: 41px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+
+    align-self: stretch;
+    justify-content: center;
+    align-items: stretch;
+
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 .fields__item {
@@ -9,13 +27,25 @@
   align-items: flex-start;
   width: 276px;
   padding: 0;
-  margin: 0 22px 0;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+
+    margin-bottom: 56px;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .fields__label {
   margin-left: 5px;
   color: @pink;
   .font-main();
+
+  @media (min-width: @tablet-width) {
+    margin-right: 22px;
+  }
 }
 
 .fields__value {
@@ -29,6 +59,12 @@
   border-radius: 2px;
   padding: 14px 22px 15px;
   margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
 
   &--textarea {
     height: 197px;
@@ -52,6 +88,10 @@
   font-size: 18px;
   width: 250px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
 }
 
 .fields__item-check {
@@ -61,61 +101,3 @@
   width: 276px;
   margin-top: 45px;
 }
-
-.fields__checkbox {
-  width: 22px;
-  height: 22px;
-  border: 1px solid @black-trans;
-  padding: 6px;
-  margin-right: 5px;
-  background-color: @white;
-}
-
-.fields__checkbox-img {
-  width: 22px;
-  height: 22px;
-  display: block;
-
-  &--yes {
-    background: url("../img/icon-yes.svg") no-repeat 50% 50%;
-  }
-}
-
-
-.fields__checkbox-input {
-  display: none;
-}
-
-.fields__checkbox-label {
-  .font-main();
-  display: block;
-  font-size: 18px;
-  line-height: 30px;
-  padding: 0;
-  margin: 0;
-}
-
-/* .fields__radio-input {
-  display: none;
-}
-
-.fields__radio {
-  display: inline-block;
-  vertical-align: middle;
-  width: 37px;
-  height: 37px;
-  margin-right: 31px;
-  background-color: @white;
-  border: 2px solid @black-trans;
-  border-radius: 50%;
-}
-
-.fields__radio-img {
-  width: 32px;
-  height: 32px;
-  display: block;
-
-  &--yes {
-    background: url("../img/icon-map-marker.svg") no-repeat 0% 0%;
-  }
-} */

@@ -1,15 +1,25 @@
-.main-nav {
-  width: 100%;
-}
 
-.main-nav__list-toogle {
+.main-nav__toogle {
   border: none;
   outline: none;
-  min-height: 66px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 33px;
+  width: 50px;
+  background: url("../img/icon-menu-cross.svg") no-repeat 100%;
   background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    top: 30px;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
-.main-nav__list-logo {
-  width: 75px;
-  height: 22px;
+.main-nav__toogle--burger {
+  background: url("../img/icon-menu-burger.svg") no-repeat 100%;
 }

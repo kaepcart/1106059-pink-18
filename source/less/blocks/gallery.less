@@ -4,8 +4,19 @@
   flex-direction: column;
 }
 
-
 .gallery__textblock {
-  margin: 50px 0 50px 0;
-  line-height: 30px;
+  @media (min-width: @tablet-width) {
+    margin-top: 82px;
+    margin-bottom: 82px;
+    width: 435;
+
+    .font-main();
+
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    .font-main();
+  }
 }

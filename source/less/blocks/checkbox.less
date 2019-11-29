@@ -1,0 +1,78 @@
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked),
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+  position: absolute;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label,
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 48px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before,
+input[type="checkbox"]:not(:checked) + label::before,
+input[type="radio"]:checked + label::before,
+input[type="radio"]:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  border: 1px solid @black-trans;
+  background-color: @white;
+}
+
+input[type="checkbox"]:checked + label::before,
+input[type="checkbox"]:not(:checked) + label::before {
+  border-radius: 2px;
+}
+
+input[type="radio"]:checked + label::before,
+input[type="radio"]:not(:checked) + label::before {
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked + label::after,
+input[type="checkbox"]:not(:checked) + label::after,
+input[type="radio"]:checked + label::after,
+input[type="radio"]:not(:checked) + label::after {
+  content: "";
+  position: absolute;
+}
+
+input[type="checkbox"]:checked + label::after,
+input[type="checkbox"]:not(:checked) + label::after {
+  left: 10px;
+  top: 10px;
+  width: 36px;
+  height: 36px;
+  background: url("../img/icon-yes.svg") no-repeat;
+}
+
+input[type="radio"]:checked + label::after,
+input[type="radio"]:not(:checked) + label::after {
+  left: 11px;
+  top: 11px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: @pink;
+}
+
+input[type="checkbox"]:not(:checked) + label::after,
+input[type="radio"]:not(:checked) + label::after {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + label::after,
+input[type="radio"]:checked + label::after {
+  opacity: 1;
+}
