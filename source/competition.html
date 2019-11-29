@@ -63,7 +63,9 @@
 
       <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
 
+
         <div class="competition__full-name fields fields--not-border">
+
           <div class="competition__field fields__item">
             <label class="fields__label fields__label--input" for="surname">Фамилия:</label>
             <input required type="text" id="surname" name="surname" class="fields__value fields__value--input"
@@ -141,8 +143,8 @@
         <div class="competition__contacts fields">
 
           <p class="competition__contacts-header fields__header">
-                Контактная информация
-            </p>
+            Контактная информация
+          </p>
 
           <p class="competition__contacts-field fields__item contact-info contact-info--phone">
             <label class="fields__label fields__label--input contact-info__label" for="phone">Номер телефона</label>
@@ -152,8 +154,8 @@
 
           <p class="competition__contacts-field fields__item contact-info contact-info--email">
             <label class="fields__label fields__label--input contact-info__label" for="mail">Адрес почты</label>
-            <input class="fields__value fields__value--input contact-info__value"  required type="email" id="mail" name="mail"
-              placeholder="Введите почту*" />
+            <input class="fields__value fields__value--input contact-info__value" required type="email" id="mail"
+              name="mail" placeholder="Введите почту*" />
           </p>
 
         </div>
@@ -161,7 +163,7 @@
         <div class="competition__application fields">
 
           <p class="competition__application-header fields__header">
-              C каким приложением путешествовали?
+            C каким приложением путешествовали?
           </p>
 
           <div class="fields__item-check">
@@ -181,10 +183,10 @@
 
           <div class="fields__item-check">
 
-              <input type="radio" name="application-radio" id="windows-radio" />
-              <label for="windows-radio">
-                Windows Phone
-              </label>
+            <input type="radio" name="application-radio" id="windows-radio" />
+            <label for="windows-radio">
+              Windows Phone
+            </label>
 
           </div>
 
@@ -194,19 +196,22 @@
 
           <p class="competition__field fields__item">
 
-            <label class="competition__emotion-header fields__header fields__label fields__label--input" for="emotions">Опишите свои эмоции:</label>
+            <label class="competition__emotion-header fields__header fields__label fields__label--input"
+              for="emotions">Опишите свои эмоции:</label>
 
             <textarea id="emotions" name="emotions" class="fields__value fields__value--textarea"
               placeholder="Можно прям в красках не стесняйтесь выражаться"></textarea>
 
-            </p>
+          </p>
 
         </div>
 
-        <button class="competition__submit" type="submit">Отправить форму</button>
+        <div class="competition__form-submit">
+          <button class="competition__submit" type="submit">Отправить форму</button>
 
-        <div class="competition__requared-fields">
-          <span class="competition__star">*</span> <span class="competition__star-text"> - Обязательные поля</span>
+          <div class="competition__requared-fields">
+            <span class="competition__star">*</span> <span class="competition__star-text"> - Обязательные поля</span>
+          </div>
         </div>
 
       </form>
@@ -217,9 +222,7 @@
 
   <footer class="page-footer">
 
-    <div class="page-footer__wrapper">
-
-      <div class="page-footer__social social">
+      <div class="page-footer__wrapper page-footer__social social">
 
         <div class="page-footer__header social-header">
           <img class="page-footer__pink-icon" alt="Иконка с очками" src="./img/logo-pink-blue-mobile.svg">
@@ -238,13 +241,13 @@
           </li>
         </ul>
 
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Html Academy"></a>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Html Academy"></a>
+        </div>
+
       </div>
 
-    </div>
 
   </footer>
 
