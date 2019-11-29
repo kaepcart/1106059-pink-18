@@ -13,33 +13,33 @@
 
   <header class="page-header">
 
-      <div class="page-header__menu-wrapper">
-          <a href="index.html" class="page-header__logo page-header__logo--close  page-header__link">
-            <p class="page-header__list-logo"></p>
-          </a>
+    <div class="page-header__menu-wrapper">
+      <a href="index.html" class="page-header__logo page-header__logo--close  page-header__link">
+        <p class="page-header__list-logo"></p>
+      </a>
 
-          <nav class="page-header__nav main-nav">
-            <button class="main-nav__toogle main-nav__toogle--burger">
-             <span class="visually-hidden">Закрыть меню</span>
-            </button>
-
-
-            <ul class="main-nav__list site-list visually-hidden">
-              <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
-              <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
-              <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
-              <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
-            </ul>
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toogle main-nav__toogle--burger">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
 
 
-          </nav>
-        </div>
+        <ul class="main-nav__list site-list visually-hidden">
+          <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+          <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
+          <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
+        </ul>
+
+
+      </nav>
+    </div>
 
     <div class="page-header__wrapper gallery__header header-box header-box--text">
 
       <h2 class="header-box__text header-box__text--tagline">
-          Фотографии пользователей
-        </h2>
+        Фотографии пользователей
+      </h2>
 
     </div>
   </header>
@@ -267,11 +267,11 @@
 
     <form class="photo-editor" action="https://echo.htmlacademy.ru" method="post">
 
-      <div class="photo-editor__header">
-        <p class="textblock__text-first">
+      <div class="photo-editor__header textblock">
+        <p class="textblock__text--first">
           Затмите из всех!
         </p>
-        <p class="textblock__text-second">
+        <p class="textblock__text--second">
           Выкладывайте все, что накопилось в телефоне!
         </p>
       </div>
@@ -279,38 +279,56 @@
       <div class="photo-editor__work-panel">
 
 
+        <picture>
 
-        <img class="photo-editor__work-area" src="./img/photo-road-mobile@1x.jpg" alt="Фото для редактирование" />
+          <source media="(min-width: 1200px)" srcset="./img/photo-road-desktop@1x.jpg">
+          <source media="(min-width: 640px)" srcset="./img/photo-road-tablet@1x.jpg">
+          <img class="photo-editor__work-area" src="./img/photo-road-mobile@1x.jpg" alt="Фото для редактирование" />
+        </picture>
 
-        <p class="photo-editor__edit-buttons ">
 
-          <button type="button"
-            class="photo-editor__edit-button photo-editor__edit-button--crop photo-editor__edit-button--active"
-            title="Вырезать"></button>
+        <div class="photo-editor_tools">
 
-          <button type="button" class="photo-editor__edit-button photo-editor__edit-button--fill"
-            title="Залить"></button>
+          <div class="photo-editor__edit-buttons ">
 
-          <button type="button" class="photo-editor__edit-button photo-editor__edit-button--contrast"
-            title="Контраст"></button>
-        </p>
+            <button type="button"
+              class="photo-editor__edit-button photo-editor__edit-button--crop photo-editor__edit-button--active"
+              title="Вырезать"></button>
 
-        <div class="photo-editor__bright-slider bright-range">
-          <input type="range" class="bright-range__input" />
-          <a class="bright-range__bar"></a>
-          <a class="bright-range__toggle"></a>
-        </div>
+            <div class="photo-editor__bright-slider bright-range bright-range--separat">
+              <input type="range" class="bright-range__input" />
+            </div>
 
-        <hr />
 
-        <div class="photo-editor__buttons">
-          <button class="photo-editor__button photo-editor__button--submit" type="submit"> Запостить</button>
-          <button class="photo-editor__button photo-editor__button--cancel" type="button"> Отменить</button>
+            <button type="button" class="photo-editor__edit-button photo-editor__edit-button--fill"
+              title="Залить"></button>
+
+            <div class="photo-editor__bright-slider bright-range bright-range--separat">
+              <input type="range" class="bright-range__input" />
+            </div>
+
+            <button type="button" class="photo-editor__edit-button photo-editor__edit-button--contrast"
+              title="Контраст"></button>
+
+            <div class="photo-editor__bright-slider bright-range bright-range--separat">
+              <input type="range" class="bright-range__input " />
+            </div>
+
+          </div>
+
+          <p class="photo-editor__bright-slider bright-range bright-range--common">
+            <input type="range" class="bright-range__input" />
+          </p>
+
+          <hr />
+
+          <div class="photo-editor__buttons">
+            <button class="photo-editor__button photo-editor__button--submit" type="submit"> Запостить</button>
+            <button class="photo-editor__button photo-editor__button--cancel" type="button"> Отменить</button>
+          </div>
         </div>
 
       </div>
-
-
 
     </form>
 
@@ -353,4 +371,5 @@
 </body>
 <script src="./js/app.js">
 </script>
+
 </html>
