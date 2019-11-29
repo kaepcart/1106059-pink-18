@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let buttonClose = document.querySelector(".main-nav__toogle");
   let nav = document.querySelector(".main-nav__list");
-  let header = document.querySelector(".page-header__logo");
+  let header = document.querySelector(".page-header__menu-wrapper");
 
   function menegeMenu() {
 
@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       buttonClose.classList.remove("main-nav__toogle--burger");
       nav.classList.remove("visually-hidden");
-      header.classList.remove("page-header__logo--close");
+      header.classList.remove("page-header__menu-wrapper--close");
 
     } else {
 
       buttonClose.classList.add("main-nav__toogle--burger");
       nav.classList.add("visually-hidden");
-      header.classList.add("page-header__logo--close");
+      header.classList.add("page-header__menu-wrapper--close");
 
     }
 

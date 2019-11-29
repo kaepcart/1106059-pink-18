@@ -11,7 +11,8 @@
 
   @media (min-width: @tablet-width) {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
-    padding-top: 110px;
+    background-position: 50% 0;
+    padding-top: 100px;
   }
 
   @media (min-width: @desktop-width) {
@@ -28,6 +29,10 @@
   align-items: stretch;
   width: 100%;
   position: absolute;
+  
+  &--close {
+    background-color: @black-desc-trans;
+  }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
@@ -44,16 +49,11 @@
   display: block;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: @black;
   max-height: 65px;
   color: @white;
   padding-top: 18px;
   padding-bottom: 18px;
   border-bottom: 1px solid @black-border-bottom;
-
-  &--close {
-    background-color: @black-desc-trans;
-  }
 
   @media (min-width: @tablet-width) {
     height: 110px;
