@@ -1,18 +1,31 @@
 .photo {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  &--panorama {
+    margin: 0;
+  }
+}
+
+.photo__wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-decoration: none;
   list-style-type: none;
-
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
   padding: 0;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
+    justify-content: space-between;
+    max-width: 950px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -20,6 +33,7 @@
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
+
 
 }
 
@@ -30,33 +44,20 @@
   list-style-type: none;
   margin: 0;
 
-
-
-
   @media (min-width: @tablet-width) {
     width: 300px;
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  @media (min-width: @desktop-big-width) {
+  @media (min-width: @desktop-width) {
 
     margin-left: 0px;
     margin-right: 0px;
-    
-    &:nth-child(3n+2) {
-      margin-left: 110px;
-    }
-
-    &:nth-child(3n+4) {
-      margin-right: 110px;
-    }
+    justify-content: space-between;
   }
 
-  &--panorama {
-    width: 100%;
-    margin: 0;
-  }
+
 }
 
 .photo__link {
@@ -118,6 +119,7 @@
 
     &--panorama {
       width: auto;
+      justify-content: stretch;
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -125,10 +127,10 @@
 
   @media (min-width: @desktop-width) {
     &--panorama {
-      width: 90%;
-      margin-left: 20px;
-      margin-right: 20px;
-      max-width: 940px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: 920px;
     }
   }
 }
