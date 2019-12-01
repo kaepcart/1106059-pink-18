@@ -1,5 +1,6 @@
 .feedbacks {
   list-style-type: none;
+
 }
 
 .feedbacks__item {
@@ -7,8 +8,33 @@
   width: 276px;
   .font-main();
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 617px;
+    font-size: 18px;
+    line-height: 30px;
+
+  }
+}
+
+.feedbacks__author-name {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 1;
+    font-size: 14px;
+  }
 }
 
 .feedbacks__author {
   .font-bold();
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 }

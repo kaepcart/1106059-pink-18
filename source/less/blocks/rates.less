@@ -20,6 +20,18 @@
   width: 840px;
   box-sizing: border-box;
   border-collapse: collapse;
+
+
+}
+
+.rates__header {
+  @media (min-width: @tablet-width) {
+    width: 152px;
+
+    &--name {
+      background-color: @light-gray;
+    }
+  }
 }
 
 .rates__items-head {
@@ -50,9 +62,32 @@
   border-left-color: @white;
 }
 
+.rates__value {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: stretch;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+  }
+
+}
+
+.rates__access-name {
+  flex-grow: 1;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .rates__function {
   height: 60px;
   border-left: 3px solid @light-gray;
+
 }
 
 .rates__tag {
@@ -95,11 +130,11 @@
 }
 
 .rates__access-value {
-  display: block;
   width: 31px;
   height: 30px;
   padding: 0;
   margin: 0;
+
 
   &--yes {
     background: url("../img/icon-green-yes.svg") no-repeat;
