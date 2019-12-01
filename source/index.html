@@ -207,6 +207,7 @@
                 </th>
                 <th class="rates__header rates__header--tag">
                   <span class="rates__tag">
+                    <span class="visually-hidden">ХИТ</span>
                   </span>
                   <strong class="rates__name">Стандарт</strong>
                   <p class="rates__cost">3.99 USD</p>
@@ -241,7 +242,7 @@
                 </td>
               </tr>
               <tr class="rates__items-fields-tr">
-                <td class="rates__function rates__function--name" >Смайлики</td>
+                <td class="rates__function rates__function--name">Смайлики</td>
                 <td class="rates__function">
                   <div class="rates__value">
                     <p class="rates__access-name">Смайлики</p>
@@ -323,7 +324,13 @@
       <div class="contacts__map map">
         <div class="contacts__map-triangle"></div>
         <div class="contacts__map-waraper">
-          <img class="contacts__map-img" src="./img/bg-map-mobile@1x.png" alt="Карта проезда" />
+
+          <picture>
+
+            <source media="(min-width: 960px)" srcset="./img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 640px)" srcset="./img/bg-map-tablet@1x.jpg">
+            <img class="contacts__map-img" src="./img/bg-map-mobile@1x.png" alt="Карта проезда" />
+          </picture>
         </div>
 
         <p class="contacts__radio radio">
@@ -333,6 +340,36 @@
       </div>
 
     </section>
+
+    <footer class="page-footer page-footer--index">
+
+      <div class="page-footer__wrapper page-footer__social social">
+        <div class="page-footer__header social-header">
+          <img class="page-footer__pink-icon" alt="Иконка с очками" src="./img/logo-pink-blue-mobile.svg">
+        </div>
+
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy" title="Twiter"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+              title="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--play" href="https://www.instagram.com/htmlacademy" title="Youtube"></a>
+          </li>
+        </ul>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Html Academy"></a>
+        </div>
+
+      </div>
+
+
+    </footer>
 
   </main>
 
