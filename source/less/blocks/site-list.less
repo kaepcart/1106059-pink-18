@@ -46,20 +46,23 @@
     color: @black-link
   }
 
-  &--active {
-    position: relative;
+  @media (min-width: @desktop-width) {
 
-    &::after {
-      content: "";
+    &--active {
+      position: relative;
 
-      position: absolute;
-      right: 0;
-      bottom: 0px;
-      left: 0;
+      &::after {
+        content: "";
 
-      height: 3px;
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        left: 0;
 
-      background: @white;
+        height: 3px;
+
+        background: @white;
+      }
     }
   }
 }
