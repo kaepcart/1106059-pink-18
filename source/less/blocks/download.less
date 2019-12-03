@@ -27,14 +27,23 @@
 
 .download__footer {
   color: @white;
-  width: 320px;
+  width: 280px;
   height: 20px;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   .font-light();
   line-height: 22px;
-  margin-top: 25px;
+  margin-top: 10px;
   margin-bottom: 55px;
+
+  @media (min-width: @tablet-width) {
+
+    width: 320px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 25px;
+
+  }
 }
 
 .download__os {
@@ -42,6 +51,6 @@
   width: 230px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 10px;
+    padding-top: 20px;
   }
 }
