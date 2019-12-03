@@ -4,6 +4,10 @@
   align-items: center;
   padding-top: 16px;
   order: 2;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 
@@ -15,21 +19,29 @@
   border-radius: 30px;
   margin-top: 15px;
   .font-bold();
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .download__footer {
   color: @white;
-  width: 280px;
+  width: 320px;
   height: 20px;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   .font-light();
   line-height: 22px;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 55px;
 }
 
 .download__os {
   margin-top: 25px;
   width: 230px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+  }
 }
