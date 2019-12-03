@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   margin-top: 0;
-  padding-top: 81px;
+  padding-top: 87px;
   background: @light-gray;
   background-image: url("../img/bg-triangle-white.svg");
   background-size: 100% auto;
@@ -16,7 +16,6 @@
   @media (min-width: @tablet-width) {
     padding-top: 100px;
   }
-
 }
 
 
@@ -53,18 +52,15 @@
 
 
   @media (min-width: @tablet-width),
-  (max-width:@desktop-width) {
+  (max-width: @desktop-width) {
     font-size: 16px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
-  @media (min-width:@desktop-width) {
+  @media (min-width: @desktop-width) {
     font-size: 18px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
-
-
-
 }
 
 .rates__cost {
@@ -75,12 +71,12 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
@@ -96,25 +92,25 @@
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: stretch;
+  justify-content: space-between;
   align-items: center;
-
-
+  height: 55px;
 
   @media (min-width: @tablet-width) {
     justify-content: center;
-
   }
 
   @media (min-width: @desktop-width) {
     justify-content: center;
-
   }
-
 }
 
 .rates__access-name {
   flex-grow: 1;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -125,7 +121,7 @@
 
   border-left: 3px solid @light-gray;
   width: 276px;
-  height: 60px;
+  height: 40px;
 
   &--name {
     display: none;
@@ -141,7 +137,6 @@
       justify-content: center;
       align-items: center;
       font-size: 14px;
-
     }
   }
 
@@ -149,9 +144,6 @@
     width: 233px;
     height: 60px;
   }
-
-
-
 }
 
 .rates__tag {
@@ -174,6 +166,7 @@
     &--name {
       background-color: @light-gray;
       display: block;
+      border: 1px solid @light-gray;
     }
   }
 
@@ -187,8 +180,6 @@
     padding-top: 0;
   }
 }
-
-
 
 .rates__tag::before {
   position: absolute;
@@ -220,14 +211,14 @@
 
 .rates__items-fields-tr {
   border: 3px solid @light-gray;
-
 }
 
 .rates__access-value {
-  width: 31px;
+  width: 45px;
   height: 30px;
   padding: 0;
-  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
     height: 26px;
@@ -249,4 +240,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.rates__toggles {
+  margin-top: 38px;
 }
