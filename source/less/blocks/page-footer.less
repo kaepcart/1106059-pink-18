@@ -1,4 +1,19 @@
 .page-footer {
-  margin-top: 40px;
+
   width: 100%;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.page-footer--index {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

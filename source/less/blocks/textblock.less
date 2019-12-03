@@ -7,6 +7,21 @@
   @media (min-width: @tablet-width) {
     width: 440px;
     font-size: 18px;
+    margin-bottom: 50px;
+  }
+}
+
+.textblock__text {
+  @media (min-width: @tablet-width) {
+    &--first {
+      margin-bottom: 0;
+      height: 24px;
+    }
+
+    &--second {
+      height: 24px;
+      margin-top: 0;
+    }
   }
 }
 
@@ -16,5 +31,9 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: inline;
   }
 }

@@ -9,19 +9,18 @@
 
 </head>
 
-
 <body>
   <header class="page-header">
 
     <div class="page-header__menu-wrapper page-header__menu-wrapper--close">
       <a href="index.html" class="page-header__logo   page-header__link">
+      
         <picture>
           <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
           <source media="(min-width: 640px)" srcset="./img/logo-pink-white-tablet.svg">
           <img class="page-header__list-logo" alt="открыть изображение" src="./img/logo-pink-white-mobile.svg"
             srcset="./img/logo-pink-white-mobile.svg" />
         </picture>
-
       </a>
 
       <nav class="page-header__nav main-nav">
@@ -29,14 +28,12 @@
           <span class="visually-hidden">Закрыть меню</span>
         </button>
 
-
         <ul class="main-nav__list site-list visually-hidden">
-          <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--active">Главная</a></li>
           <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
           <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
           <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
         </ul>
-
 
       </nav>
     </div>
@@ -69,11 +66,7 @@
               Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8
             </p>
 
-
-
           </section>
-
-
 
         </div>
 
@@ -81,7 +74,6 @@
     </div>
 
   </header>
-
 
   <main class="page-main">
 
@@ -92,9 +84,7 @@
         <li class="advantages__header-item">Нам есть что вам предложить!</li>
       </ul>
 
-
       <div class="advantages__wrapper">
-
 
         <dl class="advantages__items">
 
@@ -136,7 +126,6 @@
 
       <div class="advantages__profit  profit">
 
-
         <div class="profit__logo">
 
         </div>
@@ -166,9 +155,15 @@
         <ul class="feedbacks__list slider__list">
           <li class="feedbacks__item slider__item">
             <h3 class="feedbacks__author">Николай Петров</h3>
+
+            <small class="feedbacks__author-name">
+              25 лет, водитель трамвая
+            </small>
+
             <p class="feedbacks__description">"Это приложение перевернуло
               мой мир и позволило по новому взглянуть на привычные серые вещи!
               А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+
           </li>
         </ul>
 
@@ -187,70 +182,117 @@
       <div class="rates__wrapper slider">
 
         <div class="rates__items-slides">
+
           <table class="rates__items-list">
             <thead class="rates__items-head">
               <tr>
-                <th colspan="2" class="rates__header">
+
+                <th class="rates__header rates__header--name">
+                  <span visually-hidden>Пустой квадрат</span>
+                </th>
+
+                <th class="rates__header">
                   <strong class="rates__name">БАЗА</strong>
                   <p class="rates__cost">1.99 USD</p>
                 </th>
-                <th colspan="2" class="rates__header rates__header--tag">
+               
+                <th class="rates__header rates__header--tag">
                   <span class="rates__tag">
+                    <span class="visually-hidden">ХИТ</span>
                   </span>
                   <strong class="rates__name">Стандарт</strong>
                   <p class="rates__cost">3.99 USD</p>
                 </th>
-                <th colspan="2" class="rates__header">
+              
+                <th class="rates__header">
                   <strong class="rates__name">АНЛИМ</strong>
                   <p class="rates__cost">9.99 USD</p>
                 </th>
+
               </tr>
             </thead>
             <tbody class="rates__items-body">
               <tr class="rates__items-fields-tr">
-                <td class="rates__function"> Разовый фильтр </td>
-                <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
+               
+                <td class="rates__function rates__function--name">Разовый фильтр</td>
+               
+                <td class="rates__function">
+                  <div class="rates__value">
+                    <p class="rates__access-name">Разовый фильтр</p>
+                    <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
+                  </div>
                 </td>
-                <td class="rates__function"> Разовый фильтр </td>
-                <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
+
+                <td class="rates__function">
+                  <div class="rates__value">
+                    <p class="rates__access-name">Разовый фильтр</p>
+                    <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
+                  </div>
                 </td>
-                <td class="rates__function"> Разовый фильтр </td>
-                <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--yes" title="Да"></p>
+                
+                <td class="rates__function">
+                  <div class="rates__value">
+                    <p class="rates__access-name">Разовый фильтр</p>
+                    <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
+                  </div>
                 </td>
+
               </tr>
               <tr class="rates__items-fields-tr">
-                <td class="rates__function"> Смайлики </td>
-                <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
+               
+                <td class="rates__function rates__function--name">Смайлики</td>
+               
+                <td class="rates__function">
+                  <div class="rates__value">
+                    <p class="rates__access-name">Смайлики</p>
+                    <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
+                  </div>
                 </td>
-                <td class="rates__function"> Смайлики </td>
-                <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
+
+                <td class="rates__function">
+                  <div class="rates__value">
+                    <p class="rates__access-name">Смайлики</p>
+                    <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
+                  </div>
                 </td>
-                <td class="rates__function"> Смайлики </td>
-                <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
+               
+                <td class="rates__function">
+                  <div class="rates__value">
+                    <p class="rates__access-name">Смайлики</p>
+                    <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
+                  </div>
                 </td>
+
               </tr>
               <tr class="rates__items-fields-tr">
-                <td class="rates__function"> Комментарии </td>
-                <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--no" title="НЕТ"></p>
+                
+                <td class="rates__function rates__function--name">Комментарии</td>
+               
+                <td class="rates__function">
+                  <div class="rates__value">
+                    <span class="rates__access-name"> Комментарии </span>
+                    <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
+                  </div>
                 </td>
-                <td class="rates__function"> Комментарии </td>
-                <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
+
+                <td class="rates__function">
+                  <div class="rates__value">
+                    <span class="rates__access-name"> Комментарии </span>
+                    <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
+                  </div>
                 </td>
-                <td class="rates__function"> Комментарии </td>
-                <td class="rates__access-field">
-                  <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
+
+                <td class="rates__function">
+                  <div class="rates__value">
+                    <span class="rates__access-name"> Комментарии </span>
+                    <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
+                  </div>
                 </td>
+
               </tr>
             </tbody>
           </table>
+
         </div>
 
       </div>
@@ -260,6 +302,7 @@
         <button type="button" class="slider__toggle slider__toggle--active" title="Слайд 2"></button>
         <button type="button" class="slider__toggle" title="Слайд 3"></button>
       </p>
+
     </section>
 
     <section class="contacts">
@@ -286,7 +329,13 @@
       <div class="contacts__map map">
         <div class="contacts__map-triangle"></div>
         <div class="contacts__map-waraper">
-          <img class="contacts__map-img" src="./img/bg-map-mobile@1x.png" alt="Карта проезда" />
+
+          <picture>
+            <source media="(min-width: 960px)" srcset="./img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 640px)" srcset="./img/bg-map-tablet@1x.jpg">
+            <img class="contacts__map-img" src="./img/bg-map-mobile@1x.png" alt="Карта проезда" />
+          </picture>
+
         </div>
 
         <p class="contacts__radio radio">
@@ -296,6 +345,36 @@
       </div>
 
     </section>
+
+    <footer class="page-footer page-footer--index">
+
+      <div class="page-footer__wrapper page-footer__social social">
+        <div class="page-footer__header social-header">
+          <img class="page-footer__pink-icon" alt="Иконка с очками" src="./img/logo-pink-blue-mobile.svg">
+        </div>
+
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy" title="Twiter"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+              title="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--play" href="https://www.instagram.com/htmlacademy" title="Youtube"></a>
+          </li>
+        </ul>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Html Academy"></a>
+        </div>
+
+      </div>
+
+
+    </footer>
 
   </main>
 

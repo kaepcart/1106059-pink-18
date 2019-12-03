@@ -22,14 +22,12 @@
           <span class="visually-hidden">Закрыть меню</span>
         </button>
 
-
         <ul class="main-nav__list site-list visually-hidden">
           <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
           <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
-          <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--active">Конкурс</a></li>
           <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
         </ul>
-
 
       </nav>
     </div>
@@ -40,17 +38,13 @@
         Конкурс на самое безбашенное путешествие с Пинк
       </h2>
 
-
     </div>
-
 
   </header>
 
   <main class="page-main">
 
     <section class="competition">
-
-
 
       <div class="competition__header textblock">
         <p class="textblock__text">
@@ -63,7 +57,8 @@
 
       <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
 
-        <div class="competition__full-name fields">
+        <div class="competition__full-name fields fields--not-border">
+
           <div class="competition__field fields__item">
             <label class="fields__label fields__label--input" for="surname">Фамилия:</label>
             <input required type="text" id="surname" name="surname" class="fields__value fields__value--input"
@@ -91,21 +86,17 @@
           </p>
 
           <div class="fields__item-check">
-
             <input type="checkbox" class="fields__checkbox-input" checked name="shark" id="shark" />
             <label class="fields__checkbox-label" for="shark">
               Сделал селфи с акулой
             </label>
-
           </div>
 
           <div class="fields__item-check">
-
             <input type="checkbox" class="fields__checkbox-input" checked name="sunburn" id="sunburn" />
             <label class="fields__checkbox-label" for="sunburn">
               Обгорел на пляже
             </label>
-
           </div>
 
           <div class="fields__item-check">
@@ -140,16 +131,20 @@
 
         <div class="competition__contacts fields">
 
-          <p class="competition__field fields__item">
-            <label class="fields__label fields__label--input" for="phone">Номер телефона:</label>
-            <input type="tel" id="phone" name="phone" class="fields__value fields__value--input"
+          <p class="competition__contacts-header fields__header">
+            Контактная информация
+          </p>
+
+          <p class="competition__contacts-field fields__item contact-info contact-info--phone">
+            <label class="fields__label fields__label--input contact-info__label" for="phone">Номер телефона</label>
+            <input class="fields__value fields__value--input contact-info__value" type="tel" id="phone" name="phone"
               placeholder="Номер пожалуйства" />
           </p>
 
-          <p class="competition__field fields__item">
-            <label class="fields__label fields__label--input" for="mail">Адрес почты:</label>
-            <input required type="email" id="mail" name="mail" class="fields__value fields__value--input"
-              placeholder="Введите почту*" />
+          <p class="competition__contacts-field fields__item contact-info contact-info--email">
+            <label class="fields__label fields__label--input contact-info__label" for="mail">Адрес почты</label>
+            <input class="fields__value fields__value--input contact-info__value" required type="email" id="mail"
+              name="mail" placeholder="Введите почту*" />
           </p>
 
         </div>
@@ -157,9 +152,7 @@
         <div class="competition__application fields">
 
           <p class="competition__application-header fields__header">
-            <span>
-              C каким приложением путешествовали?
-            </span>
+            C каким приложением путешествовали?
           </p>
 
           <div class="fields__item-check">
@@ -167,7 +160,6 @@
             <label for="ios-radio">
               Pink для IOS
             </label>
-
           </div>
 
           <div class="fields__item-check">
@@ -178,12 +170,10 @@
           </div>
 
           <div class="fields__item-check">
-
-              <input type="radio" name="application-radio" id="windows-radio" />
-              <label for="windows-radio">
-                Windows Phone
-              </label>
-
+            <input type="radio" name="application-radio" id="windows-radio" />
+            <label for="windows-radio">
+              Windows Phone
+            </label>
           </div>
 
         </div>
@@ -191,17 +181,23 @@
         <div class="competition__emotion fields">
 
           <p class="competition__field fields__item">
-            <label class="fields__label fields__label--input" for="emotions">Опишите свои эмоции:</label>
+
+            <label class="competition__emotion-header fields__header fields__label fields__label--input"
+              for="emotions">Опишите свои эмоции:</label>
+
             <textarea id="emotions" name="emotions" class="fields__value fields__value--textarea"
               placeholder="Можно прям в красках не стесняйтесь выражаться"></textarea>
+
           </p>
 
         </div>
 
-        <button class="competition__submit" type="submit">Отправить форму</button>
+        <div class="competition__form-submit">
+          <button class="competition__submit" type="submit">Отправить форму</button>
 
-        <div class="competition__requared-fields">
-          <span class="competition__star">*</span> <span class="competition__star-text"> - Обязательные поля</span>
+          <div class="competition__requared-fields">
+            <span class="competition__star">*</span> <span class="competition__star-text"> - Обязательные поля</span>
+          </div>
         </div>
 
       </form>
@@ -212,34 +208,32 @@
 
   <footer class="page-footer">
 
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper page-footer__social social">
 
-      <div class="page-footer__social social">
-
-        <div class="page-footer__header social-header">
-          <img class="page-footer__pink-icon" alt="Иконка с очками" src="./img/logo-pink-blue-mobile.svg">
-        </div>
-
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy" title="Twiter"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-              title="Facebook"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--play" href="https://www.instagram.com/htmlacademy" title="Youtube"></a>
-          </li>
-        </ul>
-
+      <div class="page-footer__header social-header">
+        <img class="page-footer__pink-icon" alt="Иконка с очками" src="./img/logo-pink-blue-mobile.svg">
       </div>
+
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy" title="Twiter"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+            title="Facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--play" href="https://www.instagram.com/htmlacademy" title="Youtube"></a>
+        </li>
+      </ul>
+
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Html Academy"></a>
       </div>
 
     </div>
+
 
   </footer>
 

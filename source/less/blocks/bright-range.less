@@ -1,20 +1,42 @@
 .bright-range {
   position: relative;
-  width: 280px;
+  min-width: 280px;
+
   box-sizing: border-box;
   margin: 6px auto 20px;
   padding-left: 20px;
   padding-right: 20px;
+
+  margin-top: 50px;
+
+  &--separat {
+    min-width: 250px;
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+
+  }
+
+  @media (min-width: @tablet-width) {
+    &--separat {
+      display: block;
+    }
+
+    &--common {
+      display: none;
+    }
+  }
 }
 
-.bright-range__bar {
+.bright-range::after {
   height: 2px;
   background-color: @black;
   width: 100%;
   display: block;
+  content: "";
 }
 
-.bright-range__toggle {
+.bright-range::before {
   display: block;
   position: absolute;
   z-index: 10;
@@ -26,4 +48,5 @@
   border: 2px solid @pink;
   border-radius: 50%;
   left: 150px;
+  content: "";
 }

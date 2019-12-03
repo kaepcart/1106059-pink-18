@@ -16,26 +16,38 @@
     padding-top: 100px;
     padding-bottom: 50px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 75px;
+    width: 752px;
+    padding-bottom: 60px;
+  }
 }
 
 .competition__form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
+  max-width: 955px;
+  align-items: space-between;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .competition__full-name {
   @media (min-width: @tablet-width) {
     order: -5;
   }
-}
 
-.competition__progress {
-  background-color: @light-gray;
-
-  @media (min-width: @tablet-width) {
-    order: -3;
+  @media (min-width: @desktop-width) {
+    width: 450px;
+    align-self: flex-start;
+    padding-top: 6px;
+    margin-left: 0;
   }
 }
 
@@ -45,21 +57,88 @@
 
   @media (min-width: @tablet-width) {
     order: -4;
-    background-color: @white;
-    width: auto;
-    border: 2px solid @gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    align-self: flex-end;
   }
 }
 
-.competition__application-header {
+.competition__progress {
+  background-color: @light-gray;
+
   @media (min-width: @tablet-width) {
-    top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
     width: 100%;
   }
 }
+
+.competition__emotion {
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.competition__contacts {
+  @media (min-width: @tablet-width) {
+    order: -3;
+    background-color: @white;
+    flex-grow: 1;
+    border: 2px solid @gray;
+    padding-left: 60px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.competition__form-submit {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.competition__contacts-header {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.competition__field {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+}
+
+.competition__emotion-header {
+  @media (min-width: @tablet-width) {
+    top: -20px;
+  }
+}
+
 
 .competition__submit {
   padding: 14px 44px;
@@ -71,6 +150,18 @@
   background-color: @green;
   width: 276px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
+
 }
 
 .competition__requared-fields {

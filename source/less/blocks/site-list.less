@@ -37,7 +37,36 @@
     margin: auto;
     margin-bottom: 25px;
   }
+
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    color: @black-link
+  }
+
+  @media (min-width: @desktop-width) {
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        left: 0;
+
+        height: 3px;
+
+        background: @white;
+      }
+    }
+  }
 }
+
 
 .site-list__item {
   align-items: center;
