@@ -7,7 +7,7 @@
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: 100%;
   background-position: 100% 0;
-  padding-top: 65px;
+  padding-top: 0;
 
   @media (min-width: @tablet-width) {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
@@ -22,6 +22,11 @@
   }
 }
 
+.page-header__wrapper--js {
+  padding-top: 65px;
+
+}
+
 .page-header__menu-wrapper {
   background-color: @black;
   display: flex;
@@ -29,7 +34,6 @@
   justify-content: stretch;
   align-items: stretch;
   width: 100%;
-  position: absolute;
 
   &--close {
     background-color: @black-desc-trans;
@@ -45,6 +49,10 @@
   }
 }
 
+.page-header__menu-wrapper--js {
+  position: absolute;
+}
+
 
 .page-header__logo {
   display: block;
@@ -52,7 +60,7 @@
   padding-right: 20px;
   max-height: 65px;
   color: @white;
-  padding-top: 18px;
+  padding-top: 22px;
   padding-bottom: 18px;
   border-bottom: 1px solid @black-border-bottom;
 
@@ -84,10 +92,7 @@
     height: 40px;
   }
 
-
-
-  &:active
-  {
+  &:active {
     opacity: 0.3;
   }
 }
