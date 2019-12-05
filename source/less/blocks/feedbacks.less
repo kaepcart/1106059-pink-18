@@ -18,11 +18,17 @@
     width: 617px;
     font-size: 18px;
     line-height: 30px;
+    width: 100%;
   }
 }
 
 .feedbacks__description {
   margin-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 28px;
+    padding: 0;
+  }
 }
 
 .feedbacks__author-name {
@@ -43,5 +49,13 @@
     order: 1;
     margin-bottom: 10px;
     font-size: 20px;
+  }
+}
+
+.feedbacks__toggles {
+
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 20px;
   }
 }
