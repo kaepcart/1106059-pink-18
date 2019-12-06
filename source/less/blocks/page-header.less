@@ -11,13 +11,14 @@
 
   @media (min-width: @tablet-width) {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
-    background-position: 50% 0;
+    background-position: 50% 70%;
     background-size: 200%;
   }
 
   @media (min-width: @desktop-width) {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: 50% 100%;
+    padding-top: 115px;
   }
 }
 
@@ -25,9 +26,7 @@
   padding-top: 65px;
 
   @media (min-width: @tablet-width) {
-
     padding-top: 115px;
-
   }
 }
 
@@ -50,6 +49,7 @@
     justify-content: center;
     margin: 0;
     padding: 0;
+    position: absolute;
   }
 }
 
@@ -70,12 +70,16 @@
 
   @media (min-width: @tablet-width) {
     height: 110px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
     background-color: transparent;
     padding-top: 25px;
     border-bottom: none;
+    padding-left: 10px;
   }
 }
 
