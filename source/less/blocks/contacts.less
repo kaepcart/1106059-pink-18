@@ -40,7 +40,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
 
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
   }
 }
 
@@ -82,8 +85,7 @@
 
 
   @media (min-width: @tablet-width) {
-    & span
-    {
+    & span {
       display: block;
 
     }
