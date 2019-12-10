@@ -30,6 +30,13 @@
     max-width: 950px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
   }
 }
 
@@ -56,6 +63,7 @@
 
     margin-left: 0;
     margin-right: 0;
+    margin-top:15px;
     justify-content: space-between;
   }
 }
@@ -97,11 +105,20 @@
   }
 
   @media (min-width: @tablet-width) {
+    height: 300px;
+
     &--panorama {
       height: 510px;
     }
   }
 
+  @media (min-width: @desktop-width) {
+    height: 400px;
+
+    &--panorama {
+      height: 510px;
+    }
+  }
 }
 
 .photo__master {
@@ -118,6 +135,17 @@
   @media (min-width: @tablet-width) {
     margin-top: 0;
     height: auto;
+  }
+}
+
+.photo__author-wraper {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -138,11 +166,20 @@
   position: relative;
 
 
+
   @media (min-width: @tablet-width) {
 
-    height: 155px;
+    height: 117px;
     margin-top: 0;
-    width: 280px;
+    width: 260px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
 
     &--panorama {
       width: auto;
@@ -157,6 +194,7 @@
         position: absolute;
         top: 15px;
         right: 5px;
+        width: auto;
       }
     }
   }
@@ -166,7 +204,11 @@
       margin-left: auto;
       margin-right: auto;
       width: 100%;
-      max-width: 920px;
+      max-width: 880px;
+      padding-left: 30px;
+      height: 50px;
+
+      padding-bottom: 20px;
     }
   }
 }
@@ -180,6 +222,12 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    width: 100%;
+    align-self: flex-end;
+    padding-bottom: 10px;
+
+
     &--panorama .photo__heart {
       order: 1;
       margin-left: 10px;
@@ -200,6 +248,12 @@
   background: url("../img/icon-heart.svg") no-repeat;
   width: 30px;
   height: 15px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    align-self: center;
+
+  }
 }
 
 .photo__comment {
@@ -231,5 +285,10 @@
 
   @media (min-width: @tablet-width) {
     top: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 60px;
+    right: 130px;
   }
 }

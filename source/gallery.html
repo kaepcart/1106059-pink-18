@@ -30,7 +30,8 @@
         </button>
 
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html" class="site-list__link site-list__link--active">Главная</a></li>
+          <li class="site-list__item"><a href="index.html" class="site-list__link site-list__link--active">Главная</a>
+          </li>
           <li class="site-list__item"><a class="site-list__link">Фотографии</a></li>
           <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
           <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
@@ -77,8 +78,11 @@
           </div>
 
           <div class="photo__details photo__details--panorama">
-            <strong class="photo__author">Анна</strong>
-            <span class="photo__time">(5 минут назад)</span>
+            <p class="photo__author-wraper">
+              <strong class="photo__author">Анна</strong>
+              <span class="photo__time">(5 минут назад)</span>
+            </p>
+
             <p class="photo__comment">
               Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавайте
               свои вопросы!
@@ -94,25 +98,31 @@
           <li class="photo__item">
             <div class="photo__master">
               <a class="photo__link" href="#">
-                <picture >
+                <picture>
                   <source media="(min-width: 960px)" srcset="./img/photo-car-desktop@1x.jpg">
                   <source media="(min-width: 640px)" srcset="./img/photo-car-tablet@1x.jpg">
-                  <img class="photo-img" alt="открыть изображение" src="./img/photo-car-mobile@1x.jpg"
+                  <img class="photo__img" alt="открыть изображение" src="./img/photo-car-mobile@1x.jpg"
                     srcset="./img/photo-car-mobile@1x.jpg" />
                 </picture>
               </a>
             </div>
 
             <div class="photo__details">
-              <strong class="photo__author">Левон</strong>
-              <span class="photo__time">(5 часов назад)</span>
+              <p class="photo__author-wraper">
+                <strong class="photo__author">Левон</strong>
+                <span class="photo__time">(5 часов назад)</span>
+              </p>
+
+
               <p class="photo__comment">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
               <div class="photo__like">
                 <a class="photo__heart" href="#">
                 </a>
-                <span>Нравится:</span> <span>356</span>
+                <div class="photo_counter">
+                  <span>Нравится:</span> <span>356</span>
+                </div>
               </div>
             </div>
 
@@ -125,22 +135,27 @@
                 <picture class="photo__img photo__img--car">
                   <source media="(min-width: 960px)" srcset="./img/photo-drumset-desktop@1x.jpg">
                   <source media="(min-width: 640px)" srcset="./img/photo-drumset-tablet@1x.jpg">
-                  <img class="photo-img" alt="открыть изображение" src="./img/photo-drumset-mobile@1x.jpg"
+                  <img class="photo__img" alt="открыть изображение" src="./img/photo-drumset-mobile@1x.jpg"
                     srcset="./img/photo-drumset-mobile@1x.jpg" />
                 </picture>
               </a>
             </div>
 
             <div class="photo__details">
-              <strong class="photo__author">Антон</strong>
-              <span class="photo__time">(12 часов назад)</span>
+              <p class="photo__author-wraper">
+                <strong class="photo__author">Антон</strong>
+                <span class="photo__time">(12 часов назад)</span>
+              </p>
+
               <p class="photo__comment">
                 Соседи будут рады!
               </p>
               <div class="photo__like">
                 <a class="photo__heart" href="#">
                 </a>
-                <span>Нравится:</span> <span>666</span>
+                <div class="photo_counter">
+                  <span>Нравится:</span> <span>356</span>
+                </div>
               </div>
             </div>
 
@@ -160,15 +175,20 @@
             </div>
 
             <div class="photo__details">
-              <strong class="photo__author">Борис</strong>
-              <span class="photo__time">(20 часов назад)</span>
+              <p class="photo__author-wraper">
+                <strong class="photo__author">Борис</strong>
+                <span class="photo__time">(20 часов назад)</span>
+              </p>
+
               <p class="photo__comment">
                 Сдесь могла бы быть ваша цитата о высоком и вечном.
               </p>
               <div class="photo__like">
                 <a class="photo__heart" href="#">
                 </a>
-                <span>Нравится:</span> <span>215</span>
+                <div class="photo_counter">
+                  <span>Нравится:</span> <span>356</span>
+                </div>
               </div>
             </div>
 
@@ -189,15 +209,20 @@
             </div>
 
             <div class="photo__details">
-              <strong class="photo__author">Сергей</strong>
-              <span class="photo__time">(25 часов назад)</span>
+              <p class="photo__author-wraper">
+                <strong class="photo__author">Сергей</strong>
+                <span class="photo__time">(25 часов назад)</span>
+              </p>
+
               <p class="photo__comment">
                 Самая кубанская в мире!
               </p>
               <div class="photo__like">
                 <a class="photo__heart" href="#">
                 </a>
-                <span>Нравится:</span> <span>4</span>
+                <div class="photo_counter">
+                  <span>Нравится:</span> <span>356</span>
+                </div>
               </div>
             </div>
 
@@ -218,15 +243,20 @@
             </div>
 
             <div class="photo__details">
-              <strong class="photo__author">Максим</strong>
-              <span class="photo__time">(40 часов назад)</span>
+              <p class="photo__author-wraper">
+                  <strong class="photo__author">Максим</strong>
+                  <span class="photo__time">(40 часов назад)</span>
+                </p>
+
               <p class="photo__comment">
                 Где снег то?
               </p>
               <div class="photo__like">
                 <a class="photo__heart" href="#">
                 </a>
-                <span>Нравится:</span> <span>150</span>
+                <div class="photo_counter">
+                  <span>Нравится:</span> <span>356</span>
+                </div>
               </div>
 
             </div>
@@ -247,15 +277,20 @@
             </div>
 
             <div class="photo__details">
-              <strong class="photo__author">Надежда</strong>
-              <span class="photo__time">(45 часов назад)</span>
+                <p class="photo__author-wraper">
+                    <strong class="photo__author">Надежда</strong>
+                    <span class="photo__time">(45 часов назад)</span>
+                  </p>
+
               <p class="photo__comment">
                 Всем GM и взаимные лайки!
               </p>
               <div class="photo__like">
                 <a class="photo__heart" href="#">
                 </a>
-                <span>Нравится:</span> <span>2560</span>
+                <div class="photo_counter">
+                  <span>Нравится:</span> <span>356</span>
+                </div>
               </div>
             </div>
 
@@ -293,8 +328,7 @@
 
             <div class="tools__edit">
 
-              <button type="button"
-                class="tools__edit-button tools__edit-button--crop tools__edit-button--active"
+              <button type="button" class="tools__edit-button tools__edit-button--crop tools__edit-button--active"
                 title="Вырезать">
 
                 <svg width="22px" height="22px" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -333,8 +367,7 @@
             </div>
 
             <div class="tools__edit">
-              <button type="button" class="tools__edit-button tools__edit-button--contrast"
-                title="Контраст">
+              <button type="button" class="tools__edit-button tools__edit-button--contrast" title="Контраст">
 
                 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-35.422 -7.96 31.92 31.92"
