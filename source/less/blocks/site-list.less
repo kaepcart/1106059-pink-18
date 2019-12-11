@@ -10,12 +10,12 @@
 @media (min-width: @desktop-width) {
   .site-list {
     flex-direction: row;
-    justify-content: space-around;
-    margin-right: auto;
-    margin-left: auto;
+    justify-content: space-between;
     background-color: transparent;
     align-items: center;
     height: 110px;
+    margin-left: 170px;
+    margin-right: 10px;
   }
 }
 
@@ -23,19 +23,20 @@
   color: @white;
   flex-direction: column;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 25px;
   font-weight: 700px;
   text-transform: uppercase;
   margin-top: auto;
   margin-bottom: auto;
   display: block;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   text-decoration: none;
 
   @media (min-width: @desktop-width) {
     margin: auto;
     margin-bottom: 25px;
+    text-transform: none;
   }
 
   &:hover {
@@ -43,11 +44,10 @@
   }
 
   &:active {
-    color: @black-link
+    color: @black-link;
   }
 
   @media (min-width: @desktop-width) {
-
     &--active {
       position: relative;
 
@@ -56,7 +56,7 @@
 
         position: absolute;
         right: 0;
-        bottom: 0px;
+        bottom: 0;
         left: 0;
 
         height: 3px;
@@ -71,7 +71,7 @@
 .site-list__item {
   align-items: center;
   justify-content: center;
-  height: 63px;
+  height: 62px;
   text-align: center;
   border-bottom: 1px solid @black-border-bottom;
   border-top: 1px solid @black-border-top;

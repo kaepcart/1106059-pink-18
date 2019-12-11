@@ -1,3 +1,4 @@
+return
 const desktopWidth = "960";
 var isOpenMenu = false;
 document.addEventListener("DOMContentLoaded", function () {
@@ -5,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
   let buttonClose = document.querySelector(".main-nav__toogle");
   let nav = document.querySelector(".main-nav__list");
   let header = document.querySelector(".page-header__menu-wrapper");
+  let headerWrapper = document.querySelector(".page-header__wrapper");
+
+  header.classList.add("page-header__menu-wrapper--js");
+  headerWrapper.classList.add("page-header__wrapper--js");
 
   function menegeMenu() {
 

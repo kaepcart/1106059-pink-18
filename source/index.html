@@ -12,9 +12,9 @@
 <body>
   <header class="page-header">
 
-    <div class="page-header__menu-wrapper page-header__menu-wrapper--close">
+    <div class="page-header__menu-wrapper">
       <a href="index.html" class="page-header__logo   page-header__link">
-      
+
         <picture>
           <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
           <source media="(min-width: 640px)" srcset="./img/logo-pink-white-tablet.svg">
@@ -24,11 +24,11 @@
       </a>
 
       <nav class="page-header__nav main-nav">
-        <button class="main-nav__toogle main-nav__toogle--burger">
+        <button class="main-nav__toogle main-nav__toogle--close">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
 
-        <ul class="main-nav__list site-list visually-hidden">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link site-list__link--active">Главная</a></li>
           <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
           <li class="site-list__item"><a href="competition.html" class="site-list__link">Конкурс</a></li>
@@ -98,16 +98,16 @@
 
           <div class="advantages__item advantages__item--world">
             <dt class="advantages__item-header">
-              Меняет мир вокруг
+              <span> Меняет мир</span> вокруг
             </dt>
             <dd class="advantages__item-content">
-              Сделайте снимок и украсте его смайликом или тектовой подписью
+              Сделайте снимок и украсте его смайликом или тектовой подписью что бы усилить эфект
             </dd>
           </div>
 
           <div class="advantages__item advantages__item--friends">
             <dt class="advantages__item-header">
-              Заводите новых друзей
+              <span> Заводите </span> новых друзей
             </dt>
             <dd class="advantages__item-content">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
@@ -132,7 +132,7 @@
 
         <div class="profit__content">
           <h3 class="profit__header">
-            Эффект на 24 часа!
+            Эффект <span class="profit__24">на 24 часа!</span>
           </h3>
 
           <p class="profit__text">
@@ -151,21 +151,30 @@
     <section class="feedbacks">
 
       <div class="feedbacks__wrapper slider">
+        <div class="feedbacks__quotes">
+          <span class="visually-hidden">Кавычки</span>
+        </div>
 
-        <ul class="feedbacks__list slider__list">
-          <li class="feedbacks__item slider__item">
-            <h3 class="feedbacks__author">Николай Петров</h3>
+        <div class="slider__wrapper">
+          <a class="slider_left"><span class="visually-hidden">Стрелка влево</span></a>
 
-            <small class="feedbacks__author-name">
-              25 лет, водитель трамвая
-            </small>
+          <ul class="feedbacks__list slider__list">
+            <li class="feedbacks__item slider__item">
+              <h3 class="feedbacks__author">Николай Петров</h3>
 
-            <p class="feedbacks__description">"Это приложение перевернуло
-              мой мир и позволило по новому взглянуть на привычные серые вещи!
-              А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+              <small class="feedbacks__author-name">
+                25 лет, водитель трамвая
+              </small>
 
-          </li>
-        </ul>
+              <p class="feedbacks__description">"Это приложение перевернуло
+                мой мир и позволило по новому взглянуть на привычные серые вещи!
+                А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+
+            </li>
+          </ul>
+
+          <a class="slider_right"><span class="visually-hidden">Стрелка вправо</span></a>
+        </div>
 
         <p class="feedbacks__toggles slider__toggles">
           <button type="button" class="slider__toggle slider__toggle--active" title="Слайд 1"> </button>
@@ -188,22 +197,23 @@
               <tr>
 
                 <th class="rates__header rates__header--name">
-                  <span visually-hidden>Пустой квадрат</span>
+                  <span class="visually-hidden">Пустой квадрат</span>
                 </th>
 
                 <th class="rates__header">
                   <strong class="rates__name">БАЗА</strong>
                   <p class="rates__cost">1.99 USD</p>
                 </th>
-               
-                <th class="rates__header rates__header--tag">
-                  <span class="rates__tag">
-                    <span class="visually-hidden">ХИТ</span>
-                  </span>
-                  <strong class="rates__name">Стандарт</strong>
-                  <p class="rates__cost">3.99 USD</p>
+
+                <th class="rates__header">
+                  <div class="rates__tag-wapper">
+                    <span class="rates__tag">
+                    </span>
+                    <strong class="rates__name">Стандарт</strong>
+                    <p class="rates__cost">3.99 USD</p>
+                  </div>
                 </th>
-              
+
                 <th class="rates__header">
                   <strong class="rates__name">АНЛИМ</strong>
                   <p class="rates__cost">9.99 USD</p>
@@ -213,9 +223,9 @@
             </thead>
             <tbody class="rates__items-body">
               <tr class="rates__items-fields-tr">
-               
+
                 <td class="rates__function rates__function--name">Разовый фильтр</td>
-               
+
                 <td class="rates__function">
                   <div class="rates__value">
                     <p class="rates__access-name">Разовый фильтр</p>
@@ -229,7 +239,7 @@
                     <p class="rates__access-value rates__access-value--yes" title="Да"> </p>
                   </div>
                 </td>
-                
+
                 <td class="rates__function">
                   <div class="rates__value">
                     <p class="rates__access-name">Разовый фильтр</p>
@@ -239,9 +249,9 @@
 
               </tr>
               <tr class="rates__items-fields-tr">
-               
+
                 <td class="rates__function rates__function--name">Смайлики</td>
-               
+
                 <td class="rates__function">
                   <div class="rates__value">
                     <p class="rates__access-name">Смайлики</p>
@@ -252,22 +262,22 @@
                 <td class="rates__function">
                   <div class="rates__value">
                     <p class="rates__access-name">Смайлики</p>
-                    <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
+                    <p class="rates__access-value rates__access-value--yes" title="НЕТ"> </p>
                   </div>
                 </td>
-               
+
                 <td class="rates__function">
                   <div class="rates__value">
                     <p class="rates__access-name">Смайлики</p>
-                    <p class="rates__access-value rates__access-value--no" title="НЕТ"> </p>
+                    <p class="rates__access-value rates__access-value--yes" title="НЕТ"> </p>
                   </div>
                 </td>
 
               </tr>
               <tr class="rates__items-fields-tr">
-                
+
                 <td class="rates__function rates__function--name">Комментарии</td>
-               
+
                 <td class="rates__function">
                   <div class="rates__value">
                     <span class="rates__access-name"> Комментарии </span>
@@ -322,7 +332,7 @@
 
         <li class="contacts__item">
           <strong class="contacts__item-header">Приезжайте в гости</strong>
-          <p class="contacts__value">ул. Большая Конюшная, 19/8</p>
+          <p class="contacts__value">ул. Большая <span>Конюшная, 19/8</span></p>
         </li>
       </ul>
 
@@ -349,7 +359,7 @@
     <footer class="page-footer page-footer--index">
 
       <div class="page-footer__wrapper page-footer__social social">
-        <div class="page-footer__header social-header">
+        <div class="page-footer__header">
           <img class="page-footer__pink-icon" alt="Иконка с очками" src="./img/logo-pink-blue-mobile.svg">
         </div>
 

@@ -1,67 +1,157 @@
 .profit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  width: 900px;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: @white;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 45px;
+    margin-bottom: 40px;
+    background-color: @light-gray;
+  }
 }
 
 .profit__logo {
+  @media (min-width: @tablet-width) {
+    background: url("../img/icon-timer.svg") no-repeat 0 0;
+    background-color: @white;
+    background-size: 100%;
+    width: 238px;
+    height: 276px;
+    display: flex;
+    position: relative;
+    margin-left: 0;
+    padding-top: 0;
+  }
 
-  background: url("../img/icon-timer.svg") no-repeat 50% 0;
-  background-color: @light-gray;
-  width: 350px;
-  height: 350px;
-  display: flex;
-  position: relative;
+  @media (min-width: @desktop-width) {
+    width: 298px;
+    height: 345px;
+    background-color: @light-gray;
+    margin-left: 131px;
+  }
 }
 
 .profit__logo::after {
   content: "";
 
-  position: absolute;
-  border: 20px solid @pink;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  top: 22%;
-  left: 12%;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    border: 15px solid @pink;
+    border-radius: 50%;
+    width: 167px;
+    height: 167px;
+    top: 20%;
+    left: 8%;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    border: 20px solid @pink;
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    left: 8%;
+  }
 }
 
 .profit__logo::before {
-  content: "24";
-  position: absolute;
-  color: @pink;
-  font-size: 120px;
-  .font-bold();
-  top: 35%;
-  left: 30%;
+  @media (min-width: @tablet-width) {
+    .font-bold();
+
+    content: "24";
+    position: absolute;
+    color: @pink;
+    font-size: 100px;
+    top: 38%;
+    left: 27%;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 120px;
+  }
+
 }
 
 .profit__content {
-  margin-left: 80px;
-  width: 550px;
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+    width: 295px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 180px;
+    width: 550px;
+  }
 }
 
 .profit__header {
-  .font-bold();
-  font-size: 30px;
-  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    .font-bold();
+    font-size: 30px;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 35px;
+    margin-bottom: 5px;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    text-align: left;
+    padding-top: 35px;
+  }
+
+}
+
+.profit__24 {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
 }
 
 .profit__text {
-  .font-main();
-  font-size: 18px;
-  text-align: left;
-  line-height: 30px;
+  @media (min-width: @tablet-width) {
+    .font-main();
+    font-size: 14px;
+    text-align: left;
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .font-main();
+    font-size: 18px;
+    text-align: left;
+    line-height: 30px;
+    padding-top: 20px;
+    margin-bottom: 25px;
+  }
+
 
   &--link {
     color: @pink;
   }
 }
 
-@media (max-width: @desktop-width) {
+@media (max-width: @tablet-width - 1) {
   .profit {
     display: none;
   }
