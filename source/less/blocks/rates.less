@@ -151,11 +151,6 @@
   }
 }
 
-.rates__tag {
-  position: absolute;
-  left: 0;
-  display: block;
-}
 
 .rates__header {
   border: 3px solid @light-gray;
@@ -188,34 +183,34 @@
   height: 100%;
   padding: 0;
   margin: 0;
-}
 
-.rates__tag::before {
-  position: absolute;
-  content: "хит";
-  height: 10px;
-  width: 28px;
-  left: 10px;
-  top: 10px;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  vertical-align: center;
-  text-transform: uppercase;
-  color: @white;
-  background-color: @pink;
-  transform: rotate(-45deg);
-  z-index: 10;
+  &::before {
+    position: absolute;
+    content: "хит";
+    height: 10px;
+    width: 28px;
+    left: 10px;
+    top: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    color: @white;
+    background-color: @pink;
+    transform: rotate(-45deg);
+    z-index: 10;
 
 
-  @media (min-width: @tablet-width) {
-    .font-semibold();
-    left: 7px;
-    top: 7px;
+    @media (min-width: @tablet-width) {
+      .font-semibold();
+      left: 7px;
+      top: 7px;
+    }
+
+
+    .font-bold();
   }
-
-
-  .font-bold();
 }
 
 .rates__items-fields-tr {

@@ -48,23 +48,28 @@
 }
 
 .fields__label {
-  margin-left: 5px;
   color: @pink;
   .font-main();
+  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     margin-right: 22px;
   }
+
 }
 
 
 .fields__header {
 
   color: @pink;
-  font-size: 18px;
-  line-height: 18px;
+
 
   .font-main();
+
+  font-size: 14px;
+  line-height: 20px;
+  width: 220px;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -89,8 +94,8 @@
   line-height: 30px;
   border: 2px solid @gray;
   border-radius: 2px;
-  padding: 14px 22px 15px;
-  margin-bottom: 16px;
+  padding: 24px 22px 15px;
+  margin-bottom: 2px;
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
@@ -118,12 +123,11 @@
   }
 }
 
-
-
 .fields__item-check {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 276px;
-  margin-top: 45px;
+  margin-top: 25px;
+  margin-bottom: 27px;
 }
