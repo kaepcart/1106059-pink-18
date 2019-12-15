@@ -1,5 +1,5 @@
 .fields {
-  padding-bottom: 41px;
+  padding-bottom: 25px;
   padding-top: 41px;
   width: 100%;
 
@@ -111,15 +111,12 @@
     }
   }
 
-  &::placeholder {
-    color: @black;
-    .font-main();
-    text-align: left;
-  }
 
   &--textarea::placeholder {
     color: @black;
     .font-main();
+    text-align: left;
+    line-height: 25px;
   }
 }
 
@@ -130,4 +127,9 @@
   width: 276px;
   margin-top: 25px;
   margin-bottom: 27px;
+
+  &--radio
+  {
+    margin-bottom:20px;
+  }
 }
