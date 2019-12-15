@@ -12,6 +12,12 @@ input[type="radio"]:not(:checked) + label {
   display: inline-block;
   position: relative;
   padding-left: 65px;
+
+  @media (min-width: @tablet-width) 
+  {
+    padding-left: 55px;
+  }
+
   line-height: 30px;
   cursor: pointer;
 }
