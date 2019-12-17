@@ -10,6 +10,7 @@
     &--email
     {
       margin-top:30px;
+      padding-bottom:0;
     }
   }
 
@@ -51,5 +52,16 @@
   .contact-info--email::after {
     background: url("../../img/icon-mail.svg") no-repeat;
 
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-info {
+
+
+    &--email
+    {
+      margin-top:40px;
+    }
   }
 }

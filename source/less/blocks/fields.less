@@ -24,8 +24,18 @@
       background-color: @white;
       border: 2px solid @gray;
       position: relative;
-      margin-bottom: 75px;
+      margin-bottom: 65px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:not(.fields--not-border) {
+      margin-right: 5px;
+      padding-left: 20px;
+      padding-right: 0;
+      
+    }
+
   }
 }
 
@@ -40,10 +50,20 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
-
+    width: 495px;
     margin-bottom: 56px;
     flex-direction: row;
     align-items: center;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    width: 440px;
+    margin-bottom: 56px;
+    flex-direction: row;
+    align-items: center;
+
   }
 }
 
@@ -130,6 +150,11 @@
   margin-top: 25px;
   margin-bottom: 27px;
 
+  @media (min-width: @desktop-width) {
+
+    width: 260px;
+  }
+
   &--radio {
     margin-bottom: 20px;
 
@@ -138,5 +163,6 @@
       margin-bottom: 30px;
       margin-top: 15px;
     }
+
   }
 }
