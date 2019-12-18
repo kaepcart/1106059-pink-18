@@ -1,5 +1,5 @@
 .fields {
-  padding-bottom: 41px;
+  padding-bottom: 25px;
   padding-top: 41px;
   width: 100%;
 
@@ -20,12 +20,22 @@
 
     &:not(.fields--not-border) {
       padding-right: 60px;
-      padding-left: 60px;
+      padding-left: 55px;
       background-color: @white;
       border: 2px solid @gray;
       position: relative;
-      margin-bottom: 80px;
+      margin-bottom: 65px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:not(.fields--not-border) {
+      margin-right: 5px;
+      padding-left: 20px;
+      padding-right: 0;
+
+    }
+
   }
 }
 
@@ -39,37 +49,52 @@
   margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
-    width: auto;
-
+    width: 495px;
     margin-bottom: 56px;
     flex-direction: row;
     align-items: center;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 440px;
+    margin-bottom: 56px;
+    flex-direction: row;
+    align-items: center;
+
   }
 }
 
 .fields__label {
-  margin-left: 5px;
   color: @pink;
   .font-main();
+  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 22px;
+    margin-right: 10px;
+    margin-left: 0;
+    padding-left: 0;
   }
+
 }
 
 
 .fields__header {
 
   color: @pink;
-  font-size: 18px;
-  line-height: 18px;
+
 
   .font-main();
 
+  font-size: 14px;
+  line-height: 20px;
+  width: 220px;
+  text-transform: uppercase;
+
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: -40px;
     align-self: center;
+    top: -25px;
     background-color: @white;
     min-width: 360px;
     max-width: 500px;
@@ -89,8 +114,8 @@
   line-height: 30px;
   border: 2px solid @gray;
   border-radius: 2px;
-  padding: 14px 22px 15px;
-  margin-bottom: 16px;
+  padding: 24px 22px 15px;
+  margin-bottom: 2px;
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
@@ -102,28 +127,52 @@
     min-height: 197px;
 
     @media (min-width: @tablet-width) {
-      min-height: 190;
+      min-height: 190px;
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 130px;
     }
   }
 
-  &::placeholder {
-    color: @black;
-    .font-main();
-    text-align: left;
-  }
 
   &--textarea::placeholder {
     color: @black;
     .font-main();
+    text-align: left;
+    line-height: 25px;
   }
 }
-
-
 
 .fields__item-check {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 276px;
-  margin-top: 45px;
+  margin-top: 25px;
+  margin-bottom: 27px;
+
+  @media (min-width: @desktop-width) {
+
+    width: 260px;
+    margin-left: 30px;
+
+  }
+
+  &--radio {
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+
+      margin-bottom: 30px;
+      margin-top: 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+
+      margin-left: 50px;
+    }
+  }
 }
