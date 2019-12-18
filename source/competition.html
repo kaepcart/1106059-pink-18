@@ -29,10 +29,10 @@
         </button>
 
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html" class="site-list__link site-list__link--active">Главная</a>
+          <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item"><a href="gallery.html" class="site-list__link">Фотографии</a></li>
-          <li class="site-list__item"><a class="site-list__link">Конкурс</a></li>
+          <li class="site-list__item"><a class="site-list__link  site-list__link--active">Конкурс</a></li>
           <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
         </ul>
 
@@ -187,7 +187,7 @@
 
         <div class="competition__emotion fields">
 
-          <p class="competition__field fields__item">
+          <p class="competition__emotion-field competition__field fields__item">
 
             <label class="competition__emotion-header fields__header fields__label fields__label--input"
               for="emotions">Опишите свои эмоции:</label>
@@ -204,6 +204,7 @@
 
           <div class="competition__requared-fields">
             <span class="competition__star">*</span> <span class="competition__star-text"> - Обязательные поля</span>
+            <span class="competition__end">для заполнения</span>
           </div>
         </div>
 
@@ -221,7 +222,7 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer competition-footer">
 
     <div class="page-footer__wrapper page-footer__social social">
 
@@ -229,7 +230,7 @@
         <img class="page-footer__pink-icon" alt="Иконка с очками" src="./img/logo-pink-blue-mobile.svg">
       </div>
 
-      <ul class="social__list">
+      <ul class="social__list competition-footer__social">
         <li class="social__item">
           <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy" title="Twiter"></a>
         </li>
@@ -242,8 +243,8 @@
         </li>
       </ul>
 
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+      <div class="page-footer__copyright competition-footer__copyright copyright">
+        <b class="copyright__text competition-footer__text">Разработано:</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Html Academy"></a>
       </div>
 

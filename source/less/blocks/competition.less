@@ -6,16 +6,18 @@
 }
 
 .competition__dialog {
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
   text-align: center;
   background-color: @white;
-  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-  bottom:20%;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  bottom: 20%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .dialog__header {
@@ -34,7 +36,6 @@
 
 .dialog__button {
   margin-bottom: 52px;
-
 }
 
 .competition__header {
@@ -73,7 +74,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+
 }
+
 
 .competition__full-name {
   padding-top: 15px;
@@ -108,7 +112,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 300px;
+    width: 410px;
     align-self: flex-end;
   }
 }
@@ -124,10 +128,27 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
-   
+    justify-content: space-between;
+    height: 170px;
+    margin-left: 5px;
+    padding-top: 25px;
+    padding-left: 30px;
+
+  }
+}
+
+.competition__progress-header {
+
+  padding-right: 50px;
+
+}
+
+.competition__progress.fields {
+  @media (min-width: @desktop-width) {
+    padding-left: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -137,12 +158,18 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
+    padding-bottom: 5px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
+    display: flex;
+    justify-content: stretch;
+    margin-left: 5px;
+    padding-bottom: 0;
   }
 }
+
 
 .competition__contacts {
   padding-top: 0;
@@ -161,32 +188,38 @@
   @media (min-width: @desktop-width) {
     width: 100%;
     flex-direction: row;
-    padding-left:0;
+    padding-left: 0;
     justify-content: space-around;
   }
 }
 
-.competition__contacts.fields
-{
+.competition__contacts.fields {
   @media (min-width: @desktop-width) {
     width: 840px;
     flex-direction: row;
-    padding-left:40px;
-    padding-right:40px;
-    margin-left:5px;
-    margin-right:5px;
-    padding-bottom:10px;
-    
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+
   }
 }
 
-.contact-info.fields__item
-{
+.contact-info.fields__item {
   @media (min-width: @desktop-width) {
     width: 370px;
     margin-right: 15px;
 
-    
+
+  }
+}
+
+.competition__end {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }
 
@@ -202,6 +235,7 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
+    margin-left: 5px;
   }
 }
 
@@ -225,22 +259,31 @@
   }
 }
 
+.competition__emotion-field {
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    padding-left: 40px;
+    padding-right: 55px;
+    padding-bottom: 0;
+    margin-bottom: 45px;
+  }
+}
+
 .competition__emotion-header {
   margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     top: -10px;
-
   }
 }
 
-.competition__emotion {
-  @media (min-width: @tablet-width) {
-    padding-bottom: 0;
-
-  }
-
-}
 
 .competition__submit {
   padding: 14px 44px;
@@ -255,7 +298,6 @@
   margin-left: auto;
   margin-right: auto;
   height: 62px;
-  ;
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
