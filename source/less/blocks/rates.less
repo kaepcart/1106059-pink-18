@@ -29,7 +29,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 840px;
+    margin-top: 40px;
+    width: 950px;
+    margin-bottom: 30px;
   }
 
   box-sizing: border-box;
@@ -142,12 +144,20 @@
       align-items: center;
       font-size: 14px;
       width: 135px;
+
     }
   }
 
   @media (min-width: @desktop-width) {
     width: 233px;
-    height: 60px;
+    height: 57px;
+
+    &--name {
+
+      width: 210px;
+      font-size: 18px;
+      padding-left: 25px;
+    }
   }
 }
 
@@ -183,6 +193,10 @@
   height: 100%;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+  }
 
   &::before {
     position: absolute;
@@ -255,6 +269,12 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+
+  }
+
 }
 
 .rates__toggles {
@@ -263,4 +283,6 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+
+
 }

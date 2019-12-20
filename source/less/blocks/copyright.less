@@ -10,17 +10,34 @@
     margin-right: 0;
     width: 140px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 15px;
+    margin-right: 0;
+    width: 140px;
+  }
 }
 
 
 .copyright__text {
   .font-light();
   font-size: 14px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+
 }
 
 .copyright__link {
   width: 27px;
   height: 34px;
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
   margin-left: 10px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
 }
