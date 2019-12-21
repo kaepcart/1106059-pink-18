@@ -48,6 +48,12 @@
     width: 620px;
     align-self: center;
   }
+
+  @media (min-width: @desktop-width) {
+
+    width: 700px;
+
+  }
 }
 
 .feedbacks__author-name {
@@ -57,6 +63,12 @@
     display: block;
     order: 1;
     font-size: 14px;
+
+    
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
   }
 }
 
@@ -69,11 +81,19 @@
     margin-bottom: 10px;
     font-size: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .feedbacks__toggles {
   @media (min-width: @tablet-width) {
     padding-top: 15px;
     padding-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
   }
 }

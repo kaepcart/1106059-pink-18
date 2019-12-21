@@ -34,3 +34,34 @@
     box-shadow: 0 0 0 2px @black;
   }
 }
+
+.slider__wrapper
+{
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    Width:950px;
+  }
+}
+
+.slider_left
+{
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-bottom: 50px;
+  }
+}
+
+
+.slider_right
+{
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-bottom: 50px;
+  }
+}
