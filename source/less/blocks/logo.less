@@ -2,11 +2,10 @@
 
   fill: @white;
 
-  &:hover
-  {
-    fill:@pink;
+  &:hover {
+    fill: @pink;
   }
-  
+
   &:active {
     fill: @white;
     opacity: 0.3;
@@ -18,6 +17,15 @@
 
   &--tablet {
     display: none;
+  }
+
+  &--button {
+    fill: @black;
+  }
+
+  &--button:active {
+    opacity: 0.3;
+    fill: @black;
   }
 
 }

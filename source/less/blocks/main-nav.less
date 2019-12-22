@@ -7,7 +7,6 @@
   top: 18px;
   right: 19px;
   width: 50px;
-  background: url("../img/icon-menu-cross.svg") no-repeat 100%;
   background-color: transparent;
 
   @media (min-width: @tablet-width) {
@@ -22,5 +21,12 @@
 }
 
 .main-nav__toogle--burger {
-  background: url("../img/icon-menu-burger.svg") no-repeat 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
+
