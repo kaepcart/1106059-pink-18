@@ -5,16 +5,15 @@ input[type="radio"]:not(:checked) {
   position: absolute;
 }
 
-input[type="checkbox"]:checked + label,
-input[type="checkbox"]:not(:checked) + label,
-input[type="radio"]:checked + label,
-input[type="radio"]:not(:checked) + label {
+input[type="checkbox"]:checked+label,
+input[type="checkbox"]:not(:checked)+label,
+input[type="radio"]:checked+label,
+input[type="radio"]:not(:checked)+label {
   display: inline-block;
   position: relative;
   padding-left: 65px;
 
-  @media (min-width: @tablet-width) 
-  {
+  @media (min-width: @tablet-width) {
     padding-left: 55px;
   }
 
@@ -22,10 +21,10 @@ input[type="radio"]:not(:checked) + label {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label::before,
-input[type="checkbox"]:not(:checked) + label::before,
-input[type="radio"]:checked + label::before,
-input[type="radio"]:not(:checked) + label::before {
+input[type="checkbox"]:checked+label::before,
+input[type="checkbox"]:not(:checked)+label::before,
+input[type="radio"]:checked+label::before,
+input[type="radio"]:not(:checked)+label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -36,26 +35,26 @@ input[type="radio"]:not(:checked) + label::before {
   background-color: @white;
 }
 
-input[type="checkbox"]:checked + label::before,
-input[type="checkbox"]:not(:checked) + label::before {
+input[type="checkbox"]:checked+label::before,
+input[type="checkbox"]:not(:checked)+label::before {
   border-radius: 2px;
 }
 
-input[type="radio"]:checked + label::before,
-input[type="radio"]:not(:checked) + label::before {
+input[type="radio"]:checked+label::before,
+input[type="radio"]:not(:checked)+label::before {
   border-radius: 100%;
 }
 
-input[type="checkbox"]:checked + label::after,
-input[type="checkbox"]:not(:checked) + label::after,
-input[type="radio"]:checked + label::after,
-input[type="radio"]:not(:checked) + label::after {
+input[type="checkbox"]:checked+label::after,
+input[type="checkbox"]:not(:checked)+label::after,
+input[type="radio"]:checked+label::after,
+input[type="radio"]:not(:checked)+label::after {
   content: "";
   position: absolute;
 }
 
-input[type="checkbox"]:checked + label::after,
-input[type="checkbox"]:not(:checked) + label::after {
+input[type="checkbox"]:checked+label::after,
+input[type="checkbox"]:not(:checked)+label::after {
   left: 10px;
   top: 10px;
   width: 36px;
@@ -63,8 +62,8 @@ input[type="checkbox"]:not(:checked) + label::after {
   background: url("../img/icon-yes.svg") no-repeat;
 }
 
-input[type="radio"]:checked + label::after,
-input[type="radio"]:not(:checked) + label::after {
+input[type="radio"]:checked+label::after,
+input[type="radio"]:not(:checked)+label::after {
   left: 11px;
   top: 11px;
   width: 15px;
@@ -73,12 +72,12 @@ input[type="radio"]:not(:checked) + label::after {
   background-color: @pink;
 }
 
-input[type="checkbox"]:not(:checked) + label::after,
-input[type="radio"]:not(:checked) + label::after {
+input[type="checkbox"]:not(:checked)+label::after,
+input[type="radio"]:not(:checked)+label::after {
   opacity: 0;
 }
 
-input[type="checkbox"]:checked + label::after,
-input[type="radio"]:checked + label::after {
+input[type="checkbox"]:checked+label::after,
+input[type="radio"]:checked+label::after {
   opacity: 1;
 }
