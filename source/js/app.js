@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let close= document.querySelector(".main-nav__icon--close");
   let burger= document.querySelector(".main-nav__icon--burger");
 
+
+
   header.classList.add("page-header__menu-wrapper--js");
   headerWrapper.classList.add("page-header__wrapper--js");
 
