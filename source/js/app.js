@@ -1,6 +1,7 @@
-
 const desktopWidth = "960";
 var isOpenMenu = false;
+const visuallyHidden = "visually-hidden";
+
 document.addEventListener("DOMContentLoaded", function () {
 
   let buttonClose = document.querySelector(".main-nav__toogle");
@@ -8,9 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
   let header = document.querySelector(".page-header__menu-wrapper");
   let headerWrapper = document.querySelector(".page-header__wrapper");
 
-  let close= document.querySelector(".main-nav__icon--close");
-  let burger= document.querySelector(".main-nav__icon--burger");
+  let close = document.querySelector(".main-nav__icon--close");
+  let burger = document.querySelector(".main-nav__icon--burger");
 
+  let doalogClose = document.querySelectorAll(".dialog__button");
+  let submitForm = document.querySelector("#submit-form");
+  let formInputs = document.querySelectorAll(".competition__form input");
+  let form = document.querySelector(".competition__form");
+
+  let dialogSuccess = document.querySelector(".dialog--success");
+  let dialogFail = document.querySelector(".dialog--fail");
 
 
   header.classList.add("page-header__menu-wrapper--js");
@@ -42,12 +50,64 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
+  function validateForm(e) {
+
+    let isValid = true;
+
+    formInputs.forEach(i => {
+
+      if (!i.validity.valid) {
+        isValid = false;
+      }
+
+    });
+
+
+    if (isValid) {
+      dialogSuccess.classList.remove(visuallyHidden);
+      return true;
+    } else {
+      dialogFail.classList.remove(visuallyHidden);
+      return false;
+    }
+
+  }
+
+  submitForm.addEventListener("click", function (e) {
+
+    validateForm(e);
+
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+  });
 
   buttonClose.addEventListener("click", function (e) {
     isOpenMenu = !isOpenMenu;
     menegeMenu();
 
   });
+
+  doalogClose.forEach(dialog=>
+    {
+      dialog.addEventListener("click", function (e) {
+        let doalogs = document.querySelectorAll(".dialog");
+
+        doalogs.forEach(d => {
+
+          if (!d.classList.contains(visuallyHidden)) {
+            d.classList.add(visuallyHidden);
+          }
+
+        });
+      });
+
+    });
+
+
+
+
 
   window.onresize = function () {
     menegeMenu();
