@@ -73,24 +73,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
-  submitForm.addEventListener("click", function (e) {
-
-    validateForm(e);
-
-  });
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-  });
-
   buttonClose.addEventListener("click", function (e) {
     isOpenMenu = !isOpenMenu;
     menegeMenu();
 
   });
 
-  doalogClose.forEach(dialog=>
-    {
+  if (submitForm) {
+
+    submitForm.addEventListener("click", function (e) {
+
+      validateForm(e);
+
+    });
+  }
+
+  if (form) {
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+    });
+  }
+
+  if (doalogClose) {
+    doalogClose.forEach(dialog => {
       dialog.addEventListener("click", function (e) {
         let doalogs = document.querySelectorAll(".dialog");
 
@@ -104,10 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
     });
-
-
-
-
+  }
 
   window.onresize = function () {
     menegeMenu();
