@@ -1,38 +1,40 @@
 .fields {
-  padding-bottom: 25px;
-  padding-top: 41px;
-  width: 100%;
-
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  padding-top: 41px;
+  padding-bottom: 25px;
+
   align-items: center;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    flex-direction: column;
-
-    align-self: stretch;
-    justify-content: center;
-    align-items: stretch;
     width: auto;
-    margin-left: 25px;
     margin-right: 25px;
+    margin-left: 25px;
+
+    align-items: stretch;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: center;
 
     &:not(.fields--not-border) {
+      position: relative;
+
+      margin-bottom: 65px;
       padding-right: 60px;
       padding-left: 55px;
+
       background-color: @white;
       border: 2px solid @gray;
-      position: relative;
-      margin-bottom: 65px;
     }
   }
 
   @media (min-width: @desktop-width) {
     &:not(.fields--not-border) {
       margin-right: 5px;
-      padding-left: 20px;
       padding-right: 0;
+      padding-left: 20px;
 
     }
 
@@ -42,33 +44,38 @@
 
 .fields__item {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: 276px;
-  padding: 0;
   margin-bottom: 16px;
+  padding: 0;
+
+  align-items: flex-start;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     width: 495px;
     margin-bottom: 56px;
-    flex-direction: row;
+
     align-items: center;
+    flex-direction: row;
 
   }
 
   @media (min-width: @desktop-width) {
     width: 440px;
     margin-bottom: 56px;
-    flex-direction: row;
+
     align-items: center;
+    flex-direction: row;
 
   }
 }
 
 .fields__label {
-  color: @pink;
-  .font-main();
   margin-left: 20px;
+
+  color: @pink;
+
+  .font-main();
 
   @media (min-width: @tablet-width) {
     margin-right: 10px;
@@ -80,55 +87,63 @@
 
 
 .fields__header {
-
-  color: @pink;
-
-
-  .font-main();
+  width: 220px;
 
   font-size: 14px;
   line-height: 20px;
-  width: 220px;
+  color: @pink;
+
   text-transform: uppercase;
+
+  .font-main();
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    align-self: center;
     top: -25px;
+
+    display: block;
+    width: fit-content;
+    padding-right: 20px;
+    padding-left: 20px;
+
     background-color: @white;
+
+    align-self: center;
     min-width: 360px;
     max-width: 500px;
-    width: fit-content;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: block;
   }
 }
 
 .fields__value {
   width: 100%;
   height: 59px;
-  align-self: center;
-  box-sizing: border-box;
+  margin-bottom: 2px;
+  padding: 24px 22px 15px;
+
   font-size: 18px;
   line-height: 30px;
+
   border: 2px solid @gray;
   border-radius: 2px;
-  padding: 24px 22px 15px;
-  margin-bottom: 2px;
+
+  align-self: center;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    flex-grow: 1;
     margin-bottom: 0;
+
+    flex-grow: 1;
   }
 
   &:hover {
     border-color: @black;
+
     outline: none;
   }
 
   &:focus {
     border-color: @pink;
+
     outline: none;
   }
 
@@ -136,9 +151,10 @@
     min-height: 197px;
 
     @media (min-width: @tablet-width) {
-      min-height: 190px;
-      padding-left: 15px;
       padding-top: 15px;
+      padding-left: 15px;
+
+      min-height: 190px;
     }
 
     @media (min-width: @desktop-width) {
@@ -148,23 +164,24 @@
 
 
   &--textarea::placeholder {
-    color: @black;
-    .font-main();
-    text-align: left;
     line-height: 25px;
+    text-align: left;
+    color: @black;
+
+    .font-main();
   }
 }
 
 .fields__item-check {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   width: 276px;
   margin-top: 25px;
   margin-bottom: 27px;
 
-  @media (min-width: @desktop-width) {
+  align-items: center;
+  flex-direction: row;
 
+  @media (min-width: @desktop-width) {
     width: 260px;
     margin-left: 30px;
 
@@ -174,13 +191,11 @@
     margin-bottom: 20px;
 
     @media (min-width: @tablet-width) {
-
-      margin-bottom: 30px;
       margin-top: 15px;
+      margin-bottom: 30px;
     }
 
     @media (min-width: @desktop-width) {
-
       margin-left: 50px;
     }
   }
