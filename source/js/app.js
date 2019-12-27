@@ -1,5 +1,6 @@
+return;
 const desktopWidth = "960";
-var isOpenMenu = false;
+let isOpenMenu = false;
 const visuallyHidden = "visually-hidden";
 
 document.addEventListener("DOMContentLoaded", function () {
