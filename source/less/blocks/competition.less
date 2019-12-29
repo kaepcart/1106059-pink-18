@@ -5,39 +5,6 @@
   position: relative;
 }
 
-.competition__dialog {
-  position: fixed;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
-  text-align: center;
-  background-color: @white;
-  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-  bottom: 20%;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.dialog__header {
-
-  .font-bold();
-
-  margin-top: 46px;
-  font-size: 18px;
-}
-
-.dialog__content {
-
-  .font-main();
-  font-size: 14px;
-}
-
-.dialog__button {
-  margin-bottom: 52px;
-}
-
 .competition__header {
   .font-main();
   font-size: 14px;
@@ -296,6 +263,16 @@
   margin-left: auto;
   margin-right: auto;
   height: 62px;
+
+  &:hover {
+    background-color: @dark-green;
+  }
+
+  &:active {
+    background-color: @dark-green;
+    color: @green;
+  }
+
 
   @media (min-width: @tablet-width) {
     margin-left: 0;

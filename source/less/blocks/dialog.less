@@ -1,0 +1,100 @@
+.dialog {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-color: @white;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  bottom: 20%;
+  z-index: 9999;
+
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+
+  }
+}
+
+.dialog__wrapper {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 367px;
+  }
+}
+
+.dialog__header {
+
+  .font-bold();
+
+  margin-top: 46px;
+  font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    align-self: center;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {}
+}
+
+.dialog__content {
+
+  .font-main();
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 62px;
+  }
+}
+
+.dialog__button {
+  margin-bottom: 52px;
+
+  @media (min-width: @tablet-width) {
+    width: 296;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.dialog__button-wrapper {
+  &--success {
+    background-color: @gray;
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    &--fail {
+      background-color: @gray;
+      padding-top: 50px;
+      padding-bottom: 0;
+    }
+  }
+}

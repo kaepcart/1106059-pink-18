@@ -4,9 +4,10 @@
 
 .feedbacks__quotes {
   @media (min-width: @desktop-width) {
-    background: url("../img/icon-quotes.svg");
     width: 79px;
     height: 63px;
+
+    background: url("../img/icon-quotes.svg");
     opacity: 0.1;
   }
 }
@@ -15,27 +16,31 @@
   margin-top: 30px;
 
   @media (min-width: @desktop-width) {
-    margin-top: 60px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 60px;
 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 .feedbacks__item {
-  text-align: center;
-  width: 276px;
-  .font-main();
-  font-size: 14px;
   display: flex;
+  width: 276px;
+
+  font-size: 14px;
+  text-align: center;
+
   flex-direction: column;
 
+  .font-main();
+
   @media (min-width: @tablet-width) {
+    width: 100%;
+
     font-size: 18px;
     line-height: 30px;
-    width: 100%;
   }
 }
 
@@ -43,14 +48,14 @@
   margin-top: 5px;
 
   @media (min-width: @tablet-width) {
+    width: 620px;
     margin-top: 28px;
     padding: 0;
-    width: 620px;
+
     align-self: center;
   }
 
   @media (min-width: @desktop-width) {
-
     width: 700px;
 
   }
@@ -61,10 +66,12 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    order: 1;
+
     font-size: 14px;
 
-    
+    order: 1;
+
+
   }
 
   @media (min-width: @desktop-width) {
@@ -74,12 +81,17 @@
 
 
 .feedbacks__author {
+
   .font-bold();
 
+  font-size: 18px;;
+
   @media (min-width: @tablet-width) {
-    order: 1;
     margin-bottom: 10px;
+
     font-size: 20px;
+
+    order: 1;
   }
 
   @media (min-width: @desktop-width) {

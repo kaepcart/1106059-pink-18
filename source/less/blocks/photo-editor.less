@@ -85,10 +85,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-left: 20px;
+    padding-top: 110px;
+
     flex-direction: row;
     justify-content: center;
-    padding-top: 110px;
-    margin-left: 20px;
   }
 }
 
@@ -103,6 +104,33 @@
   .font-bold();
   font-size: 18px;
 
+  &--submit:hover {
+    background-color: @pink;
+    color: @white;
+  }
+
+  &--submit:active {
+    background-color: @pink;
+    color: @white-30;
+  }
+
+  &--cancel {
+    border-color: @gray;
+    color: @gray;
+  }
+
+  &--cancel:hover {
+    border-color: @black;
+    opacity: 0.3;
+    color: @black;
+  }
+
+  &--cancel:active {
+    background-color: @black;
+    opacity: 0.3;
+    color: @white-30;
+  }
+
   @media (min-width: @tablet-width) {
     height: 55px;
     width: 260px;
@@ -113,11 +141,9 @@
     width: 185px;
     height: 55px;
     margin: 20px;
-    margin-bottom:0;
-    &--cancel {
-      border-color: @gray;
-      color: @gray;
-    }
+    margin-bottom: 0;
+
+
   }
 }
 
