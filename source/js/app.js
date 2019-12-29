@@ -1,4 +1,3 @@
-return;
 const desktopWidth = "960";
 let isOpenMenu = false;
 const visuallyHidden = "visually-hidden";
