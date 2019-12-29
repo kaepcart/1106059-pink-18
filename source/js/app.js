@@ -1,8 +1,11 @@
+document.createElement( "picture" );
+
 const desktopWidth = "960";
 let isOpenMenu = false;
 const visuallyHidden = "visually-hidden";
 
 document.addEventListener("DOMContentLoaded", function () {
+
 
   let buttonClose = document.querySelector(".main-nav__toogle");
   let nav = document.querySelector(".main-nav__list");
@@ -42,15 +45,19 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.add("page-header__menu-wrapper--close");
       burger.classList.remove("visually-hidden");
       close.classList.add("visually-hidden");
+
     }
 
     if (window.innerWidth > desktopWidth && !isOpenMenu) {
+
       nav.classList.remove("visually-hidden");
+
     }
 
   }
 
   function validateForm(e) {
+
 
     let isValid = true;
 
@@ -64,16 +71,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     if (isValid) {
+
       dialogSuccess.classList.remove(visuallyHidden);
       return true;
+
     } else {
+
       dialogFail.classList.remove(visuallyHidden);
       return false;
+
     }
 
   }
 
   buttonClose.addEventListener("click", function (e) {
+
+
     isOpenMenu = !isOpenMenu;
     menegeMenu();
 
@@ -82,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (submitForm) {
 
     submitForm.addEventListener("click", function (e) {
+
 
       validateForm(e);
 
@@ -93,27 +107,36 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
     });
+
   }
 
   if (doalogClose) {
+
     doalogClose.forEach(dialog => {
       dialog.addEventListener("click", function (e) {
+
+
         let doalogs = document.querySelectorAll(".dialog");
 
         doalogs.forEach(d => {
 
+
           if (!d.classList.contains(visuallyHidden)) {
+            
             d.classList.add(visuallyHidden);
+         
           }
 
         });
       });
 
     });
+
   }
 
   window.onresize = function () {
     menegeMenu();
+
   };
 
   menegeMenu();
