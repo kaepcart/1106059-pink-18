@@ -1,45 +1,103 @@
 .rates {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   margin: 0;
-  padding: 0;
   margin-top: 0;
-  padding-top: 81px;
+  padding-top: 85px;
+
+  text-align: center;
+
   background: @light-gray;
   background-image: url("../img/bg-triangle-white.svg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: 50% 0;
-  width: 100%;
+  background-size: 100% auto;
+
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 85px;
+    padding-bottom: 65px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 98px;
+    padding-bottom: 60px;
+
+    background-position: 50% 0%;
+  }
 }
 
 
 .rates__items-list {
-  width: 840px;
   box-sizing: border-box;
+  min-width: 840px;
   border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    min-width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 950px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
 }
 
 .rates__items-head {
   font-size: 18px;
   line-height: 30px;
-  text-transform: uppercase;
   color: @white;
-  background-color: @black;
-  width: 276px;
+
+  text-transform: uppercase;
+  // background-color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .rates__name {
-  .font-bold();
   font-size: 18px;
+
+  .font-bold();
+
+
+  @media (min-width: @tablet-width),
+  (max-width: @desktop-width) {
+    margin-bottom: 0;
+
+    font-size: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+
+    font-size: 18px;
+  }
 }
 
 .rates__cost {
-  .font-light();
-  font-size: 24px;
   margin-top: 5px;
+  margin-bottom: 0;
+
+  font-size: 24px;
+
+  .font-light();
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+
+    font-size: 24px;
+  }
 }
 
 .rates__items-body {
@@ -50,44 +108,150 @@
   border-left-color: @white;
 }
 
+.rates__value {
+  display: flex;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    height: 42px;
+
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: center;
+  }
+}
+
+.rates__access-name {
+  margin-left: 20px;
+
+  font-size: 14px;
+  text-align: left;
+
+  flex-grow: 1;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .rates__function {
-  height: 60px;
+  width: 276px;
+  height: 40px;
+
   border-left: 3px solid @light-gray;
-}
 
-.rates__tag {
-  position: absolute;
-  left: 0;
-}
+  &--name {
+    display: none;
+  }
 
-.rates__header {
-  border: 3px solid @light-gray;
 
-  &--tag {
-    position: relative;
-    background: url("../img/bg-hit.svg") no-repeat;
+  @media (min-width: @tablet-width) {
+    width: 150px;
+    height: 35px;
+
+    &--name {
+      display: flex;
+      width: 135px;
+      padding-left: 15px;
+
+      font-size: 14px;
+
+      align-items: center;
+      justify-content: left;
+
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 233px;
+    height: 57px;
+
+    &--name {
+      width: 210px;
+      padding-left: 25px;
+
+      font-size: 18px;
+    }
   }
 }
 
 
-.rates__tag::before {
-  position: absolute;
-  content: "хит";
-  height: 10px;
-  width: 28px;
-  top: 20px;
-  left: 9px;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  vertical-align: center;
-  text-transform: uppercase;
-  color: @white;
-  background-color: @pink;
-  transform: rotate(-45deg);
-  z-index: 10;
+.rates__header {
+  height: 94px;
 
-  .font-bold();
+  background-color: @black;
+  border: 3px solid @light-gray;
+
+  &--name {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 77px;
+
+    &--name {
+      display: block;
+
+      background-color: @light-gray;
+      border: 1px solid @light-gray;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 94px;
+  }
+}
+
+.rates__tag-wapper {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-top: 10px;
+
+  background: url("../img/bg-hit-tablet.svg") no-repeat;
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 3px;
+    z-index: 10;
+
+    width: 28px;
+    height: 10px;
+
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: @white;
+
+    background-color: @pink;
+
+    transform: rotate(-45deg);
+
+    content: "хит";
+    vertical-align: center;
+    text-transform: uppercase;
+
+    .font-bold();
+
+
+    @media (min-width: @tablet-width) {
+      top: 7px;
+      left: 7px;
+
+      .font-semibold();
+    }
+  }
 }
 
 .rates__items-fields-tr {
@@ -95,14 +259,30 @@
 }
 
 .rates__access-value {
-  display: block;
-  width: 31px;
+  width: 45px;
   height: 30px;
+  margin-top: 15px;
+  margin-bottom: 0;
   padding: 0;
-  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    height: 26px;
+    margin-top: 0;
+    margin-left: 20px;
+  }
 
   &--yes {
     background: url("../img/icon-green-yes.svg") no-repeat;
+
+    @media (min-width: @tablet-width) {
+      width: 35px;
+      height: 35px;
+      margin-top: 5px;
+      margin-left: 5px;
+
+      background: url("../img/icon-green-yes.svg") no-repeat;
+      background-size: 100%;
+    }
   }
 
   &--no {
@@ -110,11 +290,28 @@
   }
 }
 
+
 .rates__wrapper {
+  display: flex;
+  width: 100%;
 
   overflow-x: scroll;
-  width: 100%;
   align-items: center;
-  display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+
+  }
+
+}
+
+.rates__toggles {
+  margin-top: 33px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+
 }

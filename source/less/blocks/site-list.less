@@ -1,44 +1,95 @@
 .site-list {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+
   background-color: @black;
+
+  align-items: stretch;
+  flex-direction: column;
   min-height: 62px;
-  margin: 0;
-  padding: 0;
+
+  .ul-clear-style();
 }
 
+@media (min-width: @desktop-width) {
+  .site-list {
+    height: 110px;
+    margin-right: 10px;
+    margin-left: 170px;
+
+    background-color: transparent;
+
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .site-list__link {
-  color: @white;
-  flex-direction: column;
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 700px;
-  text-transform: uppercase;
+  display: block;
   margin-top: auto;
   margin-bottom: auto;
-  height: 100%;
-  display: block;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  font-size: 18px;
+  font-weight: 700px;
+  line-height: 25px;
+  color: @white;
+
+  flex-direction: column;
   text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    margin-bottom: 25px;
+
+    text-transform: none;
+  }
+
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    color: @black-link;
+  }
+
+  @media (min-width: @desktop-width) {
+    &--active {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        height: 3px;
+
+        background: @white;
+
+        content: "";
+      }
+    }
+  }
 }
 
+
 .site-list__item {
+  height: 62px;
+
+  text-align: center;
+
+  border-top: 1px solid @black-border-top;
+  border-bottom: 1px solid @black-border-bottom;
+
   align-items: center;
   justify-content: center;
-  height: 63px;
-  text-align: center;
-  border-bottom: 1px solid @black-border-bottom;
-  border-top: 1px solid @black-border-top;
   text-decoration: none;
 
-  &--header {
-    display: flex;
-    justify-content: space-between;
-    align-self: stretch;
-    margin-left: 20px;
-    margin-right: 20px;
+  @media (min-width: @desktop-width) {
+    border-top: none;
+    border-bottom: none;
   }
 }

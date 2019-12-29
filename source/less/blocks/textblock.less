@@ -1,6 +1,48 @@
 .textblock {
-  text-align: center;
   width: 240px;
+
   font-size: 14px;
+  text-align: center;
+
   .font-light();
+
+  @media (min-width: @tablet-width) {
+    width: 440px;
+    margin-bottom: 50px;
+
+    font-size: 18px;
+  }
+}
+
+.textblock__text {
+  @media (min-width: @tablet-width) {
+    &--first {
+      height: 24px;
+      margin-bottom: 0;
+    }
+
+    &--second {
+      height: 24px;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--first {
+      margin-top: 5px;
+    }
+  }
+}
+
+.textblock__text--fill-form {
+  display: none;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
 }
