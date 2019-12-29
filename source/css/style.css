@@ -1944,7 +1944,7 @@ body {
   }
 }
 .rates__cost {
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 0;
   font-size: 24px;
   font-family: "Open Sans Light", "Helvetica", "Garuda", sans-serif;
@@ -2083,8 +2083,9 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding-top: 10px;
-  background: url("../img/bg-hit-tablet.svg") no-repeat;
+  padding-top: 15px;
+  background-image: url("../img/bg-hit-tablet.svg");
+  background-repeat: no-repeat;
 }
 .rates__tag-wapper::before {
   position: absolute;
@@ -2129,7 +2130,7 @@ body {
 .rates__access-value {
   width: 45px;
   height: 30px;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 0;
   padding: 0;
 }
@@ -2141,7 +2142,9 @@ body {
   }
 }
 .rates__access-value--yes {
-  background: url("../img/icon-green-yes.svg") no-repeat;
+  background-image: url("../img/icon-green-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 60%;
 }
 @media (min-width: 640px) {
   .rates__access-value--yes {
@@ -2155,6 +2158,7 @@ body {
 }
 .rates__access-value--no {
   background: url("../img/icon-no.svg") no-repeat;
+  margin-top: 5px;
 }
 .rates__wrapper {
   display: -webkit-box;
@@ -2281,7 +2285,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 204px;
-  margin-top: 25px;
+  margin-top: 27px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2304,7 +2308,7 @@ body {
   }
 }
 .contacts__item-header {
-  margin-bottom: 2px;
+  margin-bottom: 0px;
   font-size: 18px;
   font-family: "Open Sans Bold", "Helvetica", "Garuda", sans-serif;
   font-weight: bold;
@@ -2645,7 +2649,7 @@ body {
   background-color: #283645;
   content: "";
 }
-.bright-range::before {
+.bright-range__slider {
   position: absolute;
   top: -6px;
   left: 150px;
@@ -2656,10 +2660,9 @@ body {
   background-color: white;
   border: 2px solid #d22856;
   border-radius: 50%;
-  content: "";
   cursor: pointer;
 }
-.bright-range:active::before {
+.bright-range__slider:active {
   background-color: #d22856;
 }
 .page-footer {
@@ -3027,6 +3030,18 @@ body {
   }
 }
 .fields__value--textarea::-webkit-input-placeholder {
+  line-height: 25px;
+  text-align: left;
+  color: #283645;
+  font-family: "Open Sans", "Arial", "Helvetica", "Garuda", sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: center;
+}
+.fields__value--textarea::-moz-placeholder {
   line-height: 25px;
   text-align: left;
   color: #283645;

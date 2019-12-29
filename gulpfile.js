@@ -32,16 +32,29 @@ gulp.task("css", function () {
 
 });
 
+gulp.task("css_dev", function () {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(server.stream());
+});
+
 gulp.task("server", function () {
   server.init({
-    server: "source",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/less/**/*.less", gulp.series("css_dev"));
   gulp.watch("source/*.html").on("change", server.reload);
   gulp.watch("source/js/*.js").on("change", server.reload);
 
@@ -94,6 +107,6 @@ gulp.task("sprite", function () {
 
 });
 
-gulp.task("build", gulp.series("clean", "css", "copy","images"));
+gulp.task("build", gulp.series("clean", "css", "copy"));
 
-gulp.task("start", gulp.series("build", "server"));
+gulp.task("start", gulp.series("css_dev", "server"));
