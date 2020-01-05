@@ -1097,7 +1097,17 @@ body {
     font-size: 18px;
   }
 }
+.textblock__text--first {
+  margin-bottom: 0;
+}
+.textblock__text--second {
+  line-height: 30px;
+  margin-top: 4px;
+}
 @media (min-width: 640px) {
+  .textblock__text {
+    line-height: 33px;
+  }
   .textblock__text--first {
     height: 24px;
     margin-bottom: 0;
@@ -1146,7 +1156,7 @@ body {
 @media (min-width: 640px) {
   .gallery__textblock {
     width: 435;
-    margin-top: 75px;
+    margin-top: 70px;
     margin-bottom: 55px;
     line-height: 30px;
     font-family: "Open Sans", "Arial", "Helvetica", "Garuda", sans-serif;
@@ -1336,6 +1346,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    min-height: 15px;
   }
 }
 .photo__details {
@@ -1362,7 +1373,7 @@ body {
     width: 260px;
     height: 117px;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     padding-top: 25px;
     padding-right: 20px;
     padding-bottom: 10px;
@@ -1379,7 +1390,7 @@ body {
     height: 80px;
     margin-right: 30px;
     margin-bottom: 45px;
-    margin-left: 32px;
+    margin-left: 25px;
     padding-top: 25px;
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
@@ -1461,11 +1472,6 @@ body {
   }
 }
 .photo__comment {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-  text-align: left;
   font-family: "Open Sans", "Arial", "Helvetica", "Garuda", sans-serif;
   font-weight: normal;
   font-stretch: normal;
@@ -1473,6 +1479,11 @@ body {
   line-height: 2.14;
   letter-spacing: normal;
   text-align: center;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
 }
 .photo__label {
   position: absolute;
@@ -1503,7 +1514,7 @@ body {
 }
 @media (min-width: 640px) {
   .photo__label {
-    top: 60px;
+    top: 57px;
   }
 }
 @media (min-width: 960px) {
@@ -2469,9 +2480,9 @@ body {
   letter-spacing: normal;
   text-align: center;
   font-size: 14px;
-  width: 253px;
+  width: 255px;
   line-height: 22px;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 }
 @media (min-width: 640px) {
   .photo-editor__header {
