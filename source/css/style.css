@@ -1711,6 +1711,11 @@ body {
           justify-content: center;
   list-style-type: none;
 }
+@media (min-width: 960px) {
+  .slider__list {
+    margin-top: 25px;
+  }
+}
 .slider__toggles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1767,7 +1772,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    Width: 950px;
+    width: 950px;
+    margin-bottom: 15px;
   }
 }
 .slider_left {
@@ -1816,7 +1822,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 60px;
+    margin-top: 65px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1910,6 +1916,8 @@ body {
 @media (min-width: 960px) {
   .feedbacks__author {
     font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 5px;
   }
 }
 @media (min-width: 640px) {
@@ -1921,6 +1929,7 @@ body {
 @media (min-width: 960px) {
   .feedbacks__toggles {
     padding-bottom: 0;
+    display: none;
   }
 }
 .rates {
@@ -1953,7 +1962,7 @@ body {
 }
 @media (min-width: 960px) {
   .rates {
-    padding-top: 98px;
+    padding-top: 114px;
     padding-bottom: 60px;
     background-position: 50% 0%;
   }
@@ -2179,8 +2188,21 @@ body {
 }
 @media (min-width: 640px) {
   .rates__tag-wapper::before {
-    top: 7px;
-    left: 7px;
+    top: 10px;
+    left: 0;
+    font-family: "Open Sans Semibold", "Arial", "Helvetica", "Garuda", sans-serif;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+}
+@media (min-width: 960px) {
+  .rates__tag-wapper::before {
+    top: 18px;
+    left: 3px;
     font-family: "Open Sans Semibold", "Arial", "Helvetica", "Garuda", sans-serif;
     font-weight: 300;
     font-stretch: normal;
@@ -2352,7 +2374,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 204px;
+  width: 215px;
   margin-top: 23px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2366,6 +2388,12 @@ body {
   .contacts__item {
     width: 320px;
     height: 80px;
+    margin-top: 25px;
+  }
+}
+@media (min-width: 960px) {
+  .contacts__item {
+    margin-top: 20px;
   }
 }
 @media (min-width: 960px) {
@@ -2403,7 +2431,7 @@ body {
 }
 @media (min-width: 960px) {
   .contacts__value {
-    margin-top: 20px;
+    margin-top: 23px;
   }
 }
 @media (min-width: 640px) {
@@ -2430,12 +2458,14 @@ body {
 }
 .contacts__map-triangle {
   position: absolute;
-  top: 0px;
+  top: 0;
   width: 100%;
   height: 100px;
   margin-right: auto;
   margin-left: auto;
-  background: url("../img/bg-triangle-white-footer.svg") no-repeat 0% 0%;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
   background-size: 100%;
 }
 @media (min-width: 640px) {
@@ -2447,14 +2477,16 @@ body {
 @media (min-width: 960px) {
   .contacts__map-triangle {
     height: 200px;
+    background-position: 0% 0%;
     max-width: 1200px;
+    margin-top: -1px;
   }
 }
 .contacts__map-waraper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 200px;
+  height: 170px;
   overflow-y: hidden;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2831,7 +2863,7 @@ body {
 }
 @media (min-width: 960px) {
   .social__list {
-    margin-top: 25px;
+    margin-top: 10px;
   }
 }
 .social__link {
@@ -2901,7 +2933,8 @@ body {
 }
 @media (min-width: 960px) {
   .copyright__text {
-    font-size: 18px;
+    font-size: 19px;
+    margin-right: 10px;
   }
 }
 .copyright__link {
@@ -2918,7 +2951,7 @@ body {
 @media (min-width: 960px) {
   .copyright__link {
     margin-bottom: 0;
-    margin-right: 0;
+    margin-right: 15px;
     margin-top: 0;
   }
 }
@@ -3653,7 +3686,7 @@ body {
     display: flex;
     width: 100%;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-top: 45px;
     background-color: #f2f2f2;
     -webkit-box-align: center;
@@ -3672,7 +3705,7 @@ body {
     display: flex;
     width: 238px;
     height: 276px;
-    margin-left: 0;
+    margin-left: 10px;
     padding-top: 0;
     background: url("../img/icon-timer.svg") no-repeat 0 0;
     background-color: white;
@@ -3693,10 +3726,10 @@ body {
 @media (min-width: 640px) {
   .profit__logo::after {
     position: absolute;
-    top: 21%;
-    left: 4%;
-    width: 167px;
-    height: 167px;
+    top: 20%;
+    left: 8%;
+    width: 172px;
+    height: 172px;
     border: 15px solid #d22856;
     border-radius: 50%;
   }
@@ -3705,16 +3738,16 @@ body {
   .profit__logo::after {
     top: 20%;
     left: 8%;
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
     border: 20px solid #d22856;
   }
 }
 @media (min-width: 640px) {
   .profit__logo::before {
     position: absolute;
-    top: 38%;
-    left: 20%;
+    top: 36%;
+    left: 25%;
     font-size: 100px;
     color: #d22856;
     content: "24";
@@ -3730,18 +3763,20 @@ body {
 @media (min-width: 960px) {
   .profit__logo::before {
     font-size: 120px;
+    left: 27%;
   }
 }
 @media (min-width: 640px) {
   .profit__content {
-    width: 295px;
-    margin-left: 60px;
+    width: 320px;
+    margin-left: 75px;
   }
 }
 @media (min-width: 960px) {
   .profit__content {
     width: 550px;
-    margin-right: 180px;
+    margin-right: 150px;
+    margin-top: 0;
   }
 }
 @media (min-width: 640px) {
@@ -3762,7 +3797,8 @@ body {
 }
 @media (min-width: 960px) {
   .profit__header {
-    padding-top: 35px;
+    padding-top: 25px;
+    margin-bottom: 15px;
     font-size: 30px;
     text-align: left;
   }
@@ -3795,11 +3831,6 @@ body {
 }
 @media (min-width: 960px) {
   .profit__text {
-    margin-bottom: 25px;
-    padding-top: 20px;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: left;
     font-family: "Open Sans", "Arial", "Helvetica", "Garuda", sans-serif;
     font-weight: normal;
     font-stretch: normal;
@@ -3807,6 +3838,11 @@ body {
     line-height: 2.14;
     letter-spacing: normal;
     text-align: center;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
   }
 }
 .profit__text--link {

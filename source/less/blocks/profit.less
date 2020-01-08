@@ -16,7 +16,7 @@
     display: flex;
     width: 100%;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-top: 45px;
 
     background-color: @light-gray;
@@ -34,7 +34,7 @@
     display: flex;
     width: 238px;
     height: 276px;
-    margin-left: 0;
+    margin-left: 10px;
     padding-top: 0;
 
     background: url("../img/icon-timer.svg") no-repeat 0 0;
@@ -56,11 +56,11 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 21%;
-    left: 4%;
+    top: 20%;
+    left: 8%;
 
-    width: 167px;
-    height: 167px;
+    width: 172px;
+    height: 172px;
 
     border: 15px solid @pink;
     border-radius: 50%;
@@ -71,8 +71,8 @@
     top: 20%;
     left: 8%;
 
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
 
     border: 20px solid @pink;
   }
@@ -81,8 +81,8 @@
 .profit__logo::before {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 38%;
-    left: 20%;
+    top: 36%;
+    left: 25%;
 
     font-size: 100px;
     color: @pink;
@@ -94,19 +94,20 @@
 
   @media (min-width: @desktop-width) {
     font-size: 120px;
+    left: 27%;
   }
-
 }
 
 .profit__content {
   @media (min-width: @tablet-width) {
-    width: 295px;
-    margin-left: 60px;
+    width: 320px;
+    margin-left: 75px;
   }
 
   @media (min-width: @desktop-width) {
     width: 550px;
-    margin-right: 180px;
+    margin-right: 150px;
+    margin-top: 0;
   }
 }
 
@@ -121,14 +122,11 @@
     font-size: 30px;
     line-height: 35px;
     text-align: left;
-
-
-
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 35px;
-
+    padding-top: 25px;
+    margin-bottom: 15px;
     font-size: 30px;
     text-align: left;
   }
@@ -155,31 +153,30 @@
     font-size: 14px;
     line-height: 25px;
     text-align: left;
-
-
   }
 
+
+
   @media (min-width: @desktop-width) {
+    .font-main();
     margin-bottom: 25px;
-    padding-top: 20px;
+    padding-top: 10px;
 
     font-size: 18px;
     line-height: 30px;
     text-align: left;
 
-    .font-main();
   }
 
 
   &--link {
     color: @pink;
 
-    &:hover
-    {
+    &:hover {
       color: @black;
     }
-    &:active
-    {
+
+    &:active {
       color: @black-trans;
     }
   }
