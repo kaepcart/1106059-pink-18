@@ -423,6 +423,9 @@ body {
   opacity: 0.3;
   fill: #283645;
 }
+.logo__icon--mobile.logo__icon--button {
+  display: block;
+}
 @media (min-width: 640px) {
   .logo__icon--desktop {
     display: none;
@@ -443,6 +446,9 @@ body {
   }
   .logo__icon--desktop {
     display: block;
+  }
+  .logo__icon--mobile.logo__icon--button {
+    display: none;
   }
 }
 .header-box {
