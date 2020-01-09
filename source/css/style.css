@@ -3114,6 +3114,7 @@ body {
 }
 .fields__label {
   margin-left: 20px;
+  margin-top: 5px;
   color: #d22856;
   font-family: "Open Sans", "Arial", "Helvetica", "Garuda", sans-serif;
   font-weight: normal;
@@ -3122,6 +3123,9 @@ body {
   line-height: 2.14;
   letter-spacing: normal;
   text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 33px;
 }
 @media (min-width: 640px) {
   .fields__label {
@@ -3132,10 +3136,6 @@ body {
 }
 .fields__header {
   width: 220px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #d22856;
-  text-transform: uppercase;
   font-family: "Open Sans", "Arial", "Helvetica", "Garuda", sans-serif;
   font-weight: normal;
   font-stretch: normal;
@@ -3143,6 +3143,10 @@ body {
   line-height: 2.14;
   letter-spacing: normal;
   text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #d22856;
+  text-transform: uppercase;
 }
 @media (min-width: 640px) {
   .fields__header {
@@ -3193,6 +3197,7 @@ body {
 }
 .fields__value--textarea {
   min-height: 197px;
+  padding-top: 12px;
 }
 @media (min-width: 640px) {
   .fields__value--textarea {
@@ -3207,9 +3212,8 @@ body {
   }
 }
 .fields__value--textarea::-webkit-input-placeholder {
-  line-height: 25px;
-  text-align: left;
-  color: #283645;
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", "Arial", "Helvetica", "Garuda", sans-serif;
   font-weight: normal;
   font-stretch: normal;
@@ -3217,11 +3221,13 @@ body {
   line-height: 2.14;
   letter-spacing: normal;
   text-align: center;
+  line-height: 30px;
+  text-align: left;
+  color: #283645;
 }
 .fields__value--textarea::-moz-placeholder {
-  line-height: 25px;
-  text-align: left;
-  color: #283645;
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", "Arial", "Helvetica", "Garuda", sans-serif;
   font-weight: normal;
   font-stretch: normal;
@@ -3229,11 +3235,13 @@ body {
   line-height: 2.14;
   letter-spacing: normal;
   text-align: center;
+  line-height: 30px;
+  text-align: left;
+  color: #283645;
 }
 .fields__value--textarea:-ms-input-placeholder {
-  line-height: 25px;
-  text-align: left;
-  color: #283645;
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", "Arial", "Helvetica", "Garuda", sans-serif;
   font-weight: normal;
   font-stretch: normal;
@@ -3241,11 +3249,13 @@ body {
   line-height: 2.14;
   letter-spacing: normal;
   text-align: center;
+  line-height: 30px;
+  text-align: left;
+  color: #283645;
 }
 .fields__value--textarea::-ms-input-placeholder {
-  line-height: 25px;
-  text-align: left;
-  color: #283645;
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", "Arial", "Helvetica", "Garuda", sans-serif;
   font-weight: normal;
   font-stretch: normal;
@@ -3253,11 +3263,13 @@ body {
   line-height: 2.14;
   letter-spacing: normal;
   text-align: center;
+  line-height: 30px;
+  text-align: left;
+  color: #283645;
 }
 .fields__value--textarea::placeholder {
-  line-height: 25px;
-  text-align: left;
-  color: #283645;
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", "Arial", "Helvetica", "Garuda", sans-serif;
   font-weight: normal;
   font-stretch: normal;
@@ -3265,6 +3277,9 @@ body {
   line-height: 2.14;
   letter-spacing: normal;
   text-align: center;
+  line-height: 30px;
+  text-align: left;
+  color: #283645;
 }
 .fields__item-check {
   display: -webkit-box;
@@ -3443,9 +3458,6 @@ body {
     padding-left: 30px;
   }
 }
-.competition__progress-header {
-  padding-right: 50px;
-}
 @media (min-width: 960px) {
   .competition__progress.fields {
     padding-left: 30px;
@@ -3453,8 +3465,9 @@ body {
   }
 }
 .competition__emotion {
-  padding-top: 22px;
-  padding-bottom: 35px;
+  padding-top: 24px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
 }
 @media (min-width: 640px) {
   .competition__emotion {
@@ -3579,6 +3592,9 @@ body {
     margin-bottom: 57px;
   }
 }
+.competition__emotion-field {
+  margin-top: 13px;
+}
 @media (min-width: 640px) {
   .competition__emotion-field {
     padding-top: 0;
@@ -3596,7 +3612,8 @@ body {
   }
 }
 .competition__emotion-header {
-  margin-bottom: 15px;
+  margin-bottom: 4px;
+  margin-left: 27px;
 }
 @media (min-width: 640px) {
   .competition__emotion-header {
