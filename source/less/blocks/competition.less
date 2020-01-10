@@ -21,7 +21,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 75px;
+    padding-top: 70px;
     width: 752px;
     padding-bottom: 20px;
   }
@@ -52,13 +52,14 @@
     order: -5;
     margin-left: 20px;
     padding-bottom: 8px;
+    padding-top: 20px;
   }
 
   @media (min-width: @desktop-width) {
     width: 450px;
     align-self: flex-start;
-    padding-top: 6px;
-    margin-left: 0;
+    padding-top: 15px;
+    margin-left: 5px;
   }
 }
 
@@ -70,15 +71,21 @@
 
   @media (min-width: @tablet-width) {
     order: -4;
-    padding-top: 35px;
+    padding-top: 37px;
     padding-left: 10px;
     margin-bottom: 8px;
-
   }
 
   @media (min-width: @desktop-width) {
     width: 410px;
+    padding-top: 40px;
     align-self: flex-end;
+  }
+}
+
+.competition__application-header {
+  @media (min-width: @desktop-width) {
+    right: 4%;
   }
 }
 
@@ -95,19 +102,30 @@
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
     height: 170px;
-    margin-left: 5px;
+    margin-left: 0;
     padding-top: 25px;
-    padding-left: 30px;
-
   }
 }
 
+.competition__progress.fields {
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    padding-left: 65px;
+  }
+
+}
+
+.competition__progress-header {
+  @media (min-width: @desktop-width) {
+    left: 28%;
+  }
+}
 
 .competition__progress.fields {
   @media (min-width: @desktop-width) {
-    padding-left: 30px;
     padding-bottom: 30px;
   }
 }
@@ -131,6 +149,19 @@
   }
 }
 
+.competition__emotion.fields {
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+    padding-left: 45px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 20px;
+    padding-left: 15px;
+    margin-bottom: 60px;
+  }
+}
 
 .competition__contacts {
   padding-top: 0;
@@ -160,7 +191,7 @@
     flex-direction: row;
     padding-left: 40px;
     padding-right: 40px;
-    margin-left: 5px;
+    margin-left: 20px;
     margin-right: 5px;
     padding-bottom: 10px;
 
@@ -192,11 +223,13 @@
     width: auto;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
     margin-left: 5px;
+    margin-bottom: 0;
   }
 }
 
@@ -207,8 +240,11 @@
     display: block;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     align-self: center;
+    min-width: 220px;
+    left: 35%;
+
   }
 }
 
@@ -216,7 +252,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: center;
-    margin-bottom: 57px;
+    margin-bottom: 55px;
   }
 }
 
@@ -225,8 +261,9 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
-    margin-top: 30px;
-    margin-bottom: 45px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 510px;
   }
 
   @media (min-width: @desktop-width) {
@@ -244,6 +281,13 @@
 
   @media (min-width: @tablet-width) {
     top: -10px;
+    left: 13%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 34%;
+    top: -12px;
+    min-width: 200px;
   }
 }
 

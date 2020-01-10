@@ -612,6 +612,9 @@ body {
   }
   .header-box__text--wide {
     width: 480px;
+    padding-top: 25px;
+    padding-bottom: 63px;
+    line-height: 60px;
   }
   .header-box__text-wrapper {
     width: 230px;
@@ -1146,7 +1149,7 @@ body {
 }
 @media (min-width: 640px) {
   .textblock__text {
-    line-height: 33px;
+    line-height: 30px;
   }
   .textblock__text--first {
     height: 24px;
@@ -2834,6 +2837,11 @@ body {
     margin-top: 60px;
   }
 }
+@media (min-width: 960px) {
+  .page-footer__competition {
+    margin-top: 35px;
+  }
+}
 .page-footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3088,7 +3096,7 @@ body {
 }
 @media (min-width: 640px) {
   .fields__item {
-    width: 495px;
+    width: 620px;
     margin-bottom: 56px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3182,6 +3190,7 @@ body {
 @media (min-width: 640px) {
   .fields__value {
     margin-bottom: 0;
+    margin-left: 10px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -3204,6 +3213,7 @@ body {
     padding-top: 15px;
     padding-left: 15px;
     min-height: 190px;
+    width: 100px;
   }
 }
 @media (min-width: 960px) {
@@ -3298,8 +3308,10 @@ body {
 }
 @media (min-width: 960px) {
   .fields__item-check {
-    width: 260px;
-    margin-left: 30px;
+    width: 315px;
+  }
+  .fields__item-check--middle {
+    width: 295px;
   }
 }
 .fields__item-check--radio {
@@ -3314,6 +3326,12 @@ body {
 @media (min-width: 960px) {
   .fields__item-check--radio {
     margin-left: 50px;
+  }
+}
+@media (min-width: 960px) {
+  .fields__checkbox-label {
+    padding-top: 3px;
+    margin-left: 3px;
   }
 }
 .competition {
@@ -3353,7 +3371,7 @@ body {
 }
 @media (min-width: 960px) {
   .competition__header {
-    padding-top: 75px;
+    padding-top: 70px;
     width: 752px;
     padding-bottom: 20px;
   }
@@ -3396,6 +3414,7 @@ body {
             order: -5;
     margin-left: 20px;
     padding-bottom: 8px;
+    padding-top: 20px;
   }
 }
 @media (min-width: 960px) {
@@ -3403,8 +3422,8 @@ body {
     width: 450px;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    padding-top: 6px;
-    margin-left: 0;
+    padding-top: 15px;
+    margin-left: 5px;
   }
 }
 .competition__application {
@@ -3418,7 +3437,7 @@ body {
     -webkit-box-ordinal-group: -3;
         -ms-flex-order: -4;
             order: -4;
-    padding-top: 35px;
+    padding-top: 37px;
     padding-left: 10px;
     margin-bottom: 8px;
   }
@@ -3426,8 +3445,14 @@ body {
 @media (min-width: 960px) {
   .competition__application {
     width: 410px;
+    padding-top: 40px;
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+}
+@media (min-width: 960px) {
+  .competition__application-header {
+    right: 4%;
   }
 }
 .competition__progress {
@@ -3449,18 +3474,30 @@ body {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     height: 170px;
-    margin-left: 5px;
+    margin-left: 0;
     padding-top: 25px;
-    padding-left: 30px;
   }
 }
 @media (min-width: 960px) {
   .competition__progress.fields {
-    padding-left: 30px;
+    padding-right: 0;
+    padding-left: 65px;
+  }
+}
+@media (min-width: 960px) {
+  .competition__progress-header {
+    left: 28%;
+  }
+}
+@media (min-width: 960px) {
+  .competition__progress.fields {
     padding-bottom: 30px;
   }
 }
@@ -3486,6 +3523,20 @@ body {
             justify-content: stretch;
     margin-left: 5px;
     padding-bottom: 0;
+  }
+}
+@media (min-width: 640px) {
+  .competition__emotion.fields {
+    padding-top: 25px;
+    padding-left: 45px;
+    margin-bottom: 65px;
+  }
+}
+@media (min-width: 960px) {
+  .competition__emotion.fields {
+    padding-top: 20px;
+    padding-left: 15px;
+    margin-bottom: 60px;
   }
 }
 .competition__contacts {
@@ -3527,7 +3578,7 @@ body {
             flex-direction: row;
     padding-left: 40px;
     padding-right: 40px;
-    margin-left: 5px;
+    margin-left: 20px;
     margin-right: 5px;
     padding-bottom: 10px;
   }
@@ -3559,12 +3610,14 @@ body {
     width: auto;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 960px) {
   .competition__form-submit {
     width: 100%;
     margin-left: 5px;
+    margin-bottom: 0;
   }
 }
 .competition__contacts-header {
@@ -3575,10 +3628,12 @@ body {
     display: block;
   }
 }
-@media (min-width: 640px) {
+@media (min-width: 960px) {
   .competition__contacts-header {
     -ms-flex-item-align: center;
         align-self: center;
+    min-width: 220px;
+    left: 35%;
   }
 }
 @media (min-width: 640px) {
@@ -3589,7 +3644,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 57px;
+    margin-bottom: 55px;
   }
 }
 .competition__emotion-field {
@@ -3598,8 +3653,9 @@ body {
 @media (min-width: 640px) {
   .competition__emotion-field {
     padding-top: 0;
-    margin-top: 30px;
-    margin-bottom: 45px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 510px;
   }
 }
 @media (min-width: 960px) {
@@ -3618,6 +3674,14 @@ body {
 @media (min-width: 640px) {
   .competition__emotion-header {
     top: -10px;
+    left: 13%;
+  }
+}
+@media (min-width: 960px) {
+  .competition__emotion-header {
+    left: 34%;
+    top: -12px;
+    min-width: 200px;
   }
 }
 .competition__submit {
@@ -3677,7 +3741,8 @@ body {
 @media (min-width: 640px) {
   .contact-info {
     position: relative;
-    margin-top: 40px;
+    width: 495px;
+    margin-top: 50px;
     margin-right: 60px;
     margin-bottom: 0;
     -webkit-box-align: start;
@@ -3722,16 +3787,26 @@ body {
     height: 20px;
     margin-top: auto;
     margin-bottom: auto;
-    background: url("../../img/icon-phone.svg");
+    background-image: url("../../img/icon-phone.svg");
     content: "";
   }
   .contact-info--email::after {
-    background: url("../../img/icon-mail.svg") no-repeat;
+    background-image: url("../../img/icon-mail.svg");
+    background-repeat: no-repeat;
   }
 }
 @media (min-width: 960px) {
+  .contact-info {
+    margin-top: 42px;
+  }
   .contact-info--email {
-    margin-top: 40px;
+    margin-left: 40px;
+  }
+  .contact-info__label {
+    margin-top: 15px;
+  }
+  .contact-info::after {
+    background-position: 50% 100%;
   }
 }
 @media (min-width: 640px) {
