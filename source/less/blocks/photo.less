@@ -105,7 +105,7 @@
 .photo__img {
   display: block;
   width: 280px;
-
+  height: auto;
 
   &--panorama {
     width: 100%;
@@ -312,6 +312,12 @@
   font-weight: 300;
   line-height: 24px;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    vertical-align: top;
+    text-align: start;
+    min-height: 50px;
+  }
 
   @media (min-width: @desktop-width) {
     vertical-align: top;
