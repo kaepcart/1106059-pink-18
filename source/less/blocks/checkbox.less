@@ -45,6 +45,12 @@
   border: 1px solid @black;
 }
 
+.checkbox[type="checkbox"]:disabled+label::before,
+.checkbox[type="radio"]:disabled+label::before {
+  border: 1px solid @gray;
+  background-color:@light-gray;
+}
+
 .checkbox[type="checkbox"]:active+label::before,
 .checkbox[type="radio"]:active+label::before {
   border: 1px solid @pink;
@@ -102,3 +108,4 @@
 .checkbox[type="radio"]:checked+label::after {
   opacity: 1;
 }
+

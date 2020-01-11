@@ -4076,6 +4076,11 @@ body {
 .checkbox[type="radio"]:hover + label::before {
   border: 1px solid #283645;
 }
+.checkbox[type="checkbox"]:disabled + label::before,
+.checkbox[type="radio"]:disabled + label::before {
+  border: 1px solid #e5e5e5;
+  background-color: #f2f2f2;
+}
 .checkbox[type="checkbox"]:active + label::before,
 .checkbox[type="radio"]:active + label::before {
   border: 1px solid #d22856;
