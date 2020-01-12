@@ -64,7 +64,6 @@ gulp.task("server", function () {
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.jpegtran({ progressive: true }),
       imagemin.svgo()
@@ -82,7 +81,6 @@ gulp.task("webp", function () {
 });
 
 gulp.task("copy", function () {
-
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/js/**",

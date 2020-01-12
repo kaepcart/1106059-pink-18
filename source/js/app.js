@@ -5,7 +5,7 @@ const desktopWidth = "960";
 let isOpenMenu = false;
 const visuallyHidden = "visually-hidden";
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () { //Тут функция без имени ставится пробел как например в for (;;)
   let buttonClose = document.querySelector(".main-nav__toogle");
   let nav = document.querySelector(".main-nav__list");
   let header = document.querySelector(".page-header__menu-wrapper");
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
   header.classList.add("page-header__menu-wrapper--js");
   headerWrapper.classList.add("page-header__wrapper--js");
 
-  function menegeMenu() {
+  function menegeMenu() {//Тут именованная функция пробел между названием функции и скобками не ставится
     if (isOpenMenu) {
       buttonClose.classList.remove("main-nav__toogle--burger");
       nav.classList.remove("visually-hidden");
