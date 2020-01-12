@@ -332,7 +332,7 @@ body {
 }
 @media (min-width: 960px) {
   .page-header__menu-wrapper {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
     width: 960px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2582,7 +2582,7 @@ body {
 }
 .contacts__map-img {
   width: 100%;
-  height: 600px;
+  height: 200px;
   border: 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -2590,11 +2590,12 @@ body {
 @media (min-width: 640px) {
   .contacts__map-img {
     max-width: 960px;
+    height: 400px;
   }
 }
 @media (min-width: 960px) {
   .contacts__map-img {
-    height: 800px;
+    height: 600px;
     max-width: 1200px;
   }
 }
