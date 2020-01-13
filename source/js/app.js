@@ -1,5 +1,6 @@
 document.createElement("picture");
 
+
 const desktopWidth = "960";
 let isOpenMenu = false;
 const visuallyHidden = "visually-hidden";
@@ -21,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () { //Тут функц�
   let dialogSuccess = document.querySelector(".dialog--success");
   let dialogFail = document.querySelector(".dialog--fail");
 
-  header.classList.add("page-header__menu-wrapper--js");
   headerWrapper.classList.add("page-header__wrapper--js");
 
   function menegeMenu() {//Тут именованная функция пробел между названием функции и скобками не ставится
@@ -96,7 +96,5 @@ document.addEventListener("DOMContentLoaded", function () { //Тут функц�
   window.onresize = function () {
     menegeMenu();
   };
-
   menegeMenu();
-
 });
