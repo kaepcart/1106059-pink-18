@@ -343,7 +343,7 @@ body {
             flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 .page-header__menu-wrapper--js {
@@ -3517,6 +3517,7 @@ body {
 }
 @media (min-width: 960px) {
   .competition__progress.fields {
+    padding-bottom: 30px;
     padding-right: 0;
     padding-left: 65px;
   }
@@ -3524,11 +3525,6 @@ body {
 @media (min-width: 960px) {
   .competition__progress-header {
     left: 28%;
-  }
-}
-@media (min-width: 960px) {
-  .competition__progress.fields {
-    padding-bottom: 30px;
   }
 }
 .competition__emotion {

@@ -64,8 +64,7 @@
   .font-bold();
 
 
-  @media (min-width: @tablet-width),
-  (max-width: @desktop-width) {
+  @media (min-width: @tablet-width), (max-width: @desktop-width) {
     margin-bottom: 0;
 
     font-size: 16px;
@@ -79,7 +78,7 @@
 }
 
 .rates__cost {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 0;
 
   font-size: 24px;
@@ -165,7 +164,6 @@
 
       align-items: center;
       justify-content: left;
-
     }
   }
 
@@ -313,9 +311,7 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 0;
-
   }
-
 }
 
 .rates__toggles {
@@ -324,6 +320,4 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
-
-
 }

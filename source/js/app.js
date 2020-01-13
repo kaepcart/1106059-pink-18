@@ -1,4 +1,3 @@
-return;
 document.createElement("picture");
 
 const desktopWidth = "960";
