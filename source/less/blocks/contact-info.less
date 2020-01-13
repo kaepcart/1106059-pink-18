@@ -2,7 +2,9 @@
   .contact-info {
     position: relative;
 
-    margin-top: 40px;
+    width: 495px;
+
+    margin-top: 50px;
     margin-right: 60px;
     margin-bottom: 0;
 
@@ -52,23 +54,32 @@
     margin-top: auto;
     margin-bottom: auto;
 
-    background: url("../../img/icon-phone.svg");
+    background-image: url("../../img/icon-phone.svg");
+
 
     content: "";
   }
 
   .contact-info--email::after {
-    background: url("../../img/icon-mail.svg") no-repeat;
-
+    background-image: url("../../img/icon-mail.svg");
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contact-info {
-
+    margin-top: 42px;
 
     &--email {
-      margin-top: 40px;
+      margin-left: 40px;
     }
+  }
+
+  .contact-info__label {
+    margin-top: 15px;
+  }
+
+  .contact-info::after {
+    background-position: 50% 100%;
   }
 }

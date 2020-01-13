@@ -30,10 +30,12 @@
   }
 }
 
+.logo__icon--mobile.logo__icon--button {
+  display: block;
+}
+
 @media (min-width: @tablet-width) {
-
   .logo__icon {
-
     &--desktop {
       display: none;
     }
@@ -44,16 +46,12 @@
 
     &--tablet {
       display: block;
-
     }
-
   }
 }
 
 @media (min-width: @desktop-width) {
-
   .logo__icon {
-
     &--tablet {
       display: none;
     }
@@ -65,6 +63,9 @@
     &--desktop {
       display: block;
     }
+  }
 
+  .logo__icon--mobile.logo__icon--button {
+    display: none;
   }
 }

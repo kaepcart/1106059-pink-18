@@ -22,13 +22,13 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 0;
-    padding-top: 55px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 35px;
   }
 }
 
@@ -44,13 +44,16 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
     background-size: 175% auto;
+    justify-content: center;
   }
 }
 
@@ -68,16 +71,27 @@
 
 
   @media (min-width: @tablet-width) {
-    padding-top: 30px;
+    padding-top: 60px;
+    padding-left: 0;
 
     align-items: flex-start;
+    justify-content: flex-start;
     order: 1;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 30px;
-
+    justify-content: space-between;
+    align-items: space-between;
     flex-direction: row;
+    padding-top: 25px;
+    margin-left: 20px;
+    width: 960px;
+  }
+}
+
+.advantages__item {
+  @media (min-width: @tablet-width) {
+    padding-top: 6px;
   }
 }
 
@@ -136,22 +150,23 @@
   margin-bottom: 8px;
   padding: 0;
 
+  .font-light();
   font-size: 24px;
   text-align: center;
   color: @black;
-
   list-style-type: none;
-
-  .font-light();
-  
   line-height: 30px;
 
   @media (min-width: @tablet-width) {
     width: 685px;
-    margin-top: 16px;
+    margin-top: 20px;
 
     font-size: 40px;
-    line-height: 49px;
+    line-height: 43px;
+
+    &--first {
+      font-size: 40px;
+    }
 
     &:nth-child(2) {
       width: 500px;
@@ -159,22 +174,24 @@
       padding-top: 0;
     }
   }
-}
 
-@media (min-width: @desktop-width) {
-  .advantages__header-item:nth-child(1) {
-    width: 800px;
-    height: 55px;
+  @media (min-width: @desktop-width) {
+    &:nth-child(1) {
+      width: 800px;
+      height: 55px;
 
-    font-size: 50px;
-    line-height: 50px;
-  }
+      font-size: 50px;
+      line-height: 40px;
 
-  .advantages__header-item:nth-child(2) {
-    width: 700px;
+      margin-bottom: 0;
+    }
 
-    font-size: 50px;
-    line-height: 60px;
+    &:nth-child(2) {
+      width: 700px;
+
+      font-size: 50px;
+      line-height: 60px;
+    }
   }
 }
 
@@ -191,16 +208,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 320px;
+    width: 300px;
     margin-top: 60px;
     padding: 0;
+    margin-right: 15px;
 
     font-size: 30px;
     text-align: center;
+  }
+}
 
-    & span {
-      display: block;
-    }
+.advantages__item-header & span {
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
@@ -223,13 +243,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 250px;
+    width: 265px;
     margin-top: 25px;
-    margin-left: 20px;
+    margin-left: 15px;
 
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+  }
+}
+
+.advantages__item-content span {
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
@@ -248,14 +274,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 300px;
-    margin-top: 10px;
+    width: 308px;
+    margin-top: 5px;
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 20px;
     padding-right: 0;
 
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: 0% 0%;
+    background-position: 0 0%;
 
     order: -1;
     min-height: 480px;

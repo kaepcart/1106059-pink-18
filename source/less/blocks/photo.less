@@ -25,7 +25,7 @@
 
 
   @media (min-width: @tablet-width) {
-    margin-top: 10px;
+    margin-top: 12px;
     margin-right: 10px;
     margin-left: 10px;
 
@@ -36,11 +36,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-top: 8px;
+    margin-right: 10px;
     margin-bottom: 0;
-    margin-left: 5px;
+    margin-left: 10px;
     padding-bottom: 0;
+    max-width: 940px;
   }
 }
 
@@ -85,8 +86,6 @@
   &--panorama {
     min-height: 130px;
   }
-
-
 }
 
 @media (min-width: @tablet-width) {
@@ -104,7 +103,7 @@
 .photo__img {
   display: block;
   width: 280px;
-
+  height: auto;
 
   &--panorama {
     width: 100%;
@@ -155,6 +154,13 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    min-height: 10px;
+
+    line-height: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 20px;
   }
 }
 
@@ -178,13 +184,12 @@
   background-color: @light-gray;
 
 
-
   @media (min-width: @tablet-width) {
     display: flex;
     width: 260px;
     height: 117px;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     padding-top: 25px;
     padding-right: 20px;
     padding-bottom: 10px;
@@ -195,10 +200,11 @@
 
     &--panorama {
       width: auto;
-      height: 80px;
-      margin-right: 30px;
-      margin-bottom: 45px;
-      margin-left: 32px;
+      height: 85px;
+
+      margin-bottom: 40px;
+      margin-left: 20px;
+      margin-right: 20px;
       padding-top: 25px;
 
       justify-content: stretch;
@@ -206,7 +212,7 @@
       & .photo__like {
         position: absolute;
         top: 15px;
-        right: 5px;
+        right: 10px;
 
         width: auto;
       }
@@ -214,15 +220,19 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-right: 20px;
+    padding-bottom: 6px;
+    padding-left: 27px;
+    padding-top: 27px;
+    align-items: flex-start;
+
     &--panorama {
-      width: 100%;
       height: 50px;
       margin-right: auto;
       margin-left: auto;
       padding-bottom: 20px;
-      padding-left: 30px;
-
-      max-width: 880px;
+      padding-left: 28px;
+      width: 890px;
     }
   }
 }
@@ -252,6 +262,19 @@
       order: 1;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 12px;
+
+    &--panorama {
+      margin-top: 7px;
+    }
+
+    &--panorama .photo__heart {
+      margin-left: 15px;
+      margin-right: 5px;
+    }
+  }
 }
 
 .photo__time {
@@ -270,19 +293,29 @@
   @media (min-width: @tablet-width) {
     align-self: center;
     order: 1;
-
   }
 }
 
 .photo__comment {
-  margin: 0;
+  .font-main();
 
+  margin: 0;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   text-align: left;
 
-  .font-main();
+  @media (min-width: @tablet-width) {
+    vertical-align: top;
+    text-align: start;
+    min-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    vertical-align: top;
+    text-align: start;
+    min-height: 50px;
+  }
 }
 
 .photo__label {
@@ -306,11 +339,11 @@
   .font-bold();
 
   @media (min-width: @tablet-width) {
-    top: 60px;
+    top: 57px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 60px;
+    top: 55px;
     right: 130px;
   }
 }

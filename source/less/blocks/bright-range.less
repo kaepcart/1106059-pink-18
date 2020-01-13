@@ -42,7 +42,7 @@
   content: "";
 }
 
-.bright-range::before {
+.bright-range__slider {
   position: absolute;
   top: -6px;
   left: 150px;
@@ -56,10 +56,9 @@
   border: 2px solid @pink;
   border-radius: 50%;
 
-  content: "";
   cursor: pointer;
 }
 
-.bright-range:active::before {
+.bright-range__slider:active {
   background-color: @pink;
 }

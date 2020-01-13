@@ -1,10 +1,11 @@
-return;
+document.createElement("picture");
+
+
 const desktopWidth = "960";
 let isOpenMenu = false;
 const visuallyHidden = "visually-hidden";
 
-document.addEventListener("DOMContentLoaded", function () {
-
+document.addEventListener("DOMContentLoaded", function () { //Тут функция без имени ставится пробел как например в for (;;)
   let buttonClose = document.querySelector(".main-nav__toogle");
   let nav = document.querySelector(".main-nav__list");
   let header = document.querySelector(".page-header__menu-wrapper");
@@ -21,23 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
   let dialogSuccess = document.querySelector(".dialog--success");
   let dialogFail = document.querySelector(".dialog--fail");
 
-
-  header.classList.add("page-header__menu-wrapper--js");
   headerWrapper.classList.add("page-header__wrapper--js");
 
-  function menegeMenu() {
-
-
+  function menegeMenu() {//Тут именованная функция пробел между названием функции и скобками не ставится
     if (isOpenMenu) {
-
       buttonClose.classList.remove("main-nav__toogle--burger");
       nav.classList.remove("visually-hidden");
       header.classList.remove("page-header__menu-wrapper--close");
       close.classList.remove("visually-hidden");
       burger.classList.add("visually-hidden");
-
     } else {
-
       buttonClose.classList.add("main-nav__toogle--burger");
       nav.classList.add("visually-hidden");
       header.classList.add("page-header__menu-wrapper--close");
@@ -48,21 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth > desktopWidth && !isOpenMenu) {
       nav.classList.remove("visually-hidden");
     }
-
   }
 
   function validateForm(e) {
-
     let isValid = true;
 
     formInputs.forEach(i => {
-
       if (!i.validity.valid) {
         isValid = false;
       }
-
     });
-
 
     if (isValid) {
       dialogSuccess.classList.remove(visuallyHidden);
@@ -71,26 +60,20 @@ document.addEventListener("DOMContentLoaded", function () {
       dialogFail.classList.remove(visuallyHidden);
       return false;
     }
-
   }
 
   buttonClose.addEventListener("click", function (e) {
     isOpenMenu = !isOpenMenu;
     menegeMenu();
-
   });
 
   if (submitForm) {
-
     submitForm.addEventListener("click", function (e) {
-
       validateForm(e);
-
     });
   }
 
   if (form) {
-
     form.addEventListener("submit", function (e) {
       e.preventDefault();
     });
@@ -102,21 +85,16 @@ document.addEventListener("DOMContentLoaded", function () {
         let doalogs = document.querySelectorAll(".dialog");
 
         doalogs.forEach(d => {
-
           if (!d.classList.contains(visuallyHidden)) {
             d.classList.add(visuallyHidden);
           }
-
         });
       });
-
     });
   }
 
   window.onresize = function () {
     menegeMenu();
   };
-
   menegeMenu();
-
 });
