@@ -1,5 +1,5 @@
 document.createElement("picture");
-
+return;
 
 const desktopWidth = "960";
 let isOpenMenu = false;
