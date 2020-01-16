@@ -17,7 +17,7 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 85px;
-    padding-bottom: 65px;
+    padding-bottom: 50px;
     padding-left: 0;
   }
 
@@ -309,6 +309,10 @@
   align-items: center;
   flex-direction: column;
 
+  @media (min-width: @tablet-width) {
+    min-height: 243px;
+  }
+
   @media (min-width: @desktop-width) {
     min-height: 375px;
     margin-left: 0;
@@ -316,7 +320,7 @@
 }
 
 .rates__toggles {
-  margin-top: 33px;
+  margin-top: 20px;
 
   @media (min-width: @tablet-width) {
     display: none;
