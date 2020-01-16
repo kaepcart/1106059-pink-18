@@ -53,12 +53,8 @@ gulp.task("cssmin_dev", function () {
 
 gulp.task("css_dev", function () {
   return gulp.src("source/less/style.less")
-    .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
