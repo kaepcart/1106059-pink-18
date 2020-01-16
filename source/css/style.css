@@ -2804,6 +2804,9 @@ body {
 }
 @media (min-width: 960px) {
   .fields__value--textarea {
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-right: 0;
     min-height: 130px;
   }
 }
@@ -2923,8 +2926,9 @@ body {
   .competition__full-name {
     width: 450px;
     align-self: flex-start;
-    padding-top: 15px;
-    margin-left: 0;
+    padding-top: 10px;
+    margin-left: 5px;
+    margin-right: 0;
   }
 }
 .competition__application {
@@ -2947,14 +2951,22 @@ body {
     width: 410px;
     padding-top: 40px;
     align-self: flex-end;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 @media (min-width: 660px) {
   .competition__application.fields {
     padding-left: 60px;
     padding-bottom: 30px;
+  }
+}
+@media (min-width: 960px) {
+  .competition__application.fields {
+    width: 410px;
+    padding-top: 40px;
+    align-self: flex-end;
+    padding-left: 20px;
   }
 }
 @media (min-width: 960px) {
@@ -2984,7 +2996,7 @@ body {
     align-items: flex-start;
     height: 170px;
     margin-left: 0;
-    padding-top: 25px;
+    padding-top: 27px;
   }
 }
 @media (min-width: 960px) {
@@ -3032,7 +3044,7 @@ body {
   .competition__emotion.fields {
     padding-top: 20px;
     padding-left: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
 }
 .competition__contacts {
@@ -3058,19 +3070,20 @@ body {
     width: 100%;
     flex-direction: row;
     padding-left: 0;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 }
 @media (min-width: 960px) {
   .competition__contacts.fields {
     width: 840px;
     flex-direction: row;
-    padding-left: 40px;
+    justify-items: flex-start;
+    padding-left: 45px;
     padding-right: 40px;
     margin-left: 10px;
     margin-right: 5px;
     padding-bottom: 10px;
-    padding-top: 0px;
+    padding-top: 0;
   }
 }
 .competition__end {
@@ -3096,7 +3109,9 @@ body {
   .competition__form-submit {
     width: 100%;
     margin-left: 5px;
+    margin-right: 15px;
     margin-bottom: 0;
+    margin-top: 2px;
   }
 }
 .competition__contacts-header {
@@ -3121,6 +3136,11 @@ body {
     margin-bottom: 48px;
   }
 }
+@media (min-width: 960px) {
+  .competition__field--surname {
+    margin-bottom: 55px;
+  }
+}
 .competition__emotion-field {
   margin-top: 13px;
 }
@@ -3138,7 +3158,7 @@ body {
     padding-left: 40px;
     padding-right: 55px;
     padding-bottom: 0;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 }
 .competition__emotion-header {
@@ -3258,6 +3278,7 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     background-image: url("../../img/icon-phone.svg");
+    background-repeat: no-repeat;
     content: "";
   }
   .contact-info--email::after {
@@ -3268,24 +3289,36 @@ body {
 }
 @media (min-width: 960px) {
   .contact-info {
-    margin-top: 42px;
+    margin-top: 40px;
+    margin-left: 0;
+    padding-left: 0;
   }
   .contact-info--email {
-    margin-left: 40px;
+    margin-left: 38px;
   }
   .contact-info__label {
-    margin-top: 12px;
+    margin-top: 10px;
     margin-left: 20px;
   }
   .contact-info::after {
     background-position: 50% 100%;
+    padding-top: 5px;
+    padding-right: 7px;
+  }
+  .contact-info::before {
+    height: 65px;
+  }
+  .contact-info--email::after {
+    margin-top: 0;
+    padding-top: 2px;
   }
 }
 @media (min-width: 960px) {
   .contact-info.fields__item {
-    width: 378px;
-    padding-left: 5px;
-    padding-top: 2px;
+    width: 375px;
+    padding-left: 10px;
+    padding-top: 0;
+    margin-right: 20px;
   }
 }
 @media (min-width: 660px) {
